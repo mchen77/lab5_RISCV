@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab05
-Fri Mar 12 13:37:47 2021
+Fri Mar 12 13:51:05 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Mar 12 13:37:47 2021       ;
+; Analysis & Synthesis Status     ; Successful - Fri Mar 12 13:51:05 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab05                                       ;
 ; Top-level Entity Name           ; lab05                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-; Total pins                      ; 2                                           ;
+; Total pins                      ; 3                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -166,13 +166,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                      ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------+---------+
-; lab05.v                          ; yes             ; User Verilog HDL File  ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                             ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
+; lab05.v                          ; yes             ; User Verilog HDL File  ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -191,13 +191,13 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;       ;
 ; Dedicated logic registers                   ; 0     ;
 ;                                             ;       ;
-; I/O pins                                    ; 2     ;
+; I/O pins                                    ; 3     ;
 ;                                             ;       ;
 ; Total DSP Blocks                            ; 0     ;
 ;                                             ;       ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 2     ;
+; Total fan-out                               ; 3     ;
 ; Average fan-out                             ; 0.50  ;
 +---------------------------------------------+-------+
 
@@ -207,7 +207,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |lab05                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 2    ; 0            ; |lab05              ; lab05       ; work         ;
+; |lab05                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 3    ; 0            ; |lab05              ; lab05       ; work         ;
 +----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -232,7 +232,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------+---------------------------------+
 ; Type              ; Count                           ;
 +-------------------+---------------------------------+
-; boundary_port     ; 2                               ;
+; boundary_port     ; 3                               ;
 ;                   ;                                 ;
 ; Max LUT depth     ; 0.00                            ;
 ; Average LUT depth ; 0.00                            ;
@@ -244,7 +244,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -254,26 +254,27 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Fri Mar 12 13:37:21 2021
+    Info: Processing started: Fri Mar 12 13:50:41 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab05 -c lab05
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file lab05.v
-    Info (12023): Found entity 1: lab05 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 1
+    Info (12023): Found entity 1: lab05 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 1
 Info (12127): Elaborating entity "lab05" for the top level hierarchy
 Warning (12158): Entity "lab05" contains only dangling pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 2
-    Warning (15610): No output dependent on input pin "reset" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 3
-Info (21057): Implemented 2 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 2 input pins
+Warning (21074): Design contains 3 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 2
+    Warning (15610): No output dependent on input pin "reset" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 3
+    Warning (15610): No output dependent on input pin "foo" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 4
+Info (21057): Implemented 3 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
     Info (21059): Implemented 0 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4801 megabytes
-    Info: Processing ended: Fri Mar 12 13:37:48 2021
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:59
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4790 megabytes
+    Info: Processing ended: Fri Mar 12 13:51:05 2021
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:47
 
 

@@ -17,7 +17,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
-// DATE "03/12/2021 13:39:14"
+// DATE "03/12/2021 13:53:14"
 
 // 
 // Device: Altera 5CEBA4F23C7 Package FBGA484
@@ -31,13 +31,16 @@
 
 module lab05 (
 	clk,
-	reset);
+	reset,
+	foo);
 input 	clk;
 input 	reset;
+input 	foo;
 
 // Design Ports Information
-// clk	=>  Location: PIN_V13,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// reset	=>  Location: PIN_A12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_AB17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_T12,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// foo	=>  Location: PIN_K9,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
 wire gnd;
@@ -53,10 +56,11 @@ tri1 devpor;
 tri1 devoe;
 wire \clk~input_o ;
 wire \reset~input_o ;
+wire \foo~input_o ;
 wire \~QUARTUS_CREATED_GND~I_combout ;
 
 
-// Location: IOIBUF_X33_Y0_N58
+// Location: IOIBUF_X38_Y0_N52
 cyclonev_io_ibuf \clk~input (
 	.i(clk),
 	.ibar(gnd),
@@ -67,7 +71,7 @@ defparam \clk~input .bus_hold = "false";
 defparam \clk~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X36_Y45_N52
+// Location: IOIBUF_X34_Y0_N18
 cyclonev_io_ibuf \reset~input (
 	.i(reset),
 	.ibar(gnd),
@@ -76,6 +80,17 @@ cyclonev_io_ibuf \reset~input (
 // synopsys translate_off
 defparam \reset~input .bus_hold = "false";
 defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X34_Y45_N52
+cyclonev_io_ibuf \foo~input (
+	.i(foo),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\foo~input_o ));
+// synopsys translate_off
+defparam \foo~input .bus_hold = "false";
+defparam \foo~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LABCELL_X32_Y32_N3
