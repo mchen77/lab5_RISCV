@@ -1,0 +1,5 @@
+|lab05
+clk => ~NO_FANOUT~
+reset => ~NO_FANOUT~
+
+

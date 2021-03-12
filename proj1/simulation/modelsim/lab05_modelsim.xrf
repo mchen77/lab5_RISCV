@@ -1,0 +1,7 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v
+source_file = 1, C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/lab05.cbx.xml
+design_name = lab05
+instance = comp, \clk~input , clk~input, lab05, 1
+instance = comp, \reset~input , reset~input, lab05, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, lab05, 1
