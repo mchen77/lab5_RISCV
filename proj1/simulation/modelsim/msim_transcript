@@ -7,89 +7,372 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying D:/engn1640/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:05:22 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v 
+# Start time: 14:54:54 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 11:05:22 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 14:54:55 on Mar 13,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:05:22 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v 
+# Start time: 14:54:55 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 11:05:23 on Mar 13,2021, Elapsed time: 0:00:01
+# End time: 14:54:55 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:05:23 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v 
-# init_auxdbinfo(): INTERNAL ERROR: Cannot open page file "C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work/_lib1_0.qpg" in read mode
-# doVOpenFlatFile(): INTERNAL ERROR: Cannot obtain auxid to open C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work/_temp/vlogdy3g8i
-# mtilibWrite(): INTERNAL ERROR: Unexpected null object encountered
-# ** Fatal: (vlog-9) Problem while writing internal20180930A file "C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work/_temp/vlogdy3g8i".
-# C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v(6): Verilog Compiler exiting
-# End time: 11:05:23 on Mar 13,2021, Elapsed time: 0:00:00
+# Start time: 14:54:58 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
+# 
+# Top level modules:
+# 	lab05
+# End time: 14:54:58 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:09 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 14:55:10 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:10 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
+# -- Compiling module alu_control
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v(9): near "always": syntax error, unexpected always, expecting ';'.
+# End time: 14:55:10 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./lab05_run_msim_rtl_verilog.do line 10
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDr..."
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v}
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:05:59 on Mar 13,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v 
+# Start time: 14:55:10 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(14): near "begin": syntax error, unexpected begin.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(24): near "7": syntax error, unexpected INTEGER NUMBER.
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(26): (vlog-13205) Syntax error found in the scope following 'MemRead'. Is there a missing '::'?
+# End time: 14:55:11 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:11 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
 # -- Compiling module imm_gen
 # 
 # Top level modules:
 # 	imm_gen
-# End time: 11:06:00 on Mar 13,2021, Elapsed time: 0:00:01
+# End time: 14:55:11 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v}
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 11:06:04 on Mar 13,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
-# -- Compiling module imm_gen_test
+# Start time: 14:55:11 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
 # 
 # Top level modules:
-# 	imm_gen_test
-# End time: 11:06:04 on Mar 13,2021, Elapsed time: 0:00:00
+# 	lab05
+# End time: 14:55:12 on Mar 13,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim work.imm_gen_test
-# vsim work.imm_gen_test 
-# Start time: 11:06:06 on Mar 13,2021
-# Loading work.imm_gen_test
-# Loading work.imm_gen
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:55:12 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:55:12 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:38 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 14:57:39 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:39 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
+# -- Compiling module alu_control
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v(18): (vlog-2730) Undefined variable: 'intr_split'.
+# End time: 14:57:40 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:40 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(51): near "begin": syntax error, unexpected begin, expecting ':'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(60): near ":": syntax error, unexpected ':', expecting IDENTIFIER or disable or clock or "SystemVerilog keyword 'clocking'".
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(62): (vlog-13205) Syntax error found in the scope following 'MemRead'. Is there a missing '::'?
+# End time: 14:57:40 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:40 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# End time: 14:57:41 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:41 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
+# 
+# Top level modules:
+# 	lab05
+# End time: 14:57:41 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:57:41 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:57:42 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:58:29 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# End time: 14:58:29 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:58:32 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(51): near "begin": syntax error, unexpected begin, expecting ':'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(60): near ":": syntax error, unexpected ':', expecting IDENTIFIER or disable or clock or "SystemVerilog keyword 'clocking'".
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v(62): (vlog-13205) Syntax error found in the scope following 'MemRead'. Is there a missing '::'?
+# End time: 14:58:32 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:58:55 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 14:58:55 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:00 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 14:59:00 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:00 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# End time: 14:59:01 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:01 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 14:59:01 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:02 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# End time: 14:59:02 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:02 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
+# 
+# Top level modules:
+# 	lab05
+# End time: 14:59:02 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:03 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 14:59:03 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:06 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v(8): near "wire": syntax error, unexpected wire, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v(16): (vlog-13205) Syntax error found in the scope following 'instr'. Is there a missing '::'?
+# End time: 14:59:07 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:33 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 14:59:33 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:59:59 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 14:59:59 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:02:02 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v(14): near "reg": syntax error, unexpected reg, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER or '*'.
+# End time: 15:02:02 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:02:16 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:02:16 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.control_unit_tb
+# vsim -gui -l msim_transcript work.control_unit_tb 
+# Start time: 15:02:26 on Mar 13,2021
+# Loading work.control_unit_tb
+# Loading work.control_unit
+# ** Fatal: (vsim-3365) Too many port connections. Expected 1, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /control_unit_tb/dut File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v Line: 11
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 15:02:28 on Mar 13,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:05:11 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:05:12 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.control_unit_tb
+# vsim -gui -l msim_transcript work.control_unit_tb 
+# Start time: 15:05:21 on Mar 13,2021
+# Loading work.control_unit_tb
+# Loading work.control_unit
+# ** Fatal: (vsim-3365) Too many port connections. Expected 1, found 8.
+#    Time: 0 ns  Iteration: 0  Instance: /control_unit_tb/dut File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v Line: 11
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 15:05:23 on Mar 13,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:07:01 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:07:01 on Mar 13,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:07:05 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 15:07:06 on Mar 13,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.control_unit_tb
+# vsim -gui -l msim_transcript work.control_unit_tb 
+# Start time: 15:07:17 on Mar 13,2021
+# Loading work.control_unit_tb
+# Loading work.control_unit
 add wave -position insertpoint  \
-sim:/imm_gen_test/instr \
-sim:/imm_gen_test/out
+sim:/control_unit_tb/instr \
+sim:/control_unit_tb/aluop \
+sim:/control_unit_tb/Branch \
+sim:/control_unit_tb/MemRead \
+sim:/control_unit_tb/MemtoReg \
+sim:/control_unit_tb/MemWrite \
+sim:/control_unit_tb/ALUSrc \
+sim:/control_unit_tb/RegWrite
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: gohar  Hostname: DESKTOP-LGI5C03  ProcessID: 1928
-#           Attempting to use alternate WLF file "./wlftnt69ve".
+#           Attempting to use alternate WLF file "./wlftt4c8nj".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftnt69ve
+#           Using alternate file: ./wlftt4c8nj
 run -all
-# instr, out
-#    7340051,    7
-# 3765436435, 3591
-# 3765436451, 3584
-#    7340451,    3
-#        355,    1
-#   33554531,   16
-#        227, 1024
-# 2147483747, 2048
-#   33554483,    0
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v(27)
-#    Time: 900 ns  Iteration: 0  Instance: /imm_gen_test
-# Break in Module imm_gen_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v line 27
+#                    0 instr=0110011 aluop=10 Branch=0 MemRead=0 MemtoReg=0 MemWrite=0 ALUSrc=0 RegWrite=1
+#                  100 instr=0010011 aluop=10 Branch=0 MemRead=0 MemtoReg=0 MemWrite=0 ALUSrc=1 RegWrite=1
+#                  200 instr=0100011 aluop=00 Branch=0 MemRead=0 MemtoReg=0 MemWrite=1 ALUSrc=1 RegWrite=0
+#                  300 instr=0000011 aluop=00 Branch=0 MemRead=1 MemtoReg=1 MemWrite=0 ALUSrc=1 RegWrite=1
+#                  400 instr=1100011 aluop=01 Branch=1 MemRead=0 MemtoReg=0 MemWrite=0 ALUSrc=0 RegWrite=0
+#                  500 instr=0000000 aluop=00 Branch=0 MemRead=0 MemtoReg=0 MemWrite=0 ALUSrc=0 RegWrite=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v(39)
+#    Time: 600 ns  Iteration: 0  Instance: /control_unit_tb
+# Break in Module control_unit_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v line 39
