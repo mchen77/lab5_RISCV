@@ -7,132 +7,206 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying D:/engn1640/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:01:13 on Mar 12,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v 
+# Start time: 21:16:31 on Mar 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 19:01:14 on Mar 12,2021, Elapsed time: 0:00:01
+# End time: 21:16:32 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:01:14 on Mar 12,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v 
+# Start time: 21:16:32 on Mar 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
 # -- Compiling module lab05
 # 
 # Top level modules:
 # 	lab05
-# End time: 19:01:14 on Mar 12,2021, Elapsed time: 0:00:00
+# End time: 21:16:32 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:03:55 on Mar 12,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
-# -- Compiling module reg_file_test
-# ** Error: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(15): (vlog-2730) Undefined variable: 'CLOCK_50'.
-# End time: 19:03:55 on Mar 12,2021, Elapsed time: 0:00:00
+# Start time: 21:16:46 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 21:16:47 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:16:52 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(8): near "wire": syntax error, unexpected wire, expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(26): (vlog-13205) Syntax error found in the scope following 'opcode'. Is there a missing '::'?
+# End time: 21:16:52 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:30 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(22): near "initial": syntax error, unexpected initial, expecting ';' or ','.
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(26): (vlog-13205) Syntax error found in the scope following 'opcode'. Is there a missing '::'?
+# End time: 21:17:31 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:17:38 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(48): near "end": syntax error, unexpected end, expecting ';'.
+# End time: 21:17:38 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:04:33 on Mar 12,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# Start time: 21:19:10 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(22): (vlog-2730) Undefined variable: 'clk'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(50): near "end": syntax error, unexpected end, expecting ';'.
+# End time: 21:19:10 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:19:13 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
 # -- Compiling module reg_file_test
 # 
 # Top level modules:
 # 	reg_file_test
-# End time: 19:04:34 on Mar 12,2021, Elapsed time: 0:00:01
+# End time: 21:19:13 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.reg_file_test
-# vsim work.reg_file_test 
-# Start time: 19:04:44 on Mar 12,2021
-# Loading work.reg_file_test
-# Loading work.reg_file
-run -all
-# wren, wd, rr1, rr2, wr, rd1, rd2
-# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
-# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(41)
-#    Time: 200 ns  Iteration: 0  Instance: /reg_file_test
-# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 41
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:19:15 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(22): (vlog-2730) Undefined variable: 'clk'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(50): near "end": syntax error, unexpected end, expecting ';'.
+# End time: 21:19:15 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:19:27 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(22): (vlog-2730) Undefined variable: 'clk'.
+# End time: 21:19:27 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:20:00 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 21:20:00 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui -l msim_transcript work.alu_tb
+# vsim -gui -l msim_transcript work.alu_tb 
+# Start time: 21:20:09 on Mar 12,2021
+# Loading work.alu_tb
+# Loading work.alu
+add wave -position insertpoint  \
+sim:/alu_tb/Y \
+sim:/alu_tb/zero \
+sim:/alu_tb/A \
+sim:/alu_tb/B \
+sim:/alu_tb/opcode
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gohar  Hostname: DESKTOP-LGI5C03  ProcessID: 1928
+#           Attempting to use alternate WLF file "./wlftsqd2ar".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftsqd2ar
+run
+#                    0 op= x A=         x B=         x Y=         x zero=x
+#                    1 op= 0 A=         5 B=         4 Y=         4 zero=0
+#                    2 op= 1 A=         7 B=         8 Y=        15 zero=0
+#                    3 op= 2 A=         5 B=         4 Y=         9 zero=0
+#                    4 op= 6 A=         9 B=         4 Y=         5 zero=0
+#                    5 op= 7 A=         3 B=         4 Y=        12 zero=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(46)
+#    Time: 6 ps  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v line 46
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:21:28 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 21:21:28 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 restart
-add wave -position insertpoint  \
-sim:/reg_file_test/clk \
-sim:/reg_file_test/wren \
-sim:/reg_file_test/rr1 \
-sim:/reg_file_test/rr2 \
-sim:/reg_file_test/wr \
-sim:/reg_file_test/wd \
-sim:/reg_file_test/rd1 \
-sim:/reg_file_test/rd2
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.alu_tb
+run
+run
+run
 run -all
-# wren, wd, rr1, rr2, wr, rd1, rd2
-# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
-# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(41)
-#    Time: 200 ns  Iteration: 0  Instance: /reg_file_test
-# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 41
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
+#                    0 op= x A=         x B=         x Y=         x zero=x
+#                  100 op= 0 A=         5 B=         4 Y=         4 zero=0
+#                  200 op= 1 A=         7 B=         8 Y=        15 zero=0
+#                  300 op= 2 A=         5 B=         4 Y=         9 zero=0
+#                  400 op= 6 A=         9 B=         4 Y=         5 zero=0
+#                  500 op= 6 A=         7 B=         7 Y=         0 zero=1
+#                  600 op= 7 A=         3 B=         4 Y=        12 zero=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(52)
+#    Time: 700 ns  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v line 52
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:06:58 on Mar 12,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
-# -- Compiling module reg_file_test
+# Start time: 21:22:19 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
 # 
 # Top level modules:
-# 	reg_file_test
-# End time: 19:06:58 on Mar 12,2021, Elapsed time: 0:00:00
+# 	alu_tb
+# End time: 21:22:19 on Mar 12,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim work.reg_file_test
-# End time: 19:07:22 on Mar 12,2021, Elapsed time: 0:02:38
-# Errors: 0, Warnings: 0
-# vsim work.reg_file_test 
-# Start time: 19:07:22 on Mar 12,2021
-# Loading work.reg_file_test
-# Loading work.reg_file
-add wave -position insertpoint  \
-sim:/reg_file_test/clk \
-sim:/reg_file_test/wren \
-sim:/reg_file_test/rr1 \
-sim:/reg_file_test/rr2 \
-sim:/reg_file_test/wr \
-sim:/reg_file_test/wd \
-sim:/reg_file_test/rd1 \
-sim:/reg_file_test/rd2
+restart
+# Loading work.alu_tb
 run -all
-# wren, wd, rr1, rr2, wr, rd1, rd2
-# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
-# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
-# 0, ffaa7788, 02,  01,  01,  00000010,  00000000
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(42)
-#    Time: 300 ns  Iteration: 0  Instance: /reg_file_test
-# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 42
-vsim work.reg_file_test
-# End time: 19:09:21 on Mar 12,2021, Elapsed time: 0:01:59
+#                    0 op= 0 A=         5 B=         4 Y=         4 zero=0
+#                  100 op= 1 A=         7 B=         8 Y=        15 zero=0
+#                  200 op= 2 A=         5 B=         4 Y=         9 zero=0
+#                  300 op= 6 A=         9 B=         4 Y=         5 zero=0
+#                  400 op= 6 A=         7 B=         7 Y=         0 zero=1
+#                  500 op= 7 A=         3 B=         4 Y=        12 zero=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(52)
+#    Time: 600 ns  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v line 52
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:22:47 on Mar 12,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 21:22:48 on Mar 12,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim work.reg_file_test 
-# Start time: 19:09:21 on Mar 12,2021
-# Loading work.reg_file_test
-# Loading work.reg_file
-add wave -position insertpoint  \
-sim:/reg_file_test/clk \
-sim:/reg_file_test/wren \
-sim:/reg_file_test/rr1 \
-sim:/reg_file_test/rr2 \
-sim:/reg_file_test/wr \
-sim:/reg_file_test/wd \
-sim:/reg_file_test/rd1 \
-sim:/reg_file_test/rd2
+restart
+# Loading work.alu_tb
 run -all
-# wren, wd, rr1, rr2, wr, rd1, rd2
-# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
-# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
-# 0, ffaa7788, 02,  01,  01,  00000010,  00000000
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(42)
-#    Time: 300 ns  Iteration: 0  Instance: /reg_file_test
-# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 42
+#                    0 op=0000 A=         5 B=         4 Y=         4 zero=0
+#                  100 op=0001 A=         7 B=         8 Y=        15 zero=0
+#                  200 op=0010 A=         5 B=         4 Y=         9 zero=0
+#                  300 op=0110 A=         9 B=         4 Y=         5 zero=0
+#                  400 op=0110 A=         7 B=         7 Y=         0 zero=1
+#                  500 op=0111 A=         3 B=         4 Y=        12 zero=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v(52)
+#    Time: 600 ns  Iteration: 0  Instance: /alu_tb
+# Break in Module alu_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v line 52

@@ -8,75 +8,121 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim
+Z0 dD:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim
+valu
+!s110 1615601807
+!i10b 1
+!s100 6a]o_O8S0^A=9_G?bmgeH3
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IBDU4OSB9Y<QMPN]jlnJ3F1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1615601747
+8D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
+FD:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
+!i122 2
+L0 4 34
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1615601806.000000
+!s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v|
+!s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+valu_tb
+!s110 1615602168
+!i10b 1
+!s100 FAI_EQmFGNA1RYBcY;aze1
+R1
+IBGQS?ff^iebEJR0z0c?FW0
+R2
+R0
+w1615602161
+8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+!i122 7
+L0 7 49
+R3
+r1
+!s85 0
+31
+!s108 1615602167.000000
+!s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v|
+!s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v|
+!i113 1
+R4
+R5
 vlab05
-Z1 !s110 1615593674
+Z6 !s110 1615601792
 !i10b 1
 !s100 N6?QVHPmm`Q`Se8MR5LV:0
-Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IzaiXQVl93Maaill9i5k1M0
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+R1
+I=z;>7icnNWmVb<V_dAQCC3
+R2
 R0
-w1615584945
-8C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v
-FC:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v
+w1615596921
+8D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
+FD:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
 !i122 1
 L0 1 9
-Z4 OV;L;2020.1;71
+R3
 r1
 !s85 0
 31
-!s108 1615593674.000000
-!s107 C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1|C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v|
+!s108 1615601792.000000
+!s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1|D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v|
 !i113 1
-Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work {+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1}
-Z7 tCvgOpt 0
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1
+R5
 vreg_file
-R1
+R6
 !i10b 1
 !s100 @nmh;QI2zMcc4[U;UQMA]1
+R1
+I7zDme]?29z>B1JiF89=ka0
 R2
-IDKBCD6e:O1nbJQDzK3kQN3
-R3
 R0
-w1615593584
-8C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v
-FC:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v
+Z9 w1615596922
+8D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
+FD:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
 !i122 0
 L0 3 29
-R4
+R3
 r1
 !s85 0
 31
-!s108 1615593673.000000
-!s107 C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1|C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v|
+!s108 1615601791.000000
+!s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1|D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v|
 !i113 1
-R5
-R6
 R7
+R8
+R5
 vreg_file_test
-!s110 1615594018
+!s110 1615601953
 !i10b 1
-!s100 =ZM0;L<z92R1YkiWglJkO2
+!s100 eNbfIF2UVgJ@c05lN>L@]3
+R1
+IiADj3C[>711C?TPi[X;0?1
 R2
-I=SYJMFXk`S8<kAdn5gR>`0
-R3
 R0
-w1615594006
-8C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
-FC:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+R9
+8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
 !i122 3
 L0 5 40
-R4
+R3
 r1
 !s85 0
 31
-!s108 1615594018.000000
-!s107 C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v|
-!s90 -reportprogress|300|-work|work|C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v|
+!s108 1615601953.000000
+!s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v|
+!s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v|
 !i113 1
-o-work work
-R7
+R4
+R5
