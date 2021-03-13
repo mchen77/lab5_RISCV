@@ -5,7 +5,7 @@ module alu_control (
 	input 		[1:0] aluop,
 	output reg 	[4:0] aluopcode
 );
-	
+
 	always@(*) begin
 		case(aluop)
 			2'b00: begin		// S-type (add)
@@ -17,8 +17,9 @@ module alu_control (
 			2'b10: begin		// R-type (funct3 business)
 				aluopcode = instr_split;
 			end
+			default: aluopcode = instr_split;
 		endcase
-	
+
 	end
-	
+
 endmodule

@@ -4,7 +4,7 @@ module reg_file(clk, wren, wd, rr1, rr2, wr, rd1, rd2);
   input clk, wren; //clock and write enable ports
   input [4:0] rr1, rr2, wr; //5 bit register address inputs
   input [31:0] wd; //data to write
-  output reg [31:0] rd1, rd2; //read data outputs
+  output [31:0] rd1, rd2; //read data outputs
 
   reg [31:0] file [31:0]; //32 registers 32bits wide
   integer i;
@@ -15,10 +15,14 @@ module reg_file(clk, wren, wd, rr1, rr2, wr, rd1, rd2);
    end
 
   //read data logic
-  always @(posedge clk) begin
-    rd1 <= file[rr1];
-    rd2 <= file[rr2];
-  end
+  // always @(posedge clk) begin
+  //   rd1 <= file[rr1];
+  //   rd2 <= file[rr2];
+  // end
+
+  //should be combinational
+  assign rd1 = file[rr1];
+  assign rd2 = file[rr2];
 
   //write data Logic
   always @(posedge clk) begin

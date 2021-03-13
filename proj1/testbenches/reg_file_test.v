@@ -19,32 +19,37 @@ module reg_file_test;
   #0.50 clk = ~clk;
 
   always @(posedge clk) begin
-  $display("%h, %h, %h,  %h,  %h,  %h,  %h", wren, wd, rr1, rr2, wr, rd1, rd2);
+  $display("RegWrite=%h, writeData=%h, address1=%h, address2=%h, writeReg=%h,  destR1=%h,  destR2=%h", wren, wd, rr1, rr2, wr, rd1, rd2);
   end
 
   initial begin
     #0 wren = 1;
     wr = 5'h0;
-    wd = 32'h10; //write h10
-    rr1 = 5'h0; //rd1 is 32'h10
-    rr2 = 5'h0; //rd2 is 32'h10
+    wd = 32'h0; //write h0
+    rr1 = 5'h0; //rd1 is 32'h0
+    rr2 = 5'h0; //rd2 is 32'h0
     #1 wren = 1;
     wr = 5'h1;
-    wd = 32'hffaa7788; //write hffaa7788
-    rr1 = 5'h0; //rd1 is 32'h10
-    rr2 = 5'h1; //rd2 is 32'hffaa7788
+    wd = 32'h1; //write h1
+    rr1 = 5'h0; //rd1 is 32'h0
+    rr2 = 5'h0; //rd2 is 32'h1
+    #1 wren = 1;
+    wr = 5'h2;
+    wd = 32'h2; //write h2
+    rr1 = 5'h0; //rd1 is 32'h0
+    rr2 = 5'h1; //rd2 is 32'h1
+    #1 wren = 1;
+    wr = 5'h7;
+    wd = 32'h12; //write h2
+    rr1 = 5'h2; //rd1 is 32'h2
+    rr2 = 5'h1; //rd2 is 32'h1
     #1 wren = 0;
-    wr = 5'h1;
-    wd = 32'hffaa7788; //do not write anything
-    rr1 = 5'h2; //rd1 is 32'h0
-    rr2 = 5'h1; //rd2 is 32'hffaa7788
-    #1;
+    wr = 5'h7;
+    wd = 32'h12; //don't write
+    rr1 = 5'h2; //rd1 is 32'h2
+    rr2 = 5'h7; //rd2 is 32'h12
 
-    wren = 0;
-    wr = 5'h1;
-    wd = 32'hffaa7788; //do not write anything
-    rr1 = 5'h2; //rd1 is 32'h0
-    rr2 = 5'h1; //rd2 is 32'hffaa7788
+    #1;
     #1;
     $stop;
   end

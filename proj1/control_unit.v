@@ -7,10 +7,10 @@ module control_unit(
 	input 	[6:0] instr,
 	output reg [1:0] aluop,
 	output reg	Branch,
-	output reg  MemRead, 
-	output reg  MemtoReg, 
-	output reg  MemWrite, 
-	output reg  ALUSrc, 
+	output reg  MemRead,
+	output reg  MemtoReg,
+	output reg  MemWrite,
+	output reg  ALUSrc,
 	output reg  RegWrite
 );
 
@@ -33,7 +33,7 @@ module control_unit(
 				MemWrite	= 1'b0;
 				ALUSrc	= 1'b1;	// 0-register, 1 imm_gen
 				RegWrite	= 1'b1;
-				aluop		= 2'b10;	// alu_control
+				aluop		= 2'b00;	// alu_control
 			end
 			7'b0100011: begin		// S-type
 				Branch 	= 1'b0;
@@ -61,7 +61,7 @@ module control_unit(
 				ALUSrc	= 1'b0;	// 0-register, 1 imm_gen
 				RegWrite	= 1'b0;
 				aluop		= 2'b01;	// alu_control
-			end			
+			end
 			default: begin
 				Branch 	= 1'b0;
 				MemRead 	= 1'b0;
@@ -71,7 +71,7 @@ module control_unit(
 				RegWrite	= 1'b0;
 				aluop		= 2'b00;	// alu_control
 			end
-		endcase	
+		endcase
 	end
 
 endmodule
