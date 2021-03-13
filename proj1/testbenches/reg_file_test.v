@@ -39,6 +39,13 @@ module reg_file_test;
     rr1 = 5'h2; //rd1 is 32'h0
     rr2 = 5'h1; //rd2 is 32'hffaa7788
     #1;
+
+    wren = 0;
+    wr = 5'h1;
+    wd = 32'hffaa7788; //do not write anything
+    rr1 = 5'h2; //rd1 is 32'h0
+    rr2 = 5'h1; //rd2 is 32'hffaa7788
+    #1;
     $stop;
   end
 endmodule

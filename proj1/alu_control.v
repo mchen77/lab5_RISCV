@@ -1,4 +1,4 @@
-
+// ENGN1640 Lab5
 
 module alu_control (
 	input 		[4:0] instr_split,	// {instr[30],instr[25], instr[14:12] (funct3)}

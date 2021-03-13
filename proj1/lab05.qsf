@@ -65,3 +65,7 @@ set_global_assignment -name VERILOG_FILE imm_gen.v
 set_global_assignment -name VERILOG_FILE ALU.v
 set_global_assignment -name VERILOG_FILE reg_file.v
 set_global_assignment -name VERILOG_FILE lab05.v
+set_global_assignment -name VERILOG_FILE control_unit.v
+set_global_assignment -name VERILOG_FILE testbenches/control_unit_tb.v
+set_global_assignment -name VERILOG_FILE testbenches/lab5_tb.v
+set_global_assignment -name QIP_FILE lab5_ram.qip

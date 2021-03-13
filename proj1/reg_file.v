@@ -10,7 +10,7 @@ module reg_file(clk, wren, wd, rr1, rr2, wr, rd1, rd2);
   integer i;
    initial begin
    for (i = 0; i < 32; i = i+1) begin
-     file[i] = 8'd0;
+     file[i] = 32'b0;
      end
    end
 
