@@ -1,0 +1,138 @@
+# Reading pref.tcl
+# do lab05_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:01:13 on Mar 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 19:01:14 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:01:14 on Mar 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
+# 
+# Top level modules:
+# 	lab05
+# End time: 19:01:14 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:03:55 on Mar 12,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# ** Error: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(15): (vlog-2730) Undefined variable: 'CLOCK_50'.
+# End time: 19:03:55 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:04:33 on Mar 12,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 19:04:34 on Mar 12,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.reg_file_test
+# vsim work.reg_file_test 
+# Start time: 19:04:44 on Mar 12,2021
+# Loading work.reg_file_test
+# Loading work.reg_file
+run -all
+# wren, wd, rr1, rr2, wr, rd1, rd2
+# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
+# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
+# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(41)
+#    Time: 200 ns  Iteration: 0  Instance: /reg_file_test
+# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 41
+restart
+add wave -position insertpoint  \
+sim:/reg_file_test/clk \
+sim:/reg_file_test/wren \
+sim:/reg_file_test/rr1 \
+sim:/reg_file_test/rr2 \
+sim:/reg_file_test/wr \
+sim:/reg_file_test/wd \
+sim:/reg_file_test/rd1 \
+sim:/reg_file_test/rd2
+run -all
+# wren, wd, rr1, rr2, wr, rd1, rd2
+# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
+# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
+# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(41)
+#    Time: 200 ns  Iteration: 0  Instance: /reg_file_test
+# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 41
+vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:06:58 on Mar 12,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 19:06:58 on Mar 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.reg_file_test
+# End time: 19:07:22 on Mar 12,2021, Elapsed time: 0:02:38
+# Errors: 0, Warnings: 0
+# vsim work.reg_file_test 
+# Start time: 19:07:22 on Mar 12,2021
+# Loading work.reg_file_test
+# Loading work.reg_file
+add wave -position insertpoint  \
+sim:/reg_file_test/clk \
+sim:/reg_file_test/wren \
+sim:/reg_file_test/rr1 \
+sim:/reg_file_test/rr2 \
+sim:/reg_file_test/wr \
+sim:/reg_file_test/wd \
+sim:/reg_file_test/rd1 \
+sim:/reg_file_test/rd2
+run -all
+# wren, wd, rr1, rr2, wr, rd1, rd2
+# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
+# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
+# 0, ffaa7788, 02,  01,  01,  00000010,  00000000
+# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(42)
+#    Time: 300 ns  Iteration: 0  Instance: /reg_file_test
+# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 42
+vsim work.reg_file_test
+# End time: 19:09:21 on Mar 12,2021, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 0
+# vsim work.reg_file_test 
+# Start time: 19:09:21 on Mar 12,2021
+# Loading work.reg_file_test
+# Loading work.reg_file
+add wave -position insertpoint  \
+sim:/reg_file_test/clk \
+sim:/reg_file_test/wren \
+sim:/reg_file_test/rr1 \
+sim:/reg_file_test/rr2 \
+sim:/reg_file_test/wr \
+sim:/reg_file_test/wd \
+sim:/reg_file_test/rd1 \
+sim:/reg_file_test/rd2
+run -all
+# wren, wd, rr1, rr2, wr, rd1, rd2
+# 1, 00000010, 00,  00,  00,  xxxxxxxx,  xxxxxxxx
+# 1, ffaa7788, 00,  01,  01,  00000000,  00000000
+# 0, ffaa7788, 02,  01,  01,  00000010,  00000000
+# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v(42)
+#    Time: 300 ns  Iteration: 0  Instance: /reg_file_test
+# Break in Module reg_file_test at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v line 42
