@@ -1,5 +1,9 @@
 # Reading pref.tcl
 # do lab05_run_msim_rtl_verilog.do
+# if ![file isdirectory lab05_iputf_libs] {
+# 	file mkdir lab05_iputf_libs
+# }
+# 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -10,82 +14,448 @@
 # Copying D:/engn1640/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+###### Libraries for IPUTF cores 
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+# 
+# 
+# vlog "D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5_sim/pll_lab5.vo"
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:12 on Mar 14,2021
+# vlog -reportprogress 300 D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5_sim/pll_lab5.vo 
+# -- Compiling module pll_lab5
+# 
+# Top level modules:
+# 	pll_lab5
+# End time: 15:27:13 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
 # vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:44 on Mar 13,2021
+# Start time: 15:27:13 on Mar 14,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
 # -- Compiling module alu_control
 # 
 # Top level modules:
 # 	alu_control
-# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:01
+# End time: 15:27:13 on Mar 14,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:45 on Mar 13,2021
+# Start time: 15:27:13 on Mar 14,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
 # -- Compiling module imm_gen
 # 
 # Top level modules:
 # 	imm_gen
-# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 15:27:14 on Mar 14,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:45 on Mar 13,2021
+# Start time: 15:27:14 on Mar 14,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 15:27:14 on Mar 14,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:45 on Mar 13,2021
+# Start time: 15:27:14 on Mar 14,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 15:27:14 on Mar 14,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:45 on Mar 13,2021
+# Start time: 15:27:14 on Mar 14,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
 # -- Compiling module lab05
 # 
 # Top level modules:
 # 	lab05
-# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 15:27:15 on Mar 14,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:20:46 on Mar 13,2021
+# Start time: 15:27:15 on Mar 14,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 22:20:46 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 15:27:15 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:15 on Mar 14,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v 
+# -- Compiling module lab5_ram
+# 
+# Top level modules:
+# 	lab5_ram
+# End time: 15:27:15 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:15 on Mar 14,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v 
+# -- Compiling module rom_lab5
+# 
+# Top level modules:
+# 	rom_lab5
+# End time: 15:27:16 on Mar 14,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:29 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 15:27:29 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:30 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:27:30 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:30 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 15:27:30 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:30 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(18): (vlog-2730) Undefined variable: 'PC'.
+# End time: 15:27:30 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
 vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:21:16 on Mar 13,2021
+# Start time: 15:27:31 on Mar 14,2021
 # vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
 # -- Compiling module lab5_tb
 # 
 # Top level modules:
 # 	lab5_tb
-# End time: 22:21:17 on Mar 13,2021, Elapsed time: 0:00:01
+# End time: 15:27:31 on Mar 14,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vsim -gui -l msim_transcript work.lab5_tb
-# vsim -gui -l msim_transcript work.lab5_tb 
-# Start time: 22:21:27 on Mar 13,2021
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:27:31 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 15:27:31 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:02 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 15:28:03 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:03 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:28:03 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:03 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 15:28:03 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:03 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(18): (vlog-2730) Undefined variable: 'PC'.
+# End time: 15:28:04 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:04 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 15:28:04 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:04 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 15:28:04 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:33 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 15:28:33 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:33 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:28:33 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:33 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 15:28:34 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:34 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 15:28:34 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:34 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 15:28:34 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:28:34 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 15:28:35 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.lab5_tb
+# vsim work.lab5_tb 
+# Start time: 15:28:50 on Mar 14,2021
 # Loading work.lab5_tb
 # Loading work.lab05
+# Loading work.imm_gen
+# Loading work.control_unit
+# Loading work.reg_file
+# Loading work.alu_control
+# Loading work.alu
+# Loading work.lab5_ram
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/dut/ram File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 63
+#         Searched libraries:
+#             D:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work
+# Loading work.rom_lab5
+# ** Error: (vsim-3033) Instantiation of 'altsyncram' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/dut/rom File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v Line: 59
+#         Searched libraries:
+#             D:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work
+# Loading work.pll_lab5
+# ** Error: (vsim-3033) Instantiation of 'altera_pll' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /lab5_tb/dut/pll File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5_sim/pll_lab5.vo Line: 46
+#         Searched libraries:
+#             D:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work
+# Error loading design
+# End time: 15:28:51 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:20 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 15:29:20 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:20 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:29:20 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:20 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 15:29:21 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:21 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 15:29:21 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:21 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 15:29:21 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:29:21 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 15:29:22 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim work.lab5_tb
+# vsim work.lab5_tb 
+# Start time: 15:29:24 on Mar 14,2021
+# Loading work.lab5_tb
+# Loading work.lab05_for_test
+# Loading work.imm_gen
+# Loading work.control_unit
+# Loading work.reg_file
+# Loading work.alu_control
+# Loading work.alu
+# ** Fatal: (vsim-3365) Too many port connections. Expected 5, found 6.
+#    Time: 0 ns  Iteration: 0  Instance: /lab5_tb/dut File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v Line: 15
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 15:29:25 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:05 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 15:30:06 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:06 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 15:30:06 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:06 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 15:30:06 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:06 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 15:30:07 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:07 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 15:30:07 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:30:07 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 15:30:07 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.lab5_tb
+# vsim work.lab5_tb 
+# Start time: 15:30:10 on Mar 14,2021
+# Loading work.lab5_tb
+# Loading work.lab05_for_test
 # Loading work.imm_gen
 # Loading work.control_unit
 # Loading work.reg_file
@@ -100,18 +470,496 @@ sim:/lab5_tb/rd2 \
 sim:/lab5_tb/out
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: gohar  Hostname: DESKTOP-LGI5C03  ProcessID: 1928
-#           Attempting to use alternate WLF file "./wlftdt4rhn".
+#           Attempting to use alternate WLF file "./wlfthtd7zk".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftdt4rhn
+#           Using alternate file: ./wlfthtd7zk
 run -all
-#                  100 instr=00000093 Y=00000000
-#                  200 instr=01000113 Y=00000010
-#                  300 instr=06400193 Y=00000064
-#                  400 instr=00800213 Y=00000008
-#                  500 instr=002082b3 Y=00000010
-#                  600 instr=00418333 Y=0000006c
+#                  100 instr=00000093 Y=00000000 rd1=00000000 rd2=00000000 out=00000000
+#                  200 instr=01000113 Y=00000010 rd1=00000000 rd2=00000000 out=00000010
+#                  300 instr=06400193 Y=00000064 rd1=00000000 rd2=00000000 out=00000064
+#                  400 instr=00800213 Y=00000008 rd1=00000000 rd2=00000000 out=00000008
+#                  500 instr=002082b3 Y=00000010 rd1=00000000 rd2=00000010 out=00000000
+#                  600 instr=00418333 Y=0000006c rd1=00000064 rd2=00000008 out=00000000
 # ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v(42)
 #    Time: 600 ns  Iteration: 0  Instance: /lab5_tb
 # Break in Module lab5_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v line 42
-# End time: 22:22:04 on Mar 13,2021, Elapsed time: 0:00:37
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:23 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 16:35:23 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:24 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 16:35:24 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:24 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 16:35:24 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:24 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 16:35:25 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:25 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v 
+# -- Compiling module lab5_tb
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(30): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(32): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(34): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(36): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(38): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(40): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(42): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(44): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(46): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(48): near "#": syntax error, unexpected '#', expecting ';'.
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(51): near "#": syntax error, unexpected '#', expecting ';'.
+# End time: 16:35:25 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:25 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 16:35:26 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:35:26 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 16:35:26 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:35 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 16:36:36 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:36 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 16:36:36 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:36 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 16:36:36 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:36 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 16:36:37 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:37 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 16:36:37 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:37 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 16:36:37 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:37 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 16:36:37 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:48 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 16:36:49 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:49 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# End time: 16:36:49 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:49 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 16:36:49 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:49 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# End time: 16:36:50 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:50 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
+# 
+# Top level modules:
+# 	lab05
+# End time: 16:36:50 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:50 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v 
+# -- Compiling module lab5_ram
+# 
+# Top level modules:
+# 	lab5_ram
+# End time: 16:36:50 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:50 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v 
+# -- Compiling module lab5_ram
+# 
+# Top level modules:
+# 	lab5_ram
+# End time: 16:36:51 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:51 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v 
+# -- Compiling module pll_lab5
+# 
+# Top level modules:
+# 	pll_lab5
+# End time: 16:36:51 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:51 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 16:36:51 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:51 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v 
+# -- Compiling module rom_lab5
+# 
+# Top level modules:
+# 	rom_lab5
+# End time: 16:36:52 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:36:52 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v 
+# -- Compiling module rom_lab5
+# 
+# Top level modules:
+# 	rom_lab5
+# End time: 16:36:52 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Load canceled
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:53 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 16:37:54 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:54 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# End time: 16:37:54 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:54 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# -- Compiling module control_unit
+# 
+# Top level modules:
+# 	control_unit
+# End time: 16:37:54 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:54 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# End time: 16:37:55 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:55 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
+# 
+# Top level modules:
+# 	lab05
+# End time: 16:37:55 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:55 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v 
+# -- Compiling module lab5_ram
+# 
+# Top level modules:
+# 	lab5_ram
+# End time: 16:37:56 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:56 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v 
+# -- Compiling module lab5_ram
+# 
+# Top level modules:
+# 	lab5_ram
+# End time: 16:37:56 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:56 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v 
+# -- Compiling module pll_lab5
+# 
+# Top level modules:
+# 	pll_lab5
+# End time: 16:37:56 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:56 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 16:37:57 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:57 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v 
+# -- Compiling module rom_lab5
+# 
+# Top level modules:
+# 	rom_lab5
+# End time: 16:37:57 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:37:57 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v 
+# -- Compiling module rom_lab5
+# 
+# Top level modules:
+# 	rom_lab5
+# End time: 16:37:57 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:00 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 16:38:00 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:00 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 16:38:00 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:00 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 16:38:00 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:01 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 16:38:01 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:01 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v 
+# -- Compiling module lab5_prog2_test
+# 
+# Top level modules:
+# 	lab5_prog2_test
+# End time: 16:38:01 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:01 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 16:38:02 on Mar 14,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:38:02 on Mar 14,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 16:38:02 on Mar 14,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.lab5_prog2_test
+# End time: 16:38:40 on Mar 14,2021, Elapsed time: 1:08:30
 # Errors: 0, Warnings: 2
+# vsim work.lab5_prog2_test 
+# Start time: 16:38:40 on Mar 14,2021
+# Loading work.lab5_prog2_test
+# Loading work.lab05_for_test
+# Loading work.imm_gen
+# Loading work.control_unit
+# Loading work.reg_file
+# Loading work.alu_control
+# Loading work.alu
+add wave -position insertpoint  \
+sim:/lab5_prog2_test/CLOCK_50 \
+sim:/lab5_prog2_test/instr \
+sim:/lab5_prog2_test/Y \
+sim:/lab5_prog2_test/rd1 \
+sim:/lab5_prog2_test/rd2 \
+sim:/lab5_prog2_test/out
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: gohar  Hostname: DESKTOP-LGI5C03  ProcessID: 1928
+#           Attempting to use alternate WLF file "./wlftnd4ej9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnd4ej9
+run -all
+#                  100 instr=00800293 Y=00000008 rd1=00000000 rd2=00000000 out=00000008
+#                  200 instr=00f00313 Y=0000000f rd1=00000000 rd2=00000000 out=0000000f
+#                  300 instr=0062a023 Y=00000008 rd1=00000008 rd2=0000000f out=00000000
+#                  400 instr=005303b3 Y=00000017 rd1=0000000f rd2=00000008 out=00000000
+#                  500 instr=40530e33 Y=00000007 rd1=0000000f rd2=00000008 out=00000000
+#                  600 instr=03c384b3 Y=000000a1 rd1=00000017 rd2=00000007 out=00000000
+#                  700 instr=00428293 Y=0000000c rd1=00000008 rd2=00000000 out=00000004
+#                  800 instr=ffc2a903 Y=0000000c rd1=0000000c rd2=00000007 out=00000000
+#                  900 instr=41248933 Y=xxxxxxxx rd1=000000a1 rd2=zzzzzzzz out=00000000
+#                 1000 instr=00291913 Y=xxxxxxxx rd1=xxxxxxxx rd2=00000000 out=00000002
+#                 1100 instr=0122a023 Y=0000000c rd1=0000000c rd2=xxxxxxxx out=00000000
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v(53)
+#    Time: 1100 ns  Iteration: 0  Instance: /lab5_prog2_test
+# Break in Module lab5_prog2_test at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v line 53
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line

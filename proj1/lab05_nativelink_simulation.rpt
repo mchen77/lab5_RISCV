@@ -1,5 +1,5 @@
 Info: Start Nativelink Simulation process
-Info: NativeLink has detected Verilog design -- Verilog simulation models will be used
+executing command line: ip-make-simscript --nativelink-mode --output-directory=lab05_iputf_input --spd=D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.spd 
 
 ========= EDA Simulation Settings =====================
 

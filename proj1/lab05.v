@@ -7,12 +7,10 @@ module lab05(
 	input CLOCK_50	
 	
 );
-	// input clk, wren; //clock and write enable ports
-	// input [5:0] rr1, rr2, wr; //5 bit register address inputs
-	// input [31:0] wd; //data to write
-	// output [31:0] rd1, rd2; //read data outputs
+
 	wire [31:0] instr;
-	reg clk;
+	wire clk;
+	wire clk_shift;
 	reg [7:0] PC; 
 	
 	initial PC = 0;
@@ -38,6 +36,7 @@ module lab05(
 	wire [4:0] wr  = instr[11: 7];
 	wire [31:0] rd1;
 	wire [31:0] rd2;
+	wire [31:0] wd;
 
 	// imm_gen
 	wire [31:0] out;
@@ -52,7 +51,7 @@ module lab05(
 	control_unit ctrl (form_code, aluop, Branch, MemRead, MemtoReg,
 						MemWrite, ALUSrc, RegWrite);
 
-	reg_file rf (clk, RegWrite, Y, rr1, rr2, wr, rd1, rd2);
+	reg_file rf (clk, RegWrite, wd, rr1, rr2, wr, rd1, rd2);
 
 	alu_control alu_ctrl(instr_split, aluop, aluopcode);
 
@@ -61,10 +60,11 @@ module lab05(
 	//COMMENT OUT FOR TESTBENCH
 	lab5_ram ram(mem_addr, clk, rd2, MemWrite, mem_dout);
 	
-	rom_lab5 rom(PC, clk, instr);
+//	rom_lab5 rom(PC, clk_shift, instr);
+	rom_prog2 rom2(PC,	clk_shift, instr);
 	
 	// PLL
-	pll_lab5 pll(CLOCK_50, 1'b0, clk);
+	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
 
 
 	// ALU logic
@@ -73,9 +73,14 @@ module lab05(
 
 	assign wd = (MemtoReg) ? mem_dout : Y;
 	
+	wire [7:0] PC_next;
+
 	always @(posedge clk) begin
-		if (PC < 8'd9) PC <= PC + 1;
+		if (PC < 7) PC <= PC + 4; //instr == 32'b0
 	end
+
+//	assign PC_next = PC + 4;
+	// assign PC_next = (PCSrc) ? PC + 4 : PC_offset;
 	
 
 endmodule

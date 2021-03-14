@@ -12,12 +12,12 @@ module lab5_tb ();
     wire [31:0] rd1,rd2;
     wire [31:0] out;
 
-    lab05 dut (CLOCK_50, instr, Y);
+    lab05_for_test dut (CLOCK_50, instr, Y, rd1, rd2, out);
 
     always #0.5 CLOCK_50 = ~CLOCK_50;
 
     always @(posedge CLOCK_50) begin
-        $display("%t instr=%h Y=%h",  $time, instr, Y);
+        $display("%t instr=%h Y=%h rd1=%h rd2=%h out=%h",  $time, instr, Y, rd1, rd2, out);
     end
 
     initial begin
@@ -25,6 +25,7 @@ module lab5_tb ();
     end
 
     initial begin
+	 
         #0;
         instr = 32'h00000093;
         #1;
