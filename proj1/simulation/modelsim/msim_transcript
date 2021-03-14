@@ -7,123 +7,83 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying D:/engn1640/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/alu_control.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:16 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/alu_control.v 
+# Start time: 22:20:44 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
 # -- Compiling module alu_control
 # 
 # Top level modules:
 # 	alu_control
-# End time: 18:17:16 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:16 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v 
+# Start time: 22:20:45 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
 # -- Compiling module imm_gen
 # 
 # Top level modules:
 # 	imm_gen
-# End time: 18:17:16 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:17 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v 
+# Start time: 22:20:45 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 18:17:17 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:17 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v 
+# Start time: 22:20:45 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 18:17:17 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:17 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v 
+# Start time: 22:20:45 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
 # -- Compiling module lab05
 # 
 # Top level modules:
 # 	lab05
-# End time: 18:17:17 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 22:20:45 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/gohar/OneDrive/Documents/ENGN\ 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1 {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/control_unit.v}
+# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:17 on Mar 13,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1" C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/control_unit.v 
+# Start time: 22:20:46 on Mar 13,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 18:17:18 on Mar 13,2021, Elapsed time: 0:00:01
+# End time: 22:20:46 on Mar 13,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v}
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:58 on Mar 13,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
-# -- Compiling module alu_tb
-# 
-# Top level modules:
-# 	alu_tb
-# End time: 18:17:59 on Mar 13,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:59 on Mar 13,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
-# -- Compiling module control_unit_tb
-# 
-# Top level modules:
-# 	control_unit_tb
-# End time: 18:17:59 on Mar 13,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:17:59 on Mar 13,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
-# -- Compiling module imm_gen_test
-# 
-# Top level modules:
-# 	imm_gen_test
-# End time: 18:18:00 on Mar 13,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:18:00 on Mar 13,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# Start time: 22:21:16 on Mar 13,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
 # -- Compiling module lab5_tb
 # 
 # Top level modules:
 # 	lab5_tb
-# End time: 18:18:00 on Mar 13,2021, Elapsed time: 0:00:00
+# End time: 22:21:17 on Mar 13,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:18:00 on Mar 13,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
-# -- Compiling module reg_file_test
-# 
-# Top level modules:
-# 	reg_file_test
-# End time: 18:18:00 on Mar 13,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.lab5_tb
-# vsim work.lab5_tb 
-# Start time: 18:18:04 on Mar 13,2021
+vsim -gui -l msim_transcript work.lab5_tb
+# vsim -gui -l msim_transcript work.lab5_tb 
+# Start time: 22:21:27 on Mar 13,2021
 # Loading work.lab5_tb
 # Loading work.lab05
 # Loading work.imm_gen
@@ -140,9 +100,9 @@ sim:/lab5_tb/rd2 \
 sim:/lab5_tb/out
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: gohar  Hostname: DESKTOP-LGI5C03  ProcessID: 1928
-#           Attempting to use alternate WLF file "./wlft9bvyks".
+#           Attempting to use alternate WLF file "./wlftdt4rhn".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft9bvyks
+#           Using alternate file: ./wlftdt4rhn
 run -all
 #                  100 instr=00000093 Y=00000000
 #                  200 instr=01000113 Y=00000010
@@ -150,8 +110,8 @@ run -all
 #                  400 instr=00800213 Y=00000008
 #                  500 instr=002082b3 Y=00000010
 #                  600 instr=00418333 Y=0000006c
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v(42)
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v(42)
 #    Time: 600 ns  Iteration: 0  Instance: /lab5_tb
-# Break in Module lab5_tb at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v line 42
-# End time: 18:18:37 on Mar 13,2021, Elapsed time: 0:00:33
+# Break in Module lab5_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v line 42
+# End time: 22:22:04 on Mar 13,2021, Elapsed time: 0:00:37
 # Errors: 0, Warnings: 2

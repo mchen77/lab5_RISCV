@@ -1,20 +1,20 @@
-Fitter Status : Successful - Fri Mar 12 21:35:37 2021
+Fitter Status : Successful - Sun Mar 14 13:17:45 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : lab05
 Top-level Entity Name : lab05
 Family : Cyclone V
 Device : 5CEBA4F23C7
 Timing Models : Final
-Logic utilization (in ALMs) : 1 / 18,480 ( < 1 % )
-Total registers : 0
-Total pins : 116 / 224 ( 52 % )
+Logic utilization (in ALMs) : 993 / 18,480 ( 5 % )
+Total registers : 1203
+Total pins : 1 / 224 ( < 1 % )
 Total virtual pins : 0
-Total block memory bits : 2,048 / 3,153,920 ( < 1 % )
-Total RAM Blocks : 2 / 308 ( < 1 % )
-Total DSP Blocks : 0 / 66 ( 0 % )
+Total block memory bits : 16,384 / 3,153,920 ( < 1 % )
+Total RAM Blocks : 3 / 308 ( < 1 % )
+Total DSP Blocks : 2 / 66 ( 3 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
 Total HSSI PMA TX Serializers : 0
-Total PLLs : 0 / 4 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
 Total DLLs : 0 / 4 ( 0 % )
