@@ -10,28 +10,28 @@ z2
 cModel Technology
 Z0 dD:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim
 valu
-Z1 !s110 1615754274
+Z1 !s110 1615785686
 !i10b 1
-!s100 9Dbb8DTmBUe1VWmKLOmMk0
+!s100 zMPkQ>_8_AQ4z=1l?_cBJ0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IiATXgLzQ=K:PfX5B=JdnT0
+IM@lDB925RXXdSUih:RhKF2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1615691901
+Z4 w1615775817
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
-!i122 61
+!i122 10
 L0 6 37
-Z4 OV;L;2020.1;71
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1615754273.000000
+Z6 !s108 1615785686.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v|
 !i113 1
-Z5 o-work work
-Z6 tCvgOpt 0
+Z7 o-work work
+Z8 tCvgOpt 0
 valu_control
 R1
 !i10b 1
@@ -40,161 +40,161 @@ R2
 I?Rac]^A7hS;gHa;eA68fg3
 R3
 R0
-Z7 w1615691675
+w1615691675
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
-!i122 62
+!i122 11
 L0 3 23
-R4
+R5
 r1
 !s85 0
 31
-Z8 !s108 1615754274.000000
+R6
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v|
 !i113 1
-R5
-R6
+R7
+R8
 valu_tb
-Z9 !s110 1615754280
+!s110 1615785694
 !i10b 1
 !s100 `4?=lnHUL>McEdVN`ndXo3
 R2
 I<_z`4DfkKbTkHXMA:G]1Q0
 R3
 R0
-Z10 w1615691903
+Z9 w1615691903
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
-!i122 72
+!i122 23
 L0 7 49
-R4
+R5
 r1
 !s85 0
 31
-Z11 !s108 1615754280.000000
+Z10 !s108 1615785694.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v|
 !i113 1
-R5
-R6
+R7
+R8
 vcontrol_unit
-R1
+Z11 !s110 1615785687
 !i10b 1
-!s100 7R77NS]Qzijj<j6KkkEjP0
+!s100 CDN:?PRKdzj8cMngJU4aT3
 R2
-IE<:JCLnKG;K:D6[ZeXFA[3
+IB3l2QCE]g0DGPPWd<jXg32
 R3
 R0
-R7
+R4
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
-!i122 63
-L0 6 72
-R4
+!i122 12
+Z12 L0 6 90
+R5
 r1
 !s85 0
 31
-R8
+Z13 !s108 1615785687.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v|
 !i113 1
-R5
-R6
+R7
+R8
 vcontrol_unit_tb
-R9
+Z14 !s110 1615785695
 !i10b 1
 !s100 zf2>IVgEin9TJcK>VZN=c3
 R2
 ICcdz?06LVahQ2aVNO1QGg1
 R3
 R0
-R10
+R9
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
-!i122 73
+!i122 24
 L0 6 39
-R4
+R5
 r1
 !s85 0
 31
-R11
+R10
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v|
 !i113 1
-R5
-R6
+R7
+R8
 vimm_gen
-Z12 !s110 1615754275
+R11
 !i10b 1
-!s100 OHSIBgLfl57:fQB?_`KMj3
+!s100 mIejMPI^e;WIFXcAP3PQk2
 R2
-ImPc;aB`;H@i6PmehXY]=53
+IL_e?cD;;Lf>oO7S6z>2^@3
 R3
 R0
-w1615691902
+w1615785486
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
-!i122 64
-L0 5 15
-R4
+!i122 13
+L0 5 18
+R5
 r1
 !s85 0
 31
-R8
+R13
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v|
 !i113 1
-R5
-R6
+R7
+R8
 vimm_gen_test
-R9
+R14
 !i10b 1
 !s100 l?Biohf?1LKoGA4FU>T1k0
 R2
 I89`PWVmoi4nj5MQfmP0c92
 R3
 R0
-R10
+R9
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
-!i122 74
+!i122 25
 L0 5 25
-R4
+R5
 r1
 !s85 0
 31
-R11
+Z15 !s108 1615785695.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v|
 !i113 1
-R5
-R6
+R7
+R8
 vlab05
-R12
+!s110 1615785688
 !i10b 1
-!s100 @J1=n2g3@fG8VFZjRYEZg1
+!s100 be3;_kOlo^ZOBoXQf6>[:1
 R2
-I=<YdBoDlgU5dzHi9ceFCF0
+I5>[e8odKRHlk]=bXT@G2Z1
 R3
 R0
-w1615752475
+w1615785478
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
-!i122 65
-L0 6 75
-R4
+!i122 14
+R12
+R5
 r1
 !s85 0
 31
-!s108 1615754275.000000
+R13
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v|
 !i113 1
-R5
-R6
+R7
+R8
 vlab05_for_test
-Z13 !s110 1615754281
+R14
 !i10b 1
 !s100 ZocP4NKa=:oa4dB?]30DC0
 R2
@@ -204,66 +204,66 @@ R0
 w1615753692
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-!i122 75
+!i122 26
 L0 6 78
-R4
+R5
 r1
 !s85 0
 31
-Z14 !s108 1615754281.000000
+R15
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v|
 !i113 1
-R5
-R6
+R7
+R8
 vlab5_prog2_test
-R13
+Z16 !s110 1615785696
 !i10b 1
 !s100 =ZHLZbhGFf]ETfV=E9A6G1
 R2
 I30FU55Ye;=eVh3aAP?cQB1
 R3
 R0
-w1615754264
+w1615754324
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v
-!i122 76
+!i122 27
 L0 8 53
-R4
+R5
 r1
 !s85 0
 31
-R14
+Z17 !s108 1615785696.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v|
 !i113 1
-R5
-R6
+R7
+R8
 vlab5_ram
-Z15 !s110 1615754276
+Z18 !s110 1615785689
 !i10b 1
-!s100 4DYUN]b6kL65?l2X=b__K1
+!s100 doHLYNzS>G^ULcW7<Hg9a1
 R2
-Ihib:z=[=bol;^hh[l=n`B0
+IM4mFRLzRW4TZMD71Z50Bz3
 R3
 R0
-w1615751857
+w1615779218
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v
-!i122 67
-L0 35 21
-R4
+!i122 16
+L0 35 24
+R5
 r1
 !s85 0
 31
-Z16 !s108 1615754276.000000
+!s108 1615785688.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v|
 !i113 1
-R5
-R6
+R7
+R8
 vlab5_tb
-Z17 !s110 1615754282
+R16
 !i10b 1
 !s100 g7a<@PBU^fZU238hGLgfK0
 R2
@@ -273,89 +273,89 @@ R0
 w1615753927
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
-!i122 77
+!i122 28
 L0 8 43
-R4
+R5
 r1
 !s85 0
 31
-R14
+R17
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v|
 !i113 1
-R5
-R6
+R7
+R8
 vpll_lab5
-R15
+R18
 !i10b 1
 !s100 o;h?_SQbKM>cDIXNbAiCS2
 R2
 IaEJbE;JfJ6O;BnIJd<j261
 R3
 R0
-w1615752279
+w1615781403
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v
-!i122 68
+!i122 17
 L0 8 16
-R4
+R5
 r1
 !s85 0
 31
-R16
+Z19 !s108 1615785689.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v|
 !i113 1
-R5
-R6
+R7
+R8
 vreg_file
-Z18 !s110 1615754277
+R18
 !i10b 1
 !s100 ;^FSHjSO?4Mj1XIg0emA:2
 R2
 I_KF5GLh_M_RU`=g65inFT1
 R3
 R0
-Z19 w1615691676
+Z20 w1615691676
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
-!i122 69
+!i122 18
 L0 3 33
-R4
+R5
 r1
 !s85 0
 31
-R16
+R19
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v|
 !i113 1
-R5
-R6
+R7
+R8
 vreg_file_test
-R17
+!s110 1615785697
 !i10b 1
 !s100 gT11coXg1b[^_^_Ti7mIS2
 R2
 IS>OJ>c[mbzRKXi2ioc_DH0
 R3
 R0
-R19
+R20
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
-!i122 78
+!i122 29
 L0 5 52
-R4
+R5
 r1
 !s85 0
 31
-!s108 1615754282.000000
+R17
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v|
 !i113 1
-R5
-R6
+R7
+R8
 vrom_lab5
-R18
+!s110 1615785690
 !i10b 1
 !s100 DnNfOCBjiC]`[la7a_5zS1
 R2
@@ -365,15 +365,38 @@ R0
 w1615751729
 8D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v
 FD:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v
-!i122 71
-L0 35 17
-R4
+!i122 20
+Z21 L0 35 17
+R5
 r1
 !s85 0
 31
-!s108 1615754277.000000
+!s108 1615785690.000000
 !s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v|
 !s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v|
 !i113 1
+R7
+R8
+vrom_prog2
+!s110 1615785691
+!i10b 1
+!s100 nK>7h_AGT0M1j4kgiRf311
+R2
+In3CFi=^VDEKNPGj1c[zO=2
+R3
+R0
+w1615755559
+8D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2_bb.v
+FD:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2_bb.v
+!i122 22
+R21
 R5
-R6
+r1
+!s85 0
+31
+!s108 1615785691.000000
+!s107 D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2_bb.v|
+!s90 -reportprogress|300|-work|work|D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2_bb.v|
+!i113 1
+R7
+R8

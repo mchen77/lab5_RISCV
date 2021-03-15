@@ -1,5 +1,5 @@
 Flow report for lab05
-Mon Mar 15 01:13:20 2021
+Mon Mar 15 01:30:14 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,25 +41,25 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Mon Mar 15 01:13:20 2021       ;
+; Flow Status                     ; Successful - Mon Mar 15 01:30:14 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab05                                       ;
 ; Top-level Entity Name           ; lab05                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1180                                        ;
-; Total pins                      ; 1                                           ;
+; Logic utilization (in ALMs)     ; 1,017 / 18,480 ( 6 % )                      ;
+; Total registers                 ; 1191                                        ;
+; Total pins                      ; 1 / 224 ( < 1 % )                           ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 16,384                                      ;
-; Total DSP Blocks                ; 2                                           ;
+; Total block memory bits         ; 16,384 / 3,153,920 ( < 1 % )                ;
+; Total DSP Blocks                ; 2 / 66 ( 3 % )                              ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 1                                           ;
-; Total DLLs                      ; 0                                           ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
 +---------------------------------+---------------------------------------------+
 
 
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/15/2021 01:12:19 ;
+; Start date & time ; 03/15/2021 01:18:39 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab05               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 101564829143456.161578513834512        ; --            ; --             ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 218381590356486.161578551917280        ; --            ; --             ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
@@ -113,8 +113,9 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:59     ; 1.0                     ; 4906 MB             ; 00:02:01                           ;
-; Total                ; 00:00:59     ; --                      ; --                  ; 00:02:01                           ;
+; Analysis & Synthesis ; 00:01:17     ; 1.0                     ; 4888 MB             ; 00:02:20                           ;
+; Fitter               ; 00:01:35     ; 1.2                     ; 6321 MB             ; 00:03:35                           ;
+; Total                ; 00:02:52     ; --                      ; --                  ; 00:05:55                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -123,7 +124,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -131,6 +133,7 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off lab05 -c lab05
+quartus_fit --read_settings_files=on --write_settings_files=off lab05 -c lab05
 
 
 
