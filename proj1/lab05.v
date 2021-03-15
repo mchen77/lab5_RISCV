@@ -58,7 +58,7 @@ module lab05(
 	alu a1 (Y, zero, A, B, aluopcode);
 
 	//COMMENT OUT FOR TESTBENCH
-	lab5_ram ram(mem_addr, clk, rd2, MemWrite, mem_dout);
+	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
 
 	//rom_lab5 rom(PC, clk_shift, instr);
 	rom_prog2 rom2(PC,	clk_shift, instr);

@@ -963,3 +963,5 @@ run -all
 # Break in Module lab5_prog2_test at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v line 53
 # A time value could not be extracted from the current line
 # A time value could not be extracted from the current line
+# End time: 23:32:55 on Mar 14,2021, Elapsed time: 6:54:15
+# Errors: 0, Warnings: 2

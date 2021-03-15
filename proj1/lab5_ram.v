@@ -41,18 +41,21 @@ module lab5_ram (
 	address,
 	clock,
 	data,
+	rden,
 	wren,
 	q);
 
 	input	[7:0]  address;
 	input	  clock;
 	input	[31:0]  data;
+	input	  rden;
 	input	  wren;
 	output	[31:0]  q;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_off
 `endif
 	tri1	  clock;
+	tri1	  rden;
 `ifndef ALTERA_RESERVED_QIS
 // synopsys translate_on
 `endif
@@ -64,6 +67,7 @@ module lab5_ram (
 				.address_a (address),
 				.clock0 (clock),
 				.data_a (data),
+				.rden_a (rden),
 				.wren_a (wren),
 				.q_a (sub_wire0),
 				.aclr0 (1'b0),
@@ -81,7 +85,6 @@ module lab5_ram (
 				.data_b (1'b1),
 				.eccstatus (),
 				.q_b (),
-				.rden_a (1'b1),
 				.rden_b (1'b1),
 				.wren_b (1'b0));
 	defparam
@@ -138,7 +141,7 @@ endmodule
 // Retrieval info: PRIVATE: WRCONTROL_ACLR_A NUMERIC "0"
 // Retrieval info: PRIVATE: WidthAddr NUMERIC "8"
 // Retrieval info: PRIVATE: WidthData NUMERIC "32"
-// Retrieval info: PRIVATE: rden NUMERIC "0"
+// Retrieval info: PRIVATE: rden NUMERIC "1"
 // Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 // Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 // Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
@@ -158,10 +161,12 @@ endmodule
 // Retrieval info: USED_PORT: clock 0 0 0 0 INPUT VCC "clock"
 // Retrieval info: USED_PORT: data 0 0 32 0 INPUT NODEFVAL "data[31..0]"
 // Retrieval info: USED_PORT: q 0 0 32 0 OUTPUT NODEFVAL "q[31..0]"
+// Retrieval info: USED_PORT: rden 0 0 0 0 INPUT VCC "rden"
 // Retrieval info: USED_PORT: wren 0 0 0 0 INPUT NODEFVAL "wren"
 // Retrieval info: CONNECT: @address_a 0 0 8 0 address 0 0 8 0
 // Retrieval info: CONNECT: @clock0 0 0 0 0 clock 0 0 0 0
 // Retrieval info: CONNECT: @data_a 0 0 32 0 data 0 0 32 0
+// Retrieval info: CONNECT: @rden_a 0 0 0 0 rden 0 0 0 0
 // Retrieval info: CONNECT: @wren_a 0 0 0 0 wren 0 0 0 0
 // Retrieval info: CONNECT: q 0 0 32 0 @q_a 0 0 32 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL lab5_ram.v TRUE
