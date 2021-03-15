@@ -66,7 +66,6 @@ module lab05(
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
 
-
 	// ALU logic
 	assign A = rd1;						// first input to ALU
 	assign B = (ALUSrc) ? out : rd2;	// second input to ALU, (1 imm_gen, 0 rd2)
