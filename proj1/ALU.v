@@ -1,22 +1,22 @@
 // ENGN1640 LAB5
-// RISC-V 
+// RISC-V
 //
 // ALU module
 
 module alu
 (
-  output reg [31:0] Y,                      
+  output reg signed [31:0] Y,
   output zero,
-  
-  input [31:0] A,
-  input [31:0] B,
+
+  input signed [31:0] A,
+  input signed [31:0] B,
   input [4:0] opcode
   );
-  
-  assign zero = (Y == 0) ? 1'b1 : 1'b0; 
-  
+
+  assign zero = (Y == 0) ? 1'b1 : 1'b0;
+
   always@(*) begin
-    case(opcode)		
+    case(opcode)
       5'b00111: begin    // AND
 			Y = A & B;
       end

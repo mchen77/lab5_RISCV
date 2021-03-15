@@ -4,17 +4,17 @@
 // main module for RISC-V processor
 
 module lab05(
-	input CLOCK_50	
-	
+	input CLOCK_50
+
 );
 
 	wire [31:0] instr;
 	wire clk;
 	wire clk_shift;
-	reg [7:0] PC; 
-	
+	reg [7:0] PC;
+
 	initial PC = 0;
-	
+
 	// control_unit
 	wire [6:0] form_code = instr[6:0];
 	wire [1:0] aluop;	// 2-bits opcode to determine format (R,S, B-type)
@@ -59,10 +59,10 @@ module lab05(
 
 	//COMMENT OUT FOR TESTBENCH
 	lab5_ram ram(mem_addr, clk, rd2, MemWrite, mem_dout);
-	
-//	rom_lab5 rom(PC, clk_shift, instr);
+
+	//rom_lab5 rom(PC, clk_shift, instr);
 	rom_prog2 rom2(PC,	clk_shift, instr);
-	
+
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
 
@@ -72,15 +72,25 @@ module lab05(
 	assign B = (ALUSrc) ? out : rd2;	// second input to ALU, (1 imm_gen, 0 rd2)
 
 	assign wd = (MemtoReg) ? mem_dout : Y;
-	
-	wire [7:0] PC_next;
+
+//	wire [7:0] PC_next;
+//	wire [7:0] PC_offset;
 
 	always @(posedge clk) begin
-		if (PC < 7) PC <= PC + 4; //instr == 32'b0
+		if (instr != 32'd0) PC <= PC + 4; //instr == 32'b0
 	end
 
+//code for branching
 //	assign PC_next = PC + 4;
-	// assign PC_next = (PCSrc) ? PC + 4 : PC_offset;
-	
+//assign PC_offset = (out << 1) + PC;
+	// assign PC_next = (to_branch & Branch) ? PC_offset : PC + 4; //if ALU output is zero -> branch
+
+	//BRANCH control
+	//instruction 12 is bne or beq
+	//wire to_branch; //branch condition
+	//assign to_branch = instr[12] ^ zero;
+
+	//for jump and link, wd = PC + 4
+
 
 endmodule
