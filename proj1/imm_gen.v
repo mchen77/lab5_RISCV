@@ -14,7 +14,7 @@ module imm_gen(instr, out);
     7'b1100011: out <= {{20{instr[31]}}, instr[31], instr[7], instr[30:25], instr[11:8]}; //SB type
     7'b1101111: out <= {{12{instr[31]}}, instr[31], instr[19:12], instr[20], instr[30:21]}; // JAL
     7'b1100111: out <= {{20{instr[31]}}, instr[31:20]}; // JALR
-	 7'b0000011: out <= {{20{instr[31]}}, instr[31:20]}; //L-type
+	  7'b0000011: out <= {{20{instr[31]}}, instr[31:20]}; //L-type
     default: out <= 32'd0;
 	 endcase
  end

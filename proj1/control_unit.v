@@ -51,7 +51,7 @@ module control_unit(
 				MemWrite	= 1'b0;
 				ALUSrc	= 1'b1;	// 0-register, 1 imm_gen
 				RegWrite	= 1'b1;
-				aluop		= 2'b00;	// alu_control
+				aluop		= 2'b00;	// alu_control (ADD)
 			end
 			7'b1100011: begin		// B-type
 				Branch 	= 1'b1;
