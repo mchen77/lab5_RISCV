@@ -57,14 +57,15 @@ module lab05(
 
 	alu a1 (Y, zero, A, B, aluopcode);
 
-	//COMMENT OUT FOR TESTBENCH
+	// COMMENT OUT FOR TESTBENCH
 	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
 
-	//must make new rom for branch mif
+	// ROMS
 	//rom_lab5 rom(PC, clk_shift, instr);
-	//rom_prog2 rom2(PC,	clk_shift, instr);
+   //rom_prog2 rom2(PC,	clk_shift, instr);
 	//load_rom rom3(PC,	clk_shift, instr);
-
+//  	rom_branch rom4(PC, clk_shift, instr);
+	rom_jal rom5(PC, clk_shift, instr);
 
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
@@ -78,13 +79,13 @@ module lab05(
 	wire [7:0] PC_next;
 	wire [7:0] PC_offset;
 	wire [7:0] PC_plus;
-
+	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
 	always @(posedge clk) begin
-		if (instr != 32'h7f) PC <= PC_next; //instr == 32'b0
+		if (instr != 32'h0) PC <= PC_next; //PC_next works for branching, not prog2
 	end
 
-//code for branching
-	assign PC_plus = PC + 4;
+	// Branching control
+	assign PC_plus = PC + 8'h4;
 	assign PC_offset = (out << 1) + PC;
 	assign PC_next = (to_branch & Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 
