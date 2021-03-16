@@ -60,8 +60,9 @@ module lab05(
 	//COMMENT OUT FOR TESTBENCH
 	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
 
+	//must make new rom for branch mif
 	//rom_lab5 rom(PC, clk_shift, instr);
-	rom_prog2 rom2(PC,	clk_shift, instr);
+	//rom_prog2 rom2(PC,	clk_shift, instr);
 	//load_rom rom3(PC,	clk_shift, instr);
 
 
@@ -74,22 +75,23 @@ module lab05(
 
 	assign wd = (MemtoReg) ? mem_dout : Y;
 
-//	wire [7:0] PC_next;
-//	wire [7:0] PC_offset;
+	wire [7:0] PC_next;
+	wire [7:0] PC_offset;
+	wire [7:0] PC_plus;
 
 	always @(posedge clk) begin
-		if (instr != 32'd0) PC <= PC + 4; //instr == 32'b0
+		if (instr != 32'h7f) PC <= PC_next; //instr == 32'b0
 	end
 
 //code for branching
-//	assign PC_next = PC + 4;
-//assign PC_offset = (out << 1) + PC;
-	// assign PC_next = (to_branch & Branch) ? PC_offset : PC + 4; //if ALU output is zero -> branch
+	assign PC_plus = PC + 4;
+	assign PC_offset = (out << 1) + PC;
+	assign PC_next = (to_branch & Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 
 	//BRANCH control
 	//instruction 12 is bne or beq
-	//wire to_branch; //branch condition
-	//assign to_branch = instr[12] ^ zero;
+	wire to_branch; //branch condition
+	assign to_branch = instr[12] ^ zero;
 
 	//for jump and link, wd = PC + 4
 

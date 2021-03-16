@@ -1,0 +1,112 @@
+Archive Project report for lab05
+Tue Mar 16 00:28:45 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Tue Mar 16 00:28:45 2021 ;
+; Revision Name          ; lab05                                 ;
+; Top-level Entity Name  ; lab05                                 ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Warning: Hierarchical Platform Designer systems and custom IP components(_hw.tcl and associated files) are not archived by the Quartus Archiver
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05_sultan_michael_milestone1.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'lab05.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4824 megabytes
+    Info: Processing ended: Tue Mar 16 00:28:45 2021
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:05
+
+
++--------------------------------------------------------------+
+; Files Archived                                               ;
++--------------------------------------------------------------+
+; File Name                                                    ;
++--------------------------------------------------------------+
+; ALU.v                                                        ;
+; alu_control.v                                                ;
+; c:/intelfpga_lite/20.1/quartus/bin64/assignment_defaults.qdf ;
+; control_unit.v                                               ;
+; imm_gen.v                                                    ;
+; lab05.mif                                                    ;
+; lab05.qpf                                                    ;
+; lab05.qsf                                                    ;
+; lab05.v                                                      ;
+; lab05_prog2.mif                                              ;
+; lab5_ram.qip                                                 ;
+; lab5_ram.v                                                   ;
+; lab5_ram_bb.v                                                ;
+; load_rom.qip                                                 ;
+; load_rom.v                                                   ;
+; load_rom_bb.v                                                ;
+; load_rom_inst.v                                              ;
+; lw_testmif.mif                                               ;
+; pll_lab5.cmp                                                 ;
+; pll_lab5.qip                                                 ;
+; pll_lab5.sip                                                 ;
+; pll_lab5.spd                                                 ;
+; pll_lab5.v                                                   ;
+; pll_lab5/pll_lab5_0002.qip                                   ;
+; pll_lab5/pll_lab5_0002.v                                     ;
+; pll_lab5_sim/pll_lab5.vo                                     ;
+; reg_file.v                                                   ;
+; rom_lab5.qip                                                 ;
+; rom_lab5.v                                                   ;
+; rom_lab5_bb.v                                                ;
+; rom_prog2.qip                                                ;
+; rom_prog2.v                                                  ;
+; rom_prog2_bb.v                                               ;
+; testbenches/control_unit_tb.v                                ;
+; testbenches/lab05_for_test.v                                 ;
+; testbenches/lab5_tb.v                                        ;
++--------------------------------------------------------------+
+
+
