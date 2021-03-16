@@ -49,7 +49,7 @@ module lab05(
 	imm_gen ig (instr, out);
 
 	control_unit ctrl (form_code, aluop, Branch, MemRead, MemtoReg,
-						MemWrite, ALUSrc, RegWrite);
+						MemWrite, ALUSrc, RegWrite, halt);
 
 	reg_file rf (clk_shift, RegWrite, wd, rr1, rr2, wr, rd1, rd2);
 
@@ -62,10 +62,10 @@ module lab05(
 
 	// ROMS
 	//rom_lab5 rom(PC, clk_shift, instr);
-   //rom_prog2 rom2(PC,	clk_shift, instr);
+   rom_prog2 rom2(PC,	clk_shift, instr);
 	//load_rom rom3(PC,	clk_shift, instr);
 //  	rom_branch rom4(PC, clk_shift, instr);
-	rom_jal rom5(PC, clk_shift, instr);
+	//rom_jal rom5(PC, clk_shift, instr);
 
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
@@ -74,14 +74,18 @@ module lab05(
 	assign A = rd1;						// first input to ALU
 	assign B = (ALUSrc) ? out : rd2;	// second input to ALU, (1 imm_gen, 0 rd2)
 
-	assign wd = (MemtoReg) ? mem_dout : Y;
+	wire [31:0] data_interm;
+	assign data_interm = (MemtoReg) ? mem_dout : Y;
+
+	assign wd = (Branch & RegWrite) ? PC_plus: data_interm;
 
 	wire [7:0] PC_next;
 	wire [7:0] PC_offset;
 	wire [7:0] PC_plus;
 	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
+	wire halt;
 	always @(posedge clk) begin
-		if (instr != 32'h0) PC <= PC_next; //PC_next works for branching, not prog2
+		if (~halt) PC <= PC_next; //PC_next works for branching, not prog2
 	end
 
 	// Branching control

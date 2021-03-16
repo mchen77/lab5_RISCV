@@ -1,5 +1,5 @@
 Flow report for lab05
-Tue Mar 16 03:07:09 2021
+Tue Mar 16 17:05:19 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,15 +41,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Tue Mar 16 03:07:09 2021       ;
+; Flow Status                     ; Successful - Tue Mar 16 17:05:19 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab05                                       ;
 ; Top-level Entity Name           ; lab05                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 1,057 / 18,480 ( 6 % )                      ;
-; Total registers                 ; 1206                                        ;
+; Logic utilization (in ALMs)     ; 1,049 / 18,480 ( 6 % )                      ;
+; Total registers                 ; 1193                                        ;
 ; Total pins                      ; 1 / 224 ( < 1 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 16,384 / 3,153,920 ( < 1 % )                ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/16/2021 03:04:45 ;
+; Start date & time ; 03/16/2021 17:01:07 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab05               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 218381590356486.161587828501564        ; --            ; --             ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 101564829143456.161592846629188        ; --            ; --             ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
@@ -117,12 +117,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:39     ; 1.0                     ; 4906 MB             ; 00:01:19                           ;
-; Fitter               ; 00:01:14     ; 1.2                     ; 6405 MB             ; 00:03:13                           ;
-; Assembler            ; 00:00:06     ; 1.0                     ; 4836 MB             ; 00:00:06                           ;
-; Timing Analyzer      ; 00:00:12     ; 1.9                     ; 5155 MB             ; 00:00:21                           ;
-; EDA Netlist Writer   ; 00:00:04     ; 1.0                     ; 4791 MB             ; 00:00:04                           ;
-; Total                ; 00:02:15     ; --                      ; --                  ; 00:05:03                           ;
+; Analysis & Synthesis ; 00:01:04     ; 1.0                     ; 4897 MB             ; 00:02:05                           ;
+; Fitter               ; 00:02:00     ; 1.2                     ; 6303 MB             ; 00:04:27                           ;
+; Assembler            ; 00:00:13     ; 1.0                     ; 4834 MB             ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:28     ; 1.8                     ; 5150 MB             ; 00:00:41                           ;
+; EDA Netlist Writer   ; 00:00:10     ; 1.0                     ; 4790 MB             ; 00:00:09                           ;
+; Total                ; 00:03:55     ; --                      ; --                  ; 00:07:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -131,11 +131,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
