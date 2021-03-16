@@ -51,18 +51,18 @@ module lab05(
 	control_unit ctrl (form_code, aluop, Branch, MemRead, MemtoReg,
 						MemWrite, ALUSrc, RegWrite);
 
-	reg_file rf (clk, RegWrite, wd, rr1, rr2, wr, rd1, rd2);
+	reg_file rf (clk_shift, RegWrite, wd, rr1, rr2, wr, rd1, rd2);
 
 	alu_control alu_ctrl(instr_split, aluop, aluopcode);
 
 	alu a1 (Y, zero, A, B, aluopcode);
 
 	//COMMENT OUT FOR TESTBENCH
-	lab5_ram ram(mem_addr, clk_shift, rd2, MemRead, MemWrite, mem_dout);
+	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
 
 	//rom_lab5 rom(PC, clk_shift, instr);
-	//rom_prog2 rom2(PC,	clk_shift, instr);
-	load_rom rom3(PC,	clk_shift, instr);
+	rom_prog2 rom2(PC,	clk_shift, instr);
+	//load_rom rom3(PC,	clk_shift, instr);
 
 
 	// PLL
