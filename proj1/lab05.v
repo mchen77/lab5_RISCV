@@ -49,7 +49,7 @@ module lab05(
 	imm_gen ig (instr, out);
 
 	control_unit ctrl (form_code, aluop, Branch, MemRead, MemtoReg,
-						MemWrite, ALUSrc, RegWrite, halt);
+						MemWrite, ALUSrc, RegWrite);
 
 	reg_file rf (clk_shift, RegWrite, wd, rr1, rr2, wr, rd1, rd2);
 
@@ -62,8 +62,8 @@ module lab05(
 
 	// ROMS
 	//rom_lab5 rom(PC, clk_shift, instr);
-   rom_prog2 rom2(PC,	clk_shift, instr);
-	//load_rom rom3(PC,	clk_shift, instr);
+   //rom_prog2 rom2(PC,	clk_shift, instr);
+	load_rom rom3(PC,	clk_shift, instr);
 //  	rom_branch rom4(PC, clk_shift, instr);
 	//rom_jal rom5(PC, clk_shift, instr);
 
@@ -83,7 +83,14 @@ module lab05(
 	wire [7:0] PC_offset;
 	wire [7:0] PC_plus;
 	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
-	wire halt;
+	reg halt;
+	always @(posedge clk_shift) begin
+		if (instr[6:0] == 7'h7f) begin
+			halt <= 1'b1;
+		end else begin
+			halt <= 1'b0;
+		end
+	end
 	always @(posedge clk) begin
 		if (~halt) PC <= PC_next; //PC_next works for branching, not prog2
 	end
