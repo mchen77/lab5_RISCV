@@ -13,7 +13,7 @@ module lab05(
 	wire clk_shift;
 	reg [7:0] PC;
 
-	initial PC = 0;
+	initial PC = 8'b0;
 
 	// control_unit
 	wire [6:0] form_code = instr[6:0];
@@ -85,20 +85,20 @@ module lab05(
 	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
 	reg halt;
 	always @(posedge clk_shift) begin
-		if (instr[6:0] == 7'h7f) begin
+		if (PC_plus == 32'h7f) begin
 			halt <= 1'b1;
 		end else begin
 			halt <= 1'b0;
 		end
 	end
 	always @(posedge clk) begin
-		if (~halt) PC <= PC_next; //PC_next works for branching, not prog2
+		if (~halt) PC <= PC + PC_next; //PC_next works for branching, not prog2
 	end
 
 	// Branching control
 	assign PC_plus = PC + 8'h4;
 	assign PC_offset = (out << 1) + PC;
-	assign PC_next = (to_branch & Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign PC_next = (to_branch && Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 
 	//BRANCH control
 	//instruction 12 is bne or beq
