@@ -62,8 +62,8 @@ module lab05(
 
 	// ROMS
 	//rom_lab5 rom(PC, clk_shift, instr);
-   //rom_prog2 rom2(PC,	clk_shift, instr);
-	load_rom rom3(PC,	clk_shift, instr);
+   rom_prog2 rom2(PC,	clk_shift, instr);
+	//load_rom rom3(PC,	clk_shift, instr);
 //  	rom_branch rom4(PC, clk_shift, instr);
 	//rom_jal rom5(PC, clk_shift, instr);
 

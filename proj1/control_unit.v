@@ -35,7 +35,7 @@ module control_unit(
 				MemWrite	= 1'b0;
 				ALUSrc	= 1'b1;	// 0-register, 1 imm_gen
 				RegWrite	= 1'b1;
-				aluop		= 2'b10;	// alu_control
+				aluop		= 2'b11;	// alu_control
 				//halt	= 1'b0;
 			end
 			7'b0100011: begin		// S-type
