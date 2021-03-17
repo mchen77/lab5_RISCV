@@ -11,7 +11,10 @@ module lab05(
 	wire [31:0] instr;
 	wire clk;
 	wire clk_shift;
-	reg [7:0] PC;
+	reg [9:0] PC;
+	
+	wire [7:0] addr;
+	assign addr = PC[9:2];
 
 	initial PC = 8'b0;
 
@@ -61,11 +64,11 @@ module lab05(
 	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
 
 	// ROMS
-	//rom_lab5 rom(PC, clk_shift, instr);
-   rom_prog2 rom2(PC,	clk_shift, instr);
-	//load_rom rom3(PC,	clk_shift, instr);
-//  	rom_branch rom4(PC, clk_shift, instr);
-	//rom_jal rom5(PC, clk_shift, instr);
+	rom_lab5 rom(addr, clk_shift, instr);
+   //rom_prog2 rom2(addr,	clk_shift, instr);
+	//load_rom rom3(addr,	clk_shift, instr);
+//  	rom_branch rom4(addr, clk_shift, instr);
+	//rom_jal rom5(addr, clk_shift, instr);
 
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
@@ -85,7 +88,7 @@ module lab05(
 	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
 	reg halt;
 	always @(posedge clk_shift) begin
-		if (PC_plus == 32'h7f) begin
+		if (instr[6:0] == 7'h7f) begin
 			halt <= 1'b1;
 		end else begin
 			halt <= 1'b0;
