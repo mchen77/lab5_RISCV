@@ -44,7 +44,14 @@ module lab05(
 
 	// memory
 	wire [31:0] mem_dout;
-	wire [7:0]  mem_addr = Y[7:0];
+	reg [7:0]  mem_addr;
+	initial begin
+		mem_addr = 0;
+	end
+
+	always@(*) begin
+	mem_addr <= Y[7:0];
+	end
 
 	// module instantiations
 	imm_gen ig (instr, out);
@@ -63,11 +70,12 @@ module lab05(
 
 	// ROMS
 	//rom_lab5 rom(addr, clk_shift, instr);
-   //rom_prog2 rom2(addr,	clk_shift, instr);
+   rom_prog2 rom2(addr,	clk_shift, instr);
 	//load_rom rom3(addr,	clk_shift, instr);
 //  	rom_branch rom4(addr, clk_shift, instr);
 	//rom_jal rom5(addr, clk_shift, instr);
-	prog2_line rom6(addr, clk_shift, instr);
+	//prog2_line rom6(addr, clk_shift, instr);
+	//factorial rom7(addr, clk_shift, instr);
 
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
@@ -86,7 +94,7 @@ module lab05(
 	wire [9:0] PC_plus;
 	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
 	reg halt;
-	initial 
+	initial
 	halt = 1'b0;
 	always @(posedge clk_shift) begin
 		if (form_code == 7'h7f) begin
