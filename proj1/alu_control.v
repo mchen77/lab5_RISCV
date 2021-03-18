@@ -17,9 +17,12 @@ module alu_control (
 			2'b10: begin		// R-type (funct3 business)
 				aluopcode = instr_split;
 			end
+			2'b11: begin		// I-type (funct3 business)
+				aluopcode = {2'b0, instr_split[2:0]};
+			end
 			default: aluopcode = instr_split;
 		endcase
 
 	end
-
+	
 endmodule
