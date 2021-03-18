@@ -1,5 +1,5 @@
 Assembler report for lab05
-Wed Mar 17 23:08:07 2021
+Thu Mar 18 00:06:45 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Mar 17 23:08:07 2021 ;
+; Assembler Status      ; Successful - Thu Mar 18 00:06:45 2021 ;
 ; Revision Name         ; lab05                                 ;
 ; Top-level Entity Name ; lab05                                 ;
 ; Family                ; Cyclone V                             ;
@@ -105,8 +105,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------+---------------------------------------------------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                                                                   ;
 +----------------+---------------------------------------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x0084CE65                                                                                                                ;
-; Checksum       ; 0x0084CE65                                                                                                                ;
+; JTAG usercode  ; 0x00859ED5                                                                                                                ;
+; Checksum       ; 0x00859ED5                                                                                                                ;
 +----------------+---------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -116,7 +116,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Mar 17 23:07:52 2021
+    Info: Processing started: Thu Mar 18 00:06:30 2021
 Info: Command: quartus_asm --read_settings_files=on --write_settings_files=off lab05 -c lab05
 Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_CV_Default -section_id Top was ignored
@@ -146,8 +146,8 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity do
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4835 megabytes
-    Info: Processing ended: Wed Mar 17 23:08:07 2021
+    Info: Peak virtual memory: 4836 megabytes
+    Info: Processing ended: Thu Mar 18 00:06:45 2021
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:14
 

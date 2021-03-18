@@ -14,7 +14,7 @@ module lab05(
 	wire [7:0] addr;
 	assign addr = PC[9:2];
 
-	initial PC = 0;
+	initial PC = 10'd0;
 
 	// control_unit
 	wire [6:0] form_code = instr[6:0];
@@ -34,7 +34,7 @@ module lab05(
 	// reg_file
 	wire [4:0] rr1 = instr[19:15];
 	wire [4:0] rr2 = instr[24:20];
-	wire [4:0] wr  = instr[11: 7];
+	wire [4:0] wr  = instr[11:7];
 	wire [31:0] rd1;
 	wire [31:0] rd2;
 	wire [31:0] wd;
@@ -62,11 +62,12 @@ module lab05(
 	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
 
 	// ROMS
-	rom_lab5 rom(addr, clk_shift, instr);
+	//rom_lab5 rom(addr, clk_shift, instr);
    //rom_prog2 rom2(addr,	clk_shift, instr);
 	//load_rom rom3(addr,	clk_shift, instr);
 //  	rom_branch rom4(addr, clk_shift, instr);
 	//rom_jal rom5(addr, clk_shift, instr);
+	prog2_line rom6(addr, clk_shift, instr);
 
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
@@ -80,24 +81,30 @@ module lab05(
 
 	assign wd = (Branch & RegWrite) ? PC_plus: data_interm;
 
-	wire [7:0] PC_next;
-	wire [7:0] PC_offset;
-	wire [7:0] PC_plus;
+	wire [9:0] PC_next;
+	wire [9:0] PC_offset;
+	wire [9:0] PC_plus;
 	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
 	reg halt;
+	initial 
+	halt = 1'b0;
 	always @(posedge clk_shift) begin
-		if (instr[6:0] == 7'h7f) begin
+		if (form_code == 7'h7f) begin
 			halt <= 1'b1;
 		end else begin
 			halt <= 1'b0;
 		end
 	end
 	always @(posedge clk) begin
-		if (~halt) PC <= PC_next; //PC_next works for branching, not prog2
+		if (halt) begin
+		PC <= PC;
+		end else begin
+		PC <= PC_next; //PC_next works for branching, not prog2
+		end
 	end
 
 	// Branching control
-	assign PC_plus = PC + 8'h4;
+	assign PC_plus = PC + 10'h4;
 	assign PC_offset = (out << 1) + PC;
 	assign PC_next = (to_branch & Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 
