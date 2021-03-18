@@ -7,7 +7,7 @@ module lab05(
 	input CLOCK_50
 
 );
-
+	// AHFHEOIFJWEIOJFWIOJFEIOJWIOGJIWEJGIEWJGGIOJEI
 	wire [31:0] instr;
 	wire clk;
 	wire clk_shift;
