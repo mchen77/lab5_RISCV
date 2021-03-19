@@ -3,7 +3,7 @@
 //
 // ALU module
 
-module alu
+module ALU
 (
   output reg signed [31:0] Y,
   output zero,
