@@ -60,15 +60,15 @@ module lab05(
 	alu a1 (Y, zero, A, B, aluopcode);
 
 	// COMMENT OUT FOR TESTBENCH
-	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
+	lab5_ram ram(mem_addr, clk_shift, rd2, MemRead, MemWrite, mem_dout);
 
 	// ROMS
 	//rom_lab5 rom(addr, clk_shift, instr);
-   //rom_prog2 rom2(addr,	clk_shift, instr);
+   rom_prog2 rom2(addr,	clk_shift, instr);
 	//load_rom rom3(addr,	clk_shift, instr);
 //  	rom_branch rom4(addr, clk_shift, instr);
 	//rom_jal rom5(addr, clk_shift, instr);
-	prog2_line rom6(addr, clk_shift, instr);
+	//prog2_line rom6(addr, clk_shift, instr);
 	//factorial rom7(addr, clk_shift, instr);
 
 	// PLL
@@ -76,7 +76,7 @@ module lab05(
 
 	// ALU logic
 	assign A = rd1;						// first input to ALU
-	assign B = (ALUSrc) ? out : rd2;	// second input to ALU, (1 imm_gen, 0 rd2)
+	assign B = (ALUSrc) ? out: rd2;	// second input to ALU, (1 imm_gen, 0 rd2)
 
 	wire [31:0] data_interm;
 	assign data_interm = (MemtoReg) ? mem_dout : Y;
@@ -100,7 +100,7 @@ module lab05(
 
 	wire halt;
 	assign halt = (form_code == 7'h7f) ? 1'b1: 1'b0;
-	
+
 	always @(posedge clk) begin
 		if (halt) begin
 		PC <= PC;
