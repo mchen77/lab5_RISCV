@@ -8,10 +8,15 @@ module lab05(
 
 );
 
+  parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
+  B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
+
+
 	wire [31:0] instr;
 	wire clk;
 	wire clk_shift;
-	reg [7:0] PC;
+	reg [9:0] PC;
+  wire [7:0] addr = PC / 4;
 
 	initial PC = 0;
 
@@ -61,11 +66,11 @@ module lab05(
 	lab5_ram ram(mem_addr, clk, rd2, MemRead, MemWrite, mem_dout);
 
 	// ROMS
-	//rom_lab5 rom(PC, clk_shift, instr);
-   //rom_prog2 rom2(PC,	clk_shift, instr);
-	//load_rom rom3(PC,	clk_shift, instr);
-//  	rom_branch rom4(PC, clk_shift, instr);
-	rom_jal rom5(PC, clk_shift, instr);
+	//rom_lab5 rom(addr, clk_shift, instr);
+   rom_prog2 rom2(addr,	clk_shift, instr);
+	//load_rom rom3(addr,	clk_shift, instr);
+//  	rom_branch rom4(addr, clk_shift, instr);
+	//rom_jal rom5(addr, clk_shift, instr);
 
 	// PLL
 	pll_lab5 pll(CLOCK_50, 1'b0, clk, clk_shift);
@@ -80,12 +85,18 @@ module lab05(
 	wire [7:0] PC_offset;
 	wire [7:0] PC_plus;
 	// when we check for instr != 32'h7, it doesnt like it and doesnt print correctly
+
+  wire run;
+  assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
+
 	always @(posedge clk) begin
-		if (instr != 32'h0) PC <= PC_next; //PC_next works for branching, not prog2
+		if (run)
+		PC <= PC_next;
+		//PC_next works for branching, not prog2
 	end
 
 	// Branching control
-	assign PC_plus = PC + 8'h4;
+	assign PC_plus = PC + 10'h4;
 	assign PC_offset = (out << 1) + PC;
 	assign PC_next = (to_branch & Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 

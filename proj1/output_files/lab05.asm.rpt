@@ -1,5 +1,5 @@
 Assembler report for lab05
-Tue Mar 16 03:06:50 2021
+Sat Mar 20 17:23:09 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -11,7 +11,7 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: D:/engn1640/projects/sultan_and_michael_lab5/proj1/output_files/lab05.sof
+  6. Assembler Device Options: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/output_files/lab05.sof
   7. Assembler Messages
 
 
@@ -39,7 +39,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Mar 16 03:06:50 2021 ;
+; Assembler Status      ; Successful - Sat Mar 20 17:23:09 2021 ;
 ; Revision Name         ; lab05                                 ;
 ; Top-level Entity Name ; lab05                                 ;
 ; Family                ; Cyclone V                             ;
@@ -64,23 +64,23 @@ https://fpgasoftware.intel.com/eula.
 +--------+------------------------+--------------+
 
 
-+---------------------------------------------------------------------------+
-; Assembler Generated Files                                                 ;
-+---------------------------------------------------------------------------+
-; File Name                                                                 ;
-+---------------------------------------------------------------------------+
-; D:/engn1640/projects/sultan_and_michael_lab5/proj1/output_files/lab05.sof ;
-+---------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                        ;
++------------------------------------------------------------------------------------------------------------------+
+; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/output_files/lab05.sof ;
++------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/engn1640/projects/sultan_and_michael_lab5/proj1/output_files/lab05.sof ;
-+----------------+------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                            ;
-+----------------+------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x008470D3                                                                         ;
-; Checksum       ; 0x008470D3                                                                         ;
-+----------------+------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/output_files/lab05.sof ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                                   ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00848BC8                                                                                                                ;
+; Checksum       ; 0x00848BC8                                                                                                                ;
++----------------+---------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -89,14 +89,14 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Mar 16 03:06:44 2021
+    Info: Processing started: Sat Mar 20 17:22:59 2021
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab05 -c lab05
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4836 megabytes
-    Info: Processing ended: Tue Mar 16 03:06:50 2021
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4834 megabytes
+    Info: Processing ended: Sat Mar 20 17:23:10 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:09
 
 
