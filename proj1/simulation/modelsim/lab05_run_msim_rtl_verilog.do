@@ -22,7 +22,7 @@ vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_la
 vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v}
 vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v}
 vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v}
-vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches {D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v}
 vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v}
 vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v}
+vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/factorial.v}
 

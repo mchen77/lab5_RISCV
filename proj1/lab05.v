@@ -19,12 +19,15 @@ module lab05(CLOCK_50);
    wire			zero;			// From a1 of ALU.v
    // End of automatics
 
-   wire [31:0] 		instr;     // isntruction from ROM 		
-   wire [7:0] 		address;   // address to RAM
-   wire 		halt;      // HALT flag
+   wire [31:0] 		instr;     // isntruction from ROM
+	wire [6:0]			form_code = instr[6:0];
+   wire [7:0] 			address;   // address to RAM
+   wire 					halt;      // HALT flag
    reg  [10:0] 		PC;        // PC current
-   wire [10:0]		PC_next;   // PC next to be latched
-   wire [10:0]		PC_offset; // PC offset for branching
+   wire [10:0]			PC_next;   // PC next to be latched
+	wire [10:0]			PC_plus;   // PC + 4
+   wire [10:0]			PC_offset; // PC offset for branching
+	wire 					to_branch; // branch condition
    wire [31:0] 		wd;        // write data for reg_file
    wire [31:0] 		A;         // ALU input A
    wire [31:0] 		B;         // ALU input B
@@ -32,12 +35,21 @@ module lab05(CLOCK_50);
    wire 		outclk_0; // PLL output clock
    wire 		outclk_1; // PLL output clock shifted 
 
-   always@(posedge outclk_0) begin
-      if (~halt) PC <= PC + 10'd4;
-      else PC <= PC;
-   end
+	parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
+				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
+	wire run;
+	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
 
-   assign halt = (instr[6:0] == 7'h7f) ? 1'b1 : 1'b0;
+	always @(posedge outclk_0) begin
+	  if (run)
+	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
+	end
+	
+	assign PC_plus = PC + 10'h4;
+	assign PC_offset = (out << 1) + PC;
+	assign PC_next = (to_branch & Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign to_branch = instr[12] ^ zero;
+	
 
    assign A = rd1;
    assign B = (ALUSrc) ? out : rd2;  // 1 = immediate, 0 = rd2
@@ -121,34 +133,80 @@ module lab05(CLOCK_50);
 		 .rden			(MemRead),		 // Templated
 		 .wren			(MemWrite));		 // Templated
 
-   /*r// om_lab5 AUTO_TEMPLATE(
+   /*rom_lab5 AUTO_TEMPLATE(
    //  .clock (outclk_1),
    //  .address (PC[9:2]),
    //  .q (instr[31:0]),);*/
-   // rom_lab5 rom1(/*AUTOINST*/
-   // 		 // Outputs
-   // 		 .q			(instr[31:0]),
-   // 		 // Inputs
-   // 		 .address		(PC[9:2]),
-   // 		 .clock			(outclk_1));
+//   rom_lab5 rom1(/*AUTOINST*/
+//    		 // Outputs
+//    		 .q			(instr[31:0]),
+//    		 // Inputs
+//    		 .address		(PC[9:2]),
+//    		 .clock			(outclk_1));
 
-    /*rom_prog2 AUTO_TEMPLATE(
+   /*rom_prog2 AUTO_TEMPLATE(
+     .clock (outclk_1),
+     .address (PC[9:2]),
+     .q (instr[31:0]),
+   );*/
+   rom_prog2 rom2(/*AUTOINST*/
+		  // Outputs
+		  .q			(instr[31:0]),
+		  // Inputs
+    	.address		(PC[9:2]),
+		  .clock		(outclk_1));
+
+   /*load_rom AUTO_TEMPLATE(
+     .clock (outclk_1),
+     .address (PC[9:2]),
+     .q (instr[31:0]),
+    );*/
+//   load_rom rom3 (/*AUTOINST*/
+//		  // Outputs
+//		  .q			(instr[31:0]),
+//		  // Inputs
+//		  .address		(PC[9:2]),
+//		  .clock		(outclk_1));
+
+   /*rom_branch AUTO_TEMPLATE(
     .clock (outclk_1),
     .address (PC[9:2]),
     .q (instr[31:0]),
-     );*/
-   rom_prog2 rom2(/*AUTOINST*/
-		  // Outputs
-		  .q			(instr[31:0]),		 // Templated
-		  // Inputs
-		  .address		(PC[9:2]),		 // Templated
-		  .clock		(outclk_1));		 // Templated
+   );*/
+//   rom_branch rom4(/*AUTOINST*/
+//		   // Outputs
+//		   .q			(instr[31:0]),		 // Templated
+//		   // Inputs
+//		   .address		(PC[9:2]),		 // Templated
+//		   .clock		(outclk_1));		 // Templated
 
-   
+   /*rom_jal AUTO_TEMPLATE(
+    .clock (outclk_1),
+    .address (PC[9:2]),
+    .q (instr[31:0]),
+    );*/
+//   rom_jal rom5 (/*AUTOINST*/
+//		 // Outputs
+//		 .q			(instr[31:0]),		 // Templated
+//		 // Inputs
+//		 .address		(PC[9:2]),		 // Templated
+//		 .clock			(outclk_1));		 // Templated
+
+   /*factorial AUTO_TEMPLATE(
+    .clock (outclk_1),
+    .address (PC[9:2]),
+    .q (instr[31:0]),
+    );*/
+//   factorial rom6 (/*AUTOINST*/
+//		   // Outputs
+//		   .q			(instr[31:0]),		 // Templated
+//		   // Inputs
+//		   .address		(PC[9:2]),		 // Templated
+//		   .clock		(outclk_1));		 // Templated
 
    /*pll_lab5 AUTO_TEMPLATE(
     .refclk (CLOCK_50), 
-    .rst (1'b0),);*/
+    .rst (1'b0),)*/
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs
 		.outclk_0		(outclk_0),

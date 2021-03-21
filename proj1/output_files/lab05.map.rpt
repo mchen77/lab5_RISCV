@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab05
-Sat Mar 20 14:24:33 2021
+Sun Mar 21 11:54:13 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -22,17 +22,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  14. Multiplexer Restructuring Statistics (Restructuring Performed)
  15. Source assignments for lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|altsyncram_29f2:altsyncram1
  16. Source assignments for rom_prog2:rom2|altsyncram:altsyncram_component|altsyncram_fhg1:auto_generated
- 17. Parameter Settings for User Entity Instance: lab5_ram:ram|altsyncram:altsyncram_component
- 18. Parameter Settings for User Entity Instance: rom_prog2:rom2|altsyncram:altsyncram_component
- 19. Parameter Settings for User Entity Instance: pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i
- 20. altsyncram Parameter Settings by Entity Instance
- 21. Port Connectivity Checks: "pll_lab5:p1"
- 22. Port Connectivity Checks: "ALU:a1"
- 23. Port Connectivity Checks: "control_unit:ctrl"
- 24. In-System Memory Content Editor Settings
- 25. Post-Synthesis Netlist Statistics for Top Partition
- 26. Elapsed Time Per Partition
- 27. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: Top-level Entity: |lab05
+ 18. Parameter Settings for User Entity Instance: lab5_ram:ram|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: rom_prog2:rom2|altsyncram:altsyncram_component
+ 20. Parameter Settings for User Entity Instance: pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "pll_lab5:p1"
+ 23. In-System Memory Content Editor Settings
+ 24. Post-Synthesis Netlist Statistics for Top Partition
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
 
 
 
@@ -59,13 +58,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Mar 20 14:24:33 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 21 11:54:13 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab05                                       ;
 ; Top-level Entity Name           ; lab05                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1182                                        ;
+; Total registers                 ; 1183                                        ;
 ; Total pins                      ; 1                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 16,384                                      ;
@@ -185,49 +184,49 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                                                           ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                                                 ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
-; lab05_prog2.mif                                                    ; yes             ; User Memory Initialization File              ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05_prog2.mif                                                    ;             ;
-; alu_control.v                                                      ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/alu_control.v                                                      ;             ;
-; imm_gen.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v                                                          ;             ;
-; ALU.v                                                              ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v                                                              ;             ;
-; reg_file.v                                                         ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v                                                         ;             ;
-; lab05.v                                                            ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v                                                            ;             ;
-; control_unit.v                                                     ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/control_unit.v                                                     ;             ;
-; lab5_ram.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v                                                         ;             ;
-; rom_prog2.v                                                        ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2.v                                                        ;             ;
-; factorial.v                                                        ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/factorial.v                                                        ;             ;
-; pll_lab5.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.v                                                         ; pll_lab5    ;
-; pll_lab5/pll_lab5_0002.v                                           ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v                                           ; pll_lab5    ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf                                                                                        ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                                 ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_mux.inc                                                                                           ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_decode.inc                                                                                        ;             ;
-; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/aglobal201.inc                                                                                        ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                                         ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                                                            ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                                                            ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                                                          ;             ;
-; db/altsyncram_nuo1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf                                             ;             ;
-; db/altsyncram_29f2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_29f2.tdf                                             ;             ;
-; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                                                   ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                                         ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                                     ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                                        ;             ;
-; db/altsyncram_fhg1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_fhg1.tdf                                             ;             ;
-; altera_pll.v                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                                                          ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                           ; altera_sld  ;
-; db/ip/sldc3a581be/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/alt_sld_fab.v                                    ; alt_sld_fab ;
-; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
-; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
-; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
-; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
-; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                                                      ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                    ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                          ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
+; lab05_prog2.mif                                                    ; yes             ; User Memory Initialization File              ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05_prog2.mif                                                    ;             ;
+; alu_control.v                                                      ; yes             ; User Verilog HDL File                        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v                                                      ;             ;
+; imm_gen.v                                                          ; yes             ; User Verilog HDL File                        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v                                                          ;             ;
+; ALU.v                                                              ; yes             ; User Verilog HDL File                        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v                                                              ;             ;
+; reg_file.v                                                         ; yes             ; User Verilog HDL File                        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v                                                         ;             ;
+; lab05.v                                                            ; yes             ; User Verilog HDL File                        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v                                                            ;             ;
+; control_unit.v                                                     ; yes             ; User Verilog HDL File                        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v                                                     ;             ;
+; lab5_ram.v                                                         ; yes             ; User Wizard-Generated File                   ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v                                                         ;             ;
+; rom_prog2.v                                                        ; yes             ; User Wizard-Generated File                   ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v                                                        ;             ;
+; factorial.v                                                        ; yes             ; User Wizard-Generated File                   ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/factorial.v                                                        ;             ;
+; pll_lab5.v                                                         ; yes             ; User Wizard-Generated File                   ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v                                                         ; pll_lab5    ;
+; pll_lab5/pll_lab5_0002.v                                           ; yes             ; User Verilog HDL File                        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v                                           ; pll_lab5    ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/altsyncram.tdf                                                            ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/stratix_ram_block.inc                                                     ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/lpm_mux.inc                                                               ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/lpm_decode.inc                                                            ;             ;
+; aglobal201.inc                                                     ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/aglobal201.inc                                                            ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/a_rdenreg.inc                                                             ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/altrom.inc                                                                ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/altram.inc                                                                ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/altdpram.inc                                                              ;             ;
+; db/altsyncram_nuo1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf                                             ;             ;
+; db/altsyncram_29f2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_29f2.tdf                                             ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; d:/engn1640/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                       ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; d:/engn1640/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                             ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; d:/engn1640/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                         ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; d:/engn1640/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                            ;             ;
+; db/altsyncram_fhg1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_fhg1.tdf                                             ;             ;
+; altera_pll.v                                                       ; yes             ; Megafunction                                 ; d:/engn1640/quartus/libraries/megafunctions/altera_pll.v                                                              ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; d:/engn1640/quartus/libraries/megafunctions/sld_hub.vhd                                                               ; altera_sld  ;
+; db/ip/sldc3a581be/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; d:/engn1640/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                          ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------+-------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------+
@@ -235,16 +234,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                          ;
 +---------------------------------------------+--------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1295                                                                           ;
+; Estimate of Logic utilization (ALMs needed) ; 1312                                                                           ;
 ;                                             ;                                                                                ;
-; Combinational ALUT usage for logic          ; 1116                                                                           ;
+; Combinational ALUT usage for logic          ; 1172                                                                           ;
 ;     -- 7 input functions                    ; 514                                                                            ;
-;     -- 6 input functions                    ; 226                                                                            ;
-;     -- 5 input functions                    ; 160                                                                            ;
-;     -- 4 input functions                    ; 65                                                                             ;
-;     -- <=3 input functions                  ; 151                                                                            ;
+;     -- 6 input functions                    ; 248                                                                            ;
+;     -- 5 input functions                    ; 150                                                                            ;
+;     -- 4 input functions                    ; 89                                                                             ;
+;     -- <=3 input functions                  ; 171                                                                            ;
 ;                                             ;                                                                                ;
-; Dedicated logic registers                   ; 1182                                                                           ;
+; Dedicated logic registers                   ; 1183                                                                           ;
 ;                                             ;                                                                                ;
 ; I/O pins                                    ; 1                                                                              ;
 ; Total MLAB memory bits                      ; 0                                                                              ;
@@ -257,7 +256,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                ;
 ; Maximum fan-out node                        ; pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|outclk_wire[1] ;
 ; Maximum fan-out                             ; 1056                                                                           ;
-; Total fan-out                               ; 11227                                                                          ;
+; Total fan-out                               ; 11485                                                                          ;
 ; Average fan-out                             ; 4.72                                                                           ;
 +---------------------------------------------+--------------------------------------------------------------------------------+
 
@@ -267,11 +266,11 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                               ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |lab05                                                                                                                                  ; 1116 (192)          ; 1182 (8)                  ; 16384             ; 2          ; 1    ; 0            ; |lab05                                                                                                                                                                                                                                                                                                                                            ; lab05                             ; work         ;
-;    |ALU:a1|                                                                                                                             ; 153 (153)           ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |lab05|ALU:a1                                                                                                                                                                                                                                                                                                                                     ; ALU                               ; work         ;
+; |lab05                                                                                                                                  ; 1172 (100)          ; 1183 (9)                  ; 16384             ; 2          ; 1    ; 0            ; |lab05                                                                                                                                                                                                                                                                                                                                            ; lab05                             ; work         ;
+;    |ALU:a1|                                                                                                                             ; 270 (270)           ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |lab05|ALU:a1                                                                                                                                                                                                                                                                                                                                     ; ALU                               ; work         ;
 ;    |alu_control:aluctrl|                                                                                                                ; 3 (3)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|alu_control:aluctrl                                                                                                                                                                                                                                                                                                                        ; alu_control                       ; work         ;
-;    |control_unit:ctrl|                                                                                                                  ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|control_unit:ctrl                                                                                                                                                                                                                                                                                                                          ; control_unit                      ; work         ;
-;    |imm_gen:ig|                                                                                                                         ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|imm_gen:ig                                                                                                                                                                                                                                                                                                                                 ; imm_gen                           ; work         ;
+;    |control_unit:ctrl|                                                                                                                  ; 11 (11)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|control_unit:ctrl                                                                                                                                                                                                                                                                                                                          ; control_unit                      ; work         ;
+;    |imm_gen:ig|                                                                                                                         ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|imm_gen:ig                                                                                                                                                                                                                                                                                                                                 ; imm_gen                           ; work         ;
 ;    |lab5_ram:ram|                                                                                                                       ; 46 (0)              ; 64 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |lab05|lab5_ram:ram                                                                                                                                                                                                                                                                                                                               ; lab5_ram                          ; work         ;
 ;       |altsyncram:altsyncram_component|                                                                                                 ; 46 (0)              ; 64 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                               ; altsyncram                        ; work         ;
 ;          |altsyncram_nuo1:auto_generated|                                                                                               ; 46 (0)              ; 64 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated                                                                                                                                                                                                                                                                ; altsyncram_nuo1                   ; work         ;
@@ -352,9 +351,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1182  ;
+; Total registers                              ; 1183  ;
 ; Number of registers using Synchronous Clear  ; 7     ;
-; Number of registers using Synchronous Load   ; 41    ;
+; Number of registers using Synchronous Load   ; 49    ;
 ; Number of registers using Asynchronous Clear ; 56    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 1146  ;
@@ -378,11 +377,11 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[13]                                               ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[4]                                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[5]                                                ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[1] ;
-; 26:1               ; 4 bits    ; 68 LEs        ; 52 LEs               ; 16 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[2]      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[29]                                               ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[0]                                     ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[0] ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 52 LEs               ; 16 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]      ;
 ; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |lab05|imm_gen:ig|Selector8                                                                                                                                                     ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |lab05|imm_gen:ig|Selector8                                                                                                                                                     ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab05|ALU:a1|ShiftLeft0                                                                                                                                                        ;
@@ -391,13 +390,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |lab05|ALU:a1|ShiftLeft0                                                                                                                                                        ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |lab05|imm_gen:ig|Selector8                                                                                                                                                     ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |lab05|imm_gen:ig|Selector8                                                                                                                                                     ;
-; 8:1                ; 11 bits   ; 55 LEs        ; 55 LEs               ; 0 LEs                  ; No         ; |lab05|B[5]                                                                                                                                                                     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab05|control_unit:ctrl|ALUSrc                                                                                                                                                 ;
-; 34:1               ; 8 bits    ; 176 LEs       ; 40 LEs               ; 136 LEs                ; No         ; |lab05|ALU:a1|Selector30                                                                                                                                                        ;
-; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |lab05|B[17]                                                                                                                                                                    ;
-; 35:1               ; 8 bits    ; 184 LEs       ; 48 LEs               ; 136 LEs                ; No         ; |lab05|wd[11]                                                                                                                                                                   ;
-; 38:1               ; 12 bits   ; 300 LEs       ; 96 LEs               ; 204 LEs                ; No         ; |lab05|wd[24]                                                                                                                                                                   ;
-; 41:1               ; 4 bits    ; 108 LEs       ; 40 LEs               ; 68 LEs                 ; No         ; |lab05|wd[28]                                                                                                                                                                   ;
+; 7:1                ; 10 bits   ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; No         ; |lab05|imm_gen:ig|Selector13                                                                                                                                                    ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |lab05|control_unit:ctrl|aluop[0]                                                                                                                                               ;
+; 34:1               ; 16 bits   ; 352 LEs       ; 80 LEs               ; 272 LEs                ; No         ; |lab05|ALU:a1|Selector16                                                                                                                                                        ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |lab05|B[12]                                                                                                                                                                    ;
+; 37:1               ; 12 bits   ; 288 LEs       ; 84 LEs               ; 204 LEs                ; No         ; |lab05|ALU:a1|Selector15                                                                                                                                                        ;
+; 40:1               ; 4 bits    ; 104 LEs       ; 36 LEs               ; 68 LEs                 ; No         ; |lab05|ALU:a1|Selector0                                                                                                                                                         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -417,6 +415,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+----------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                      ;
 +---------------------------------+--------------------+------+----------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |lab05 ;
++----------------+---------+--------------------------------------------+
+; Parameter Name ; Value   ; Type                                       ;
++----------------+---------+--------------------------------------------+
+; R              ; 0110011 ; Unsigned Binary                            ;
+; I              ; 0010011 ; Unsigned Binary                            ;
+; S              ; 0100011 ; Unsigned Binary                            ;
+; L              ; 0000011 ; Unsigned Binary                            ;
+; B_type         ; 1100011 ; Unsigned Binary                            ;
+; JAL            ; 1101111 ; Unsigned Binary                            ;
+; JALR           ; 1100111 ; Unsigned Binary                            ;
++----------------+---------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------+
@@ -828,24 +842,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:a1"                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; zero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "control_unit:ctrl"                                                                    ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Branch ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------------------------------------------------------------------------------------------+
 ; In-System Memory Content Editor Settings                                                                                                ;
 +----------------+-------------+-------+-------+------------+-----------------------------------------------------------------------------+
@@ -860,34 +856,34 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1096                        ;
+; arriav_ff             ; 1097                        ;
 ;     CLR               ; 8                           ;
-;     ENA               ; 1041                        ;
+;     ENA               ; 1033                        ;
 ;     ENA CLR           ; 7                           ;
 ;     ENA CLR SLD       ; 8                           ;
-;     ENA SLD           ; 32                          ;
-; arriav_lcell_comb     ; 1017                        ;
-;     arith             ; 94                          ;
+;     ENA SLD           ; 40                          ;
+;     plain             ; 1                           ;
+; arriav_lcell_comb     ; 1073                        ;
+;     arith             ; 104                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 14                          ;
-;         2 data inputs ; 31                          ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 39                          ;
 ;         5 data inputs ; 48                          ;
 ;     extend            ; 513                         ;
 ;         7 data inputs ; 513                         ;
-;     normal            ; 410                         ;
-;         1 data inputs ; 1                           ;
-;         2 data inputs ; 11                          ;
-;         3 data inputs ; 45                          ;
-;         4 data inputs ; 51                          ;
-;         5 data inputs ; 92                          ;
-;         6 data inputs ; 210                         ;
+;     normal            ; 456                         ;
+;         2 data inputs ; 8                           ;
+;         3 data inputs ; 59                          ;
+;         4 data inputs ; 75                          ;
+;         5 data inputs ; 82                          ;
+;         6 data inputs ; 232                         ;
 ; arriav_mac            ; 2                           ;
 ; boundary_port         ; 28                          ;
 ; generic_pll           ; 2                           ;
 ; stratixv_ram_block    ; 64                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 9.10                        ;
-; Average LUT depth     ; 7.45                        ;
+; Max LUT depth         ; 12.00                       ;
+; Average LUT depth     ; 10.08                       ;
 +-----------------------+-----------------------------+
 
 
@@ -896,7 +892,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -906,59 +902,60 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Mar 20 14:23:27 2021
+    Info: Processing started: Sun Mar 21 11:53:44 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab05 -c lab05
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file alu_control.v
-    Info (12023): Found entity 1: alu_control File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/alu_control.v Line: 3
+    Info (12023): Found entity 1: alu_control File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file imm_gen.v
-    Info (12023): Found entity 1: imm_gen File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v Line: 5
+    Info (12023): Found entity 1: imm_gen File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v Line: 5
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v Line: 6
+    Info (12023): Found entity 1: ALU File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file reg_file.v
-    Info (12023): Found entity 1: reg_file File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v Line: 3
+    Info (12023): Found entity 1: reg_file File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file lab05.v
-    Info (12023): Found entity 1: lab05 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 1
+    Info (12023): Found entity 1: lab05 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file control_unit.v
-    Info (12023): Found entity 1: control_unit File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/control_unit.v Line: 6
+    Info (12023): Found entity 1: control_unit File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file testbenches/control_unit_tb.v
-    Info (12023): Found entity 1: control_unit_tb File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v Line: 6
+    Info (12023): Found entity 1: control_unit_tb File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file testbenches/lab5_tb.v
-    Info (12023): Found entity 1: lab5_tb File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v Line: 8
+    Info (12023): Found entity 1: lab5_tb File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file rom_lab5.v
-    Info (12023): Found entity 1: rom_lab5 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_lab5.v Line: 40
+    Info (12023): Found entity 1: rom_lab5 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file testbenches/lab05_for_test.v
-    Info (12023): Found entity 1: lab05_for_test File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 6
+    Info (12023): Found entity 1: lab05_for_test File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 6
 Info (12021): Found 1 design units, including 1 entities, in source file lab5_ram.v
-    Info (12023): Found entity 1: lab5_ram File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 40
+    Info (12023): Found entity 1: lab5_ram File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_prog2.v
-    Info (12023): Found entity 1: rom_prog2 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 40
+    Info (12023): Found entity 1: rom_prog2 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file load_rom.v
-    Info (12023): Found entity 1: load_rom File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom.v Line: 40
+    Info (12023): Found entity 1: load_rom File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_branch.v
-    Info (12023): Found entity 1: rom_branch File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_branch.v Line: 40
+    Info (12023): Found entity 1: rom_branch File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_branch.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file rom_jal.v
-    Info (12023): Found entity 1: rom_jal File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal.v Line: 40
+    Info (12023): Found entity 1: rom_jal File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_jal.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file prog2_line.v
-    Info (12023): Found entity 1: prog2_line File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/prog2_line.v Line: 40
+    Info (12023): Found entity 1: prog2_line File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/prog2_line.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file factorial.v
-    Info (12023): Found entity 1: factorial File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/factorial.v Line: 40
+    Info (12023): Found entity 1: factorial File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/factorial.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file pll_lab5.v
-    Info (12023): Found entity 1: pll_lab5 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.v Line: 8
+    Info (12023): Found entity 1: pll_lab5 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v Line: 8
 Info (12021): Found 1 design units, including 1 entities, in source file pll_lab5/pll_lab5_0002.v
-    Info (12023): Found entity 1: pll_lab5_0002 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 2
+    Info (12023): Found entity 1: pll_lab5_0002 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 2
 Info (12127): Elaborating entity "lab05" for the top level hierarchy
-Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:ctrl" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 58
-Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:rf" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 77
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:a1" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 89
-Warning (10764): Verilog HDL warning at ALU.v(36): converting signed shift amount to unsigned File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v Line: 36
-Info (12128): Elaborating entity "alu_control" for hierarchy "alu_control:aluctrl" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 99
-Info (12128): Elaborating entity "imm_gen" for hierarchy "imm_gen:ig" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 105
-Info (12128): Elaborating entity "lab5_ram" for hierarchy "lab5_ram:ram" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 122
-Info (12128): Elaborating entity "altsyncram" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 89
-Info (12130): Elaborated megafunction instantiation "lab5_ram:ram|altsyncram:altsyncram_component" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 89
-Info (12133): Instantiated megafunction "lab5_ram:ram|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 89
+Warning (10230): Verilog HDL assignment warning at lab05.v(49): truncated value with size 32 to match size of target (11) File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 49
+Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:ctrl" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 70
+Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:rf" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 89
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:a1" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 101
+Warning (10764): Verilog HDL warning at ALU.v(36): converting signed shift amount to unsigned File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v Line: 36
+Info (12128): Elaborating entity "alu_control" for hierarchy "alu_control:aluctrl" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 111
+Info (12128): Elaborating entity "imm_gen" for hierarchy "imm_gen:ig" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 117
+Info (12128): Elaborating entity "lab5_ram" for hierarchy "lab5_ram:ram" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 134
+Info (12128): Elaborating entity "altsyncram" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 89
+Info (12130): Elaborated megafunction instantiation "lab5_ram:ram|altsyncram:altsyncram_component" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 89
+Info (12133): Instantiated megafunction "lab5_ram:ram|altsyncram:altsyncram_component" with the following parameter: File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v Line: 89
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
     Info (12134): Parameter "intended_device_family" = "Cyclone V"
@@ -974,14 +971,14 @@ Info (12133): Instantiated megafunction "lab5_ram:ram|altsyncram:altsyncram_comp
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_nuo1.tdf
-    Info (12023): Found entity 1: altsyncram_nuo1 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_nuo1" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+    Info (12023): Found entity 1: altsyncram_nuo1 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_nuo1" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated" File: d:/engn1640/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_29f2.tdf
-    Info (12023): Found entity 1: altsyncram_29f2 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_29f2.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_29f2" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|altsyncram_29f2:altsyncram1" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 38
-Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 39
-Info (12130): Elaborated megafunction instantiation "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 39
-Info (12133): Instantiated megafunction "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 39
+    Info (12023): Found entity 1: altsyncram_29f2 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_29f2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_29f2" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|altsyncram_29f2:altsyncram1" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 38
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 39
+Info (12130): Elaborated megafunction instantiation "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 39
+Info (12133): Instantiated megafunction "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_nuo1.tdf Line: 39
     Info (12134): Parameter "CVALUE" = "00000000000000000000000000000000"
     Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
     Info (12134): Parameter "IS_READABLE" = "1"
@@ -990,13 +987,13 @@ Info (12133): Instantiated megafunction "lab5_ram:ram|altsyncram:altsyncram_comp
     Info (12134): Parameter "SHIFT_COUNT_BITS" = "6"
     Info (12134): Parameter "WIDTH_WORD" = "32"
     Info (12134): Parameter "WIDTHAD" = "8"
-Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
-Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
-Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
-Info (12128): Elaborating entity "rom_prog2" for hierarchy "rom_prog2:rom2" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 145
-Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_prog2:rom2|altsyncram:altsyncram_component" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 82
-Info (12130): Elaborated megafunction instantiation "rom_prog2:rom2|altsyncram:altsyncram_component" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 82
-Info (12133): Instantiated megafunction "rom_prog2:rom2|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 82
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: d:/engn1640/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: d:/engn1640/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: d:/engn1640/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
+Info (12128): Elaborating entity "rom_prog2" for hierarchy "rom_prog2:rom2" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 157
+Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_prog2:rom2|altsyncram:altsyncram_component" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 82
+Info (12130): Elaborated megafunction instantiation "rom_prog2:rom2|altsyncram:altsyncram_component" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 82
+Info (12133): Instantiated megafunction "rom_prog2:rom2|altsyncram:altsyncram_component" with the following parameter: File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v Line: 82
     Info (12134): Parameter "address_aclr_a" = "NONE"
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
@@ -1012,14 +1009,14 @@ Info (12133): Instantiated megafunction "rom_prog2:rom2|altsyncram:altsyncram_co
     Info (12134): Parameter "width_a" = "32"
     Info (12134): Parameter "width_byteena_a" = "1"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_fhg1.tdf
-    Info (12023): Found entity 1: altsyncram_fhg1 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_fhg1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_fhg1" for hierarchy "rom_prog2:rom2|altsyncram:altsyncram_component|altsyncram_fhg1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12128): Elaborating entity "pll_lab5" for hierarchy "pll_lab5:p1" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 158
-Info (12128): Elaborating entity "pll_lab5_0002" for hierarchy "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.v Line: 21
-Info (12128): Elaborating entity "altera_pll" for hierarchy "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 88
+    Info (12023): Found entity 1: altsyncram_fhg1 File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/altsyncram_fhg1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_fhg1" for hierarchy "rom_prog2:rom2|altsyncram:altsyncram_component|altsyncram_fhg1:auto_generated" File: d:/engn1640/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12128): Elaborating entity "pll_lab5" for hierarchy "pll_lab5:p1" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v Line: 216
+Info (12128): Elaborating entity "pll_lab5_0002" for hierarchy "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v Line: 21
+Info (12128): Elaborating entity "altera_pll" for hierarchy "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 88
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 88
-Info (12133): Instantiated megafunction "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 88
+Info (12130): Elaborated megafunction instantiation "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i" File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 88
+Info (12133): Instantiated megafunction "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i" with the following parameter: File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 88
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -1081,7 +1078,7 @@ Info (12133): Instantiated megafunction "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2021.03.20.14:24:06 Progress: Loading sldc3a581be/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2021.03.21.11:54:01 Progress: Loading sldc3a581be/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1092,20 +1089,20 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldc3a581be/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "reg_file:rf|file" is uninferred due to asynchronous read logic File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v Line: 9
+    Info (276007): RAM logic "reg_file:rf|file" is uninferred due to asynchronous read logic File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v Line: 9
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity does not exist in design
@@ -1135,21 +1132,21 @@ Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity do
     Warning (20014): Assignment for entity set_global_assignment -name PARTITION_ENABLE_STRICT_PRESERVATION OFF -entity DE0_CV_Default -section_id Top was ignored
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 13 node(s), including 0 DDIO, 2 PLL, 0 transceiver and 0 LCELL
-Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
+Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/engn1640/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[1].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
+Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[1].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: d:/engn1640/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Info (21057): Implemented 2280 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2336 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 2206 logic cells
+    Info (21061): Implemented 2262 logic cells
     Info (21064): Implemented 64 RAM segments
     Info (21065): Implemented 2 PLLs
     Info (21062): Implemented 2 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4917 megabytes
-    Info: Processing ended: Sat Mar 20 14:24:33 2021
-    Info: Elapsed time: 00:01:06
-    Info: Total CPU time (on all processors): 00:02:10
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 4882 megabytes
+    Info: Processing ended: Sun Mar 21 11:54:13 2021
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:57
 
 
