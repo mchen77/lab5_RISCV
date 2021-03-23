@@ -1,6 +1,6 @@
 module lab05(CLOCK_50);
    input CLOCK_50;
-   
+
    /*AUTOWIRE*/
    // Beginning of automatic wires (for undeclared instantiated-module outputs)
    wire			ALUSrc;			// From ctrl of control_unit.v
@@ -31,9 +31,9 @@ module lab05(CLOCK_50);
    wire [31:0] 		wd;        // write data for reg_file
    wire [31:0] 		A;         // ALU input A
    wire [31:0] 		B;         // ALU input B
- 	        
+
    wire 		outclk_0; // PLL output clock
-   wire 		outclk_1; // PLL output clock shifted 
+   wire 		outclk_1; // PLL output clock shifted
 
 	parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
@@ -44,19 +44,21 @@ module lab05(CLOCK_50);
 	  if (run)
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
 	end
-	
+
 	assign PC_plus = PC + 10'h4;
-	assign PC_offset = (out << 1) + PC;
-	assign PC_next = (to_branch & Branch) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign PC_offset = (form_code == JALR) ? Y[10:0]: (out << 1) + PC;
+	assign PC_next = ((to_branch & Branch) | (form_code == JAL)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
-	
+
 
    assign A = rd1;
    assign B = (ALUSrc) ? out : rd2;  // 1 = immediate, 0 = rd2
 
-   assign wd = (MemtoReg) ? q : Y;
-   
-   
+   wire [31:0] regData; //either memory or alu data
+   assign regData = (MemtoReg) ? q : Y;
+
+   assign wd = (form_code == JAL | form_code == JALR) ? PC_plus: regData; //write data
+
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
 		      .aluop		(aluop[1:0]),
@@ -115,7 +117,7 @@ module lab05(CLOCK_50);
 	       .out			(out[31:0]),
 	       // Inputs
 	       .instr			(instr[31:0]));
-   
+
    /*lab5_ram AUTO_TEMPLATE(
     .clock (outclk_0),
     .rden  (MemRead),
@@ -137,24 +139,24 @@ module lab05(CLOCK_50);
    //  .clock (outclk_1),
    //  .address (PC[9:2]),
    //  .q (instr[31:0]),);*/
-//   rom_lab5 rom1(/*AUTOINST*/
-//    		 // Outputs
-//    		 .q			(instr[31:0]),
-//    		 // Inputs
-//    		 .address		(PC[9:2]),
-//    		 .clock			(outclk_1));
+   rom_lab5 rom1(/*AUTOINST*/
+    		 // Outputs
+    		 .q			(instr[31:0]),
+    		 // Inputs
+    		 .address		(PC[9:2]),
+    		 .clock			(outclk_1));
 
    /*rom_prog2 AUTO_TEMPLATE(
      .clock (outclk_1),
      .address (PC[9:2]),
      .q (instr[31:0]),
    );*/
-   rom_prog2 rom2(/*AUTOINST*/
-		  // Outputs
-		  .q			(instr[31:0]),
-		  // Inputs
-    	.address		(PC[9:2]),
-		  .clock		(outclk_1));
+//   rom_prog2 rom2(/*AUTOINST*/
+//		  // Outputs
+//		  .q			(instr[31:0]),
+//		  // Inputs
+//    	.address		(PC[9:2]),
+//		  .clock		(outclk_1));
 
    /*load_rom AUTO_TEMPLATE(
      .clock (outclk_1),
@@ -205,7 +207,7 @@ module lab05(CLOCK_50);
 //		   .clock		(outclk_1));		 // Templated
 
    /*pll_lab5 AUTO_TEMPLATE(
-    .refclk (CLOCK_50), 
+    .refclk (CLOCK_50),
     .rst (1'b0),)*/
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs
@@ -214,5 +216,5 @@ module lab05(CLOCK_50);
 		// Inputs
 		.refclk			(CLOCK_50),		 // Templated
 		.rst			(1'b0));			 // Templated
-   
+
 endmodule
