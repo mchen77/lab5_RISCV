@@ -126,15 +126,15 @@ module lab05(CLOCK_50);
     .data  (rd2),
     .address (Y[7:0]),
     )*/
-   lab5_ram ram (/*AUTOINST*/
-		 // Outputs
-		 .q			(q[31:0]),
-		 // Inputs
-		 .address		(Y[7:0]),		 // Templated
-		 .clock			(outclk_0),		 // Templated
-		 .data			(rd2),			 // Templated
-		 .rden			(MemRead),		 // Templated
-		 .wren			(MemWrite));		 // Templated
+//   lab5_ram ram (/*AUTOINST*/
+//		 // Outputs
+//		 .q			(q[31:0]),
+//		 // Inputs
+//		 .address		(Y[7:0]),		 // Templated
+//		 .clock			(outclk_0),		 // Templated
+//		 .data			(rd2),			 // Templated
+//		 .rden			(MemRead),		 // Templated
+//		 .wren			(MemWrite));		 // Templated
 
    /*rom_lab5 AUTO_TEMPLATE(
    //  .clock (outclk_1),
@@ -200,22 +200,22 @@ module lab05(CLOCK_50);
     .address (PC[9:2]),
     .q (instr[31:0]),
     );*/
-   factorial rom6 (/*AUTOINST*/
-		   // Outputs
-		   .q			(instr[31:0]),		 // Templated
-		   // Inputs
-		   .address		(PC[9:2]),		 // Templated
-		   .clock		(outclk_1));		 // Templated
+//   factorial rom6 (/*AUTOINST*/
+//		   // Outputs
+//		   .q			(instr[31:0]),		 // Templated
+//		   // Inputs
+//		   .address		(PC[9:2]),		 // Templated
+//		   .clock		(outclk_1));		 // Templated
 
    /*pll_lab5 AUTO_TEMPLATE(
     .refclk (CLOCK_50),
     .rst (1'b0),)*/
-   pll_lab5 p1 (/*AUTOINST*/
-		// Outputs
-		.outclk_0		(outclk_0),
-		.outclk_1		(outclk_1),
-		// Inputs
-		.refclk			(CLOCK_50),		 // Templated
-		.rst			(1'b0));			 // Templated
+//   pll_lab5 p1 (/*AUTOINST*/
+//		// Outputs
+//		.outclk_0		(outclk_0),
+//		.outclk_1		(outclk_1),
+//		// Inputs
+//		.refclk			(CLOCK_50),		 // Templated
+//		.rst			(1'b0));			 // Templated
 
 endmodule

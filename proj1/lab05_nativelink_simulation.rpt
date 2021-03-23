@@ -1,23 +1,20 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=lab05_iputf_input --spd=D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=lab05_iputf_input --spd=C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.spd 
+Internal error: Failed to run ip-make-simscript: 2021.03.23.17:30:33 Error: Unrecognized switch <b>1</b>
+Internal error: Failed to run ip-make-simscript: 2021.03.23.17:30:33 Error: Unrecognized switch <b>1</b>
+Error: NativeLink simulation flow was NOT successful
 
-========= EDA Simulation Settings =====================
 
-Sim Mode              :  RTL
-Family                :  cyclonev
-Quartus root          :  d:/engn1640/quartus/bin64/
-Quartus sim root      :  d:/engn1640/quartus/eda/sim_lib
-Simulation Tool       :  modelsim-altera
-Simulation Language   :  verilog
-Simulation Mode       :  GUI
-Sim Output File       :  
-Sim SDF file          :  
-Sim dir               :  simulation\modelsim
 
-=======================================================
-
-Info: Starting NativeLink simulation with ModelSim-Altera software
-Sourced NativeLink script d:/engn1640/quartus/common/tcl/internal/nativelink/modelsim.tcl
-Warning: File lab05_run_msim_rtl_verilog.do already exists - backing up current file as lab05_run_msim_rtl_verilog.do.bak
-Info: Spawning ModelSim-Altera Simulation software 
-Info: NativeLink simulation flow was successful
+================The following additional information is provided to help identify the cause of error while running nativelink scripts=================
+Nativelink TCL script failed with errorCode:  1
+Nativelink TCL script failed with errorInfo:  1
+    (procedure "iputf_call_script_gen" line 1)
+    invoked from within
+"iputf_call_script_gen $spd_file_list"
+    (procedure "iputf_setup_info" line 45)
+    invoked from within
+"iputf_setup_info"
+    (procedure "run_eda_simulation_tool" line 178)
+    invoked from within
+"run_eda_simulation_tool eda_opts_hash"
