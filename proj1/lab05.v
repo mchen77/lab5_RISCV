@@ -45,7 +45,7 @@ module lab05(CLOCK_50);
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
 	end
 
-	assign PC_plus = PC + 10'h4;
+	assign PC_plus = PC + 11'h4;
 	assign PC_offset = (form_code == JALR) ? Y[10:0]: (out << 1) + PC;
 	assign PC_next = ((to_branch & Branch) | (form_code == JAL)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
@@ -57,7 +57,7 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (form_code == JAL | form_code == JALR) ? PC_plus: regData; //write data
+   assign wd = (form_code == JAL | form_code == JALR) ? {{22{PC_plus[10]}}, PC_plus}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
@@ -139,12 +139,12 @@ module lab05(CLOCK_50);
    //  .clock (outclk_1),
    //  .address (PC[9:2]),
    //  .q (instr[31:0]),);*/
-   rom_lab5 rom1(/*AUTOINST*/
-    		 // Outputs
-    		 .q			(instr[31:0]),
-    		 // Inputs
-    		 .address		(PC[9:2]),
-    		 .clock			(outclk_1));
+//   rom_lab5 rom1(/*AUTOINST*/
+//    		 // Outputs
+//    		 .q			(instr[31:0]),
+//    		 // Inputs
+//    		 .address		(PC[9:2]),
+//    		 .clock			(outclk_1));
 
    /*rom_prog2 AUTO_TEMPLATE(
      .clock (outclk_1),
@@ -199,12 +199,12 @@ module lab05(CLOCK_50);
     .address (PC[9:2]),
     .q (instr[31:0]),
     );*/
-//   factorial rom6 (/*AUTOINST*/
-//		   // Outputs
-//		   .q			(instr[31:0]),		 // Templated
-//		   // Inputs
-//		   .address		(PC[9:2]),		 // Templated
-//		   .clock		(outclk_1));		 // Templated
+   factorial rom6 (/*AUTOINST*/
+		   // Outputs
+		   .q			(instr[31:0]),		 // Templated
+		   // Inputs
+		   .address		(PC[9:2]),		 // Templated
+		   .clock		(outclk_1));		 // Templated
 
    /*pll_lab5 AUTO_TEMPLATE(
     .refclk (CLOCK_50),
