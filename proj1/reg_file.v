@@ -9,7 +9,10 @@ module reg_file(clk, wren, wd, rr1, rr2, wr, rd1, rd2);
   reg [31:0] file [31:0]; //32 registers 32bits wide
   integer i;
    initial begin
-   for (i = 0; i < 32; i = i+1) begin
+	file[0] = 32'h0;
+	file[1] = 32'h0;
+	file[2] = 32'hff;
+   for (i = 3; i < 32; i = i+1) begin
      file[i] = 32'b0;
      end
    end
