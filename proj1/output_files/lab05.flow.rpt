@@ -1,5 +1,5 @@
 Flow report for lab05
-Tue Mar 23 23:58:40 2021
+Wed Mar 24 01:05:14 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,24 +38,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+---------------------------------------------------------------------------+
-; Flow Summary                                                              ;
-+-----------------------------+---------------------------------------------+
-; Flow Status                 ; Flow Failed - Tue Mar 23 23:58:40 2021      ;
-; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name               ; lab05                                       ;
-; Top-level Entity Name       ; lab05                                       ;
-; Family                      ; Cyclone V                                   ;
-; Device                      ; 5CEBA4F23C7                                 ;
-; Timing Models               ; Final                                       ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
-; Total registers             ; N/A until Partition Merge                   ;
-; Total pins                  ; N/A until Partition Merge                   ;
-; Total virtual pins          ; N/A until Partition Merge                   ;
-; Total block memory bits     ; N/A until Partition Merge                   ;
-; Total PLLs                  ; N/A until Partition Merge                   ;
-; Total DLLs                  ; N/A until Partition Merge                   ;
-+-----------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Wed Mar 24 01:05:14 2021       ;
+; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                   ; lab05                                       ;
+; Top-level Entity Name           ; lab05                                       ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 1,067 / 18,480 ( 6 % )                      ;
+; Total registers                 ; 1209                                        ;
+; Total pins                      ; 1 / 224 ( < 1 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 16,384 / 3,153,920 ( < 1 % )                ;
+; Total DSP Blocks                ; 2 / 66 ( 3 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 1 / 4 ( 25 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -63,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/23/2021 23:58:11 ;
+; Start date & time ; 03/24/2021 01:01:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab05               ;
 +-------------------+---------------------+
@@ -74,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 218381590356486.161655829024900        ; --            ; --             ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 101564829143456.161656207702604        ; --            ; --             ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
@@ -114,8 +119,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:30     ; 1.0                     ; 4853 MB             ; 00:01:05                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:01:05                           ;
+; Analysis & Synthesis ; 00:01:05     ; 1.0                     ; 4900 MB             ; 00:02:13                           ;
+; Fitter               ; 00:01:49     ; 1.2                     ; 6307 MB             ; 00:04:09                           ;
+; Assembler            ; 00:00:13     ; 1.0                     ; 4835 MB             ; 00:00:13                           ;
+; Timing Analyzer      ; 00:00:28     ; 1.8                     ; 5159 MB             ; 00:00:39                           ;
+; EDA Netlist Writer   ; 00:00:08     ; 1.0                     ; 4790 MB             ; 00:00:08                           ;
+; Total                ; 00:03:43     ; --                      ; --                  ; 00:07:22                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -124,7 +133,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; MChenSurface     ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-LGI5C03  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -132,6 +145,10 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off lab05 -c lab05
+quartus_fit --read_settings_files=off --write_settings_files=off lab05 -c lab05
+quartus_asm --read_settings_files=off --write_settings_files=off lab05 -c lab05
+quartus_sta lab05 -c lab05
+quartus_eda --read_settings_files=off --write_settings_files=off lab05 -c lab05
 
 
 

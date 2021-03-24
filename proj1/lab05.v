@@ -49,9 +49,9 @@ module lab05(CLOCK_50);
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (form_code == JALR) ? Y[10:0]: (form_code == JAL) ?
-  (out << 1) + PC: (out << 1) + PC;
-	assign PC_next = ((to_branch & Branch) | (form_code == JAL) | (form_code == JALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (instr[6:0] == JAL) ?
+  (out >> 1) + PC: (out << 1) + PC;
+	assign PC_next = ((to_branch & Branch) | (instr[6:0] == JAL) | (instr[6:0] == JALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
 
@@ -61,7 +61,7 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (form_code == JAL | form_code == JALR) ? {{22{PC_plus[10]}}, PC_plus}: regData; //write data
+   assign wd = (instr[6:0] == JAL | instr[6:0] == JALR) ? {{22{PC_plus[10]}}, PC_plus}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
@@ -191,24 +191,24 @@ module lab05(CLOCK_50);
     .address (PC[9:2]),
     .q (instr[31:0]),
     );*/
-//   rom_jal rom5 (/*AUTOINST*/
-//		 // Outputs
-//		 .q			(instr[31:0]),		 // Templated
-//		 // Inputs
-//		 .address		(PC[9:2]),		 // Templated
-//		 .clock			(outclk_1));		 // Templated
+   rom_jal rom5 (/*AUTOINST*/
+		 // Outputs
+		 .q			(instr[31:0]),		 // Templated
+		 // Inputs
+		 .address		(PC[9:2]),		 // Templated
+		 .clock			(outclk_1));		 // Templated
 
    /*factorial AUTO_TEMPLATE(
     .clock (outclk_1),
     .address (PC[9:2]),
     .q (instr[31:0]),
     );*/
-   factorial rom6 (/*AUTOINST*/
-		   // Outputs
-		   .q			(instr[31:0]),		 // Templated
-		   // Inputs
-		   .address		(PC[9:2]),		 // Templated
-		   .clock		(outclk_1));		 // Templated
+//   factorial rom6 (/*AUTOINST*/
+//		   // Outputs
+//		   .q			(instr[31:0]),		 // Templated
+//		   // Inputs
+//		   .address		(PC[9:2]),		 // Templated
+//		   .clock		(outclk_1));		 // Templated
 
    /*pll_lab5 AUTO_TEMPLATE(
     .refclk (CLOCK_50),
