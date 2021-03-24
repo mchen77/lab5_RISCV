@@ -1,7 +1,7 @@
 Info: Start Nativelink Simulation process
 executing command line: ip-make-simscript --nativelink-mode --output-directory=lab05_iputf_input --spd=C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.spd 
-Internal error: Failed to run ip-make-simscript: 2021.03.23.17:30:33 Error: Unrecognized switch <b>1</b>
-Internal error: Failed to run ip-make-simscript: 2021.03.23.17:30:33 Error: Unrecognized switch <b>1</b>
+Internal error: Failed to run ip-make-simscript: 2021.03.23.22:50:19 Error: Unrecognized switch <b>1</b>
+Internal error: Failed to run ip-make-simscript: 2021.03.23.22:50:19 Error: Unrecognized switch <b>1</b>
 Error: NativeLink simulation flow was NOT successful
 
 

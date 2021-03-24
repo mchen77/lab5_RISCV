@@ -15,7 +15,7 @@ module lab05_for_test(CLOCK_50, PC, rd2, instr);
    wire [31:0]		out;			// From ig of imm_gen.v
    wire [31:0]		q;			// From ram of lab5_ram.v
    wire [31:0]		rd1;			// From rf of reg_file.v
-   wire [31:0]		rd2;			// From rf of reg_file.v
+   output wire [31:0]		rd2;			// From rf of reg_file.v
    wire			zero;			// From a1 of ALU.v
    // End of automatics
 
@@ -33,7 +33,7 @@ module lab05_for_test(CLOCK_50, PC, rd2, instr);
    wire [31:0] 		B;         // ALU input B
 
    wire 		ClOCK_50; // PLL output clock
-   wire 		ClOCK_50; // PLL output clock shifted
+   //wire 		ClOCK_50; // PLL output clock shifted
 
 	parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
