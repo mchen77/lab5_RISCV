@@ -12,10 +12,10 @@ module lab05(CLOCK_50);
    wire signed [31:0]	Y;			// From a1 of ALU.v
    wire [1:0]		aluop;			// From ctrl of control_unit.v
    wire [4:0]		aluopcode;		// From aluctrl of alu_control.v
-   wire [31:0]		out;			// From ig of imm_gen.v
+   wire signed [31:0]		out;			// From ig of imm_gen.v
    wire [31:0]		q;			// From ram of lab5_ram.v
-   wire [31:0]		rd1;			// From rf of reg_file.v
-   wire [31:0]		rd2;			// From rf of reg_file.v
+   wire signed [31:0]		rd1;			// From rf of reg_file.v
+   wire signed [31:0]		rd2;			// From rf of reg_file.v
    wire			zero;			// From a1 of ALU.v
    // End of automatics
 
@@ -43,15 +43,22 @@ module lab05(CLOCK_50);
 	wire run;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
 
+	reg [10:0] PC_before;
+	initial PC_before = 11'h0;
 	always @(posedge outclk_0) begin
 	  if (run)
+	  PC_before <= PC;
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
 	end
 
+	wire isJALR  = (form_code == JALR) ? 1'b1: 1'b0;
+	wire isJAL  = (form_code == JAL) ? 1'b1: 1'b0;
+	wire [10:0] toJump = out[10:0];
+	
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (instr[6:0] == JAL) ?
-  (out >> 1) + PC: (out << 1) + PC;
-	assign PC_next = ((to_branch & Branch) | (instr[6:0] == JAL) | (instr[6:0] == JALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign PC_offset = (isJALR) ? Y[10:0]: (isJAL) ?
+  (toJump >> 1) + PC: (toJump << 1) + PC;
+	assign PC_next = ((to_branch & Branch) | (isJAL) | (isJALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
 
@@ -61,7 +68,7 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (instr[6:0] == JAL | instr[6:0] == JALR) ? {{22{PC_plus[10]}}, PC_plus}: regData; //write data
+   assign wd = (isJAL | isJALR) ? {21'b0, PC_before + 11'h1}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
