@@ -69,6 +69,7 @@ module lab05(CLOCK_50);
    assign regData = (MemtoReg) ? q : Y;
 
    assign wd = (isJAL | isJALR) ? {21'b0, PC_before + 11'h1}: regData; //write data
+	//PC was latching to next before we stored it for jal. not sure why we need to add one to get it to work.
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
