@@ -1,1 +1,1 @@
-Info (10281): Verilog HDL Declaration information at lab05_for_test.v(2): object "CLOCK_50" differs only in case from object "ClOCK_50" in the same scope File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 2
+Info (10281): Verilog HDL Declaration information at lab05_for_test.v(2): object "CLOCK_50" differs only in case from object "ClOCK_50" in the same scope File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 2

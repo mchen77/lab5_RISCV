@@ -35,8 +35,11 @@ module lab05(CLOCK_50);
    wire 		outclk_0; // PLL output clock
    wire 		outclk_1; // PLL output clock shifted
 
+   initial PC = 11'b0;
+
 	parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
+
 	wire run;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
 
@@ -47,8 +50,8 @@ module lab05(CLOCK_50);
 
 	assign PC_plus = PC + 11'h4;
 	assign PC_offset = (form_code == JALR) ? Y[10:0]: (form_code == JAL) ?
-  (out >> 2) + PC: (out << 1) + PC;
-	assign PC_next = ((to_branch & Branch) | (form_code == JAL)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+  (out << 1) + PC: (out << 1) + PC;
+	assign PC_next = ((to_branch & Branch) | (form_code == JAL) | (form_code == JALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
 

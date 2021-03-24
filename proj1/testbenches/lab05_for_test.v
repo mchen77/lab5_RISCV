@@ -1,4 +1,4 @@
-module lab05_for_test(CLOCK_50, PC, rd2, instr);
+module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run);
    input CLOCK_50;
 
    /*AUTOWIRE*/
@@ -9,46 +9,48 @@ module lab05_for_test(CLOCK_50, PC, rd2, instr);
    wire			MemWrite;		// From ctrl of control_unit.v
    wire			MemtoReg;		// From ctrl of control_unit.v
    wire			RegWrite;		// From ctrl of control_unit.v
-   wire signed [31:0]	Y;			// From a1 of ALU.v
+   output signed [31:0]	Y;			// From a1 of ALU.v
    wire [1:0]		aluop;			// From ctrl of control_unit.v
    wire [4:0]		aluopcode;		// From aluctrl of alu_control.v
    wire [31:0]		out;			// From ig of imm_gen.v
    wire [31:0]		q;			// From ram of lab5_ram.v
    wire [31:0]		rd1;			// From rf of reg_file.v
-   output wire [31:0]		rd2;			// From rf of reg_file.v
+   wire [31:0]		rd2;			// From rf of reg_file.v
    wire			zero;			// From a1 of ALU.v
    // End of automatics
 
-   output wire [31:0] 		instr;     // isntruction from ROM
+   input wire [31:0] 		instr;     // isntruction from ROM
 	wire [6:0]			form_code = instr[6:0];
    wire [7:0] 			address;   // address to RAM
    wire 					halt;      // HALT flag
    output reg  [10:0] 		PC;        // PC current
-   wire [10:0]			PC_next;   // PC next to be latched
-	wire [10:0]			PC_plus;   // PC + 4
+   output [10:0]			PC_next;   // PC next to be latched
+	output [10:0]			PC_plus;   // PC + 4
    wire [10:0]			PC_offset; // PC offset for branching
 	wire 					to_branch; // branch condition
    wire [31:0] 		wd;        // write data for reg_file
    wire [31:0] 		A;         // ALU input A
    wire [31:0] 		B;         // ALU input B
 
-   wire 		ClOCK_50; // PLL output clock
+   wire 		CLOCK_50; // PLL output clock
    //wire 		ClOCK_50; // PLL output clock shifted
 
 	parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
-	wire run;
+	output  run;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
 
-	always @(posedge ClOCK_50) begin
+   initial PC = 11'b0;
+
+	always @(posedge CLOCK_50) begin
 	  if (run)
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
 	end
 
 	assign PC_plus = PC + 11'h4;
 	assign PC_offset = (form_code == JALR) ? Y[10:0]: (form_code == JAL) ?
-  (out >> 2) + PC: (out << 1) + PC;
-	assign PC_next = ((to_branch & Branch) | (form_code == JAL)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+  (out << 1) + PC: (out << 1) + PC;
+	assign PC_next = ((to_branch & Branch) | (form_code == JAL) | (form_code == JALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
 
@@ -84,7 +86,7 @@ module lab05_for_test(CLOCK_50, PC, rd2, instr);
 		.rd1			(rd1[31:0]),
 		.rd2			(rd2[31:0]),
 		// Inputs
-		.clk			(ClOCK_50),		 // Templated
+		.clk			(CLOCK_50),		 // Templated
 		.wren			(RegWrite),		 // Templated
 		.rr1			(instr[19:15]),		 // Templated
 		.rr2			(instr[24:20]),		 // Templated

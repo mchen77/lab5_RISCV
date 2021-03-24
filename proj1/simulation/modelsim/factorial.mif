@@ -1,10 +1,10 @@
 -- Copyright (C) 2020  Intel Corporation. All rights reserved.
--- Your use of Intel Corporation's design tools, logic functions 
--- and other software and tools, and any partner logic 
--- functions, and any output files from any of the foregoing 
--- (including device programming or simulation files), and any 
--- associated documentation or information are expressly subject 
--- to the terms and conditions of the Intel Program License 
+-- Your use of Intel Corporation's design tools, logic functions
+-- and other software and tools, and any partner logic
+-- functions, and any output files from any of the foregoing
+-- (including device programming or simulation files), and any
+-- associated documentation or information are expressly subject
+-- to the terms and conditions of the Intel Program License
 -- Subscription Agreement, the Intel Quartus Prime License Agreement,
 -- the Intel FPGA IP License Agreement, or other applicable license
 -- agreement, including, without limitation, that your use is for
@@ -18,28 +18,53 @@
 WIDTH=32;
 DEPTH=256;
 
-ADDRESS_RADIX=BIN;
+ADDRESS_RADIX=UNS;
 DATA_RADIX=HEX;
 
 CONTENT BEGIN
-	000000000  :   00C00513;
-	000000001  :   008000EF;
-	000000010  :   00A02023;
-	000000011  :   0000007F;
-	000000100  :   FF810113;
-	000000101  :   00112223;
-	000000110  :   00A12023;
-	000000111  :   FFF50513;
-	000001000  :   00051863;
-	000001001  :   00100513;
-	000001010  :   00810113;
-	000001011  :   00008067;
-	000001100  :   FE1FF0EF;
-	000001101  :   00050293;
-	000001110  :   00012503;
-	000001111  :   00412083;
-	000010000  :   00810113;
-	000010001  :   02550533;
-	000010010  :   00008067;
-	[000010011..011111111]  :   00000000;
+	0  :   00c00513;
+	1: 008000ef;
+	2: 00a02023;
+	3: 0000007F;
+	4: ff810113;
+	5: 00112223;
+	6: 00a12023;
+	7: fff50513;
+	8: 00051a63;
+	9: 00700513;
+	10: 00a02223;
+	11: 00810113;
+	12: 00008067;
+	13: fddff0ef;
+	14: 00050293;
+	15: 00012503;
+	16: 00412083;
+	17: 00810113;
+	18: 02550533;
+	19: 00008067;
+	[20..FF]  :   00000000;
 END;
+
+00c00513
+008000ef
+00a02023
+ff810113
+00112223
+00a12023
+fff50513
+00051a63
+00700513
+00a02223
+00810113
+00008067
+fddff0ef
+00050293
+00012503
+00412083
+00810113
+02550533
+00008067
+
+
+
+z
