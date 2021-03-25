@@ -43,14 +43,19 @@ module lab05(CLOCK_50);
 	wire run;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
 
+	reg [10:0] PC_before;
+	initial PC_before = 11'h0;
+	
 	always @(posedge outclk_0) begin
-	  if (run)
+	  if (run) begin
+	  PC_before <= PC;
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
+	  end
 	end
 
 	assign PC_plus = PC + 11'h4;
 	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (instr[6:0] == JAL) ?
-  (out >> 1) + PC : (out << 1) + PC;
+  out + PC : out + PC;
 	assign PC_next = ((to_branch & Branch) | (instr[6:0] == JAL) | (instr[6:0] == JALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
@@ -61,7 +66,7 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (instr[6:0] == JAL | instr[6:0] == JALR) ? {{22{PC_plus[10]}}, PC_plus}: regData; //write data
+   assign wd = (instr[6:0] == JAL | instr[6:0] == JALR) ? {21'b0, PC_before}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
