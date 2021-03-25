@@ -40,8 +40,9 @@ module lab05(CLOCK_50);
 	parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
 
-	wire run;
+	wire run, jump;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
+	assign jump = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type)) ? 1'b1: 1'b0;
 
 	reg [10:0] PC_before;
 	initial PC_before = 11'h0;
@@ -56,7 +57,7 @@ module lab05(CLOCK_50);
 	assign PC_plus = PC + 11'h4;
 	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (instr[6:0] == JAL) ?
   (out) + PC : out + PC;
-	assign PC_next = ((to_branch & Branch) | (instr[6:0] == JAL) | (instr[6:0] == JALR)) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
 
@@ -66,7 +67,7 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (instr[6:0] == JAL | instr[6:0] == JALR) ? {21'b0, PC_before + 11'h4}: regData; //write data
+   assign wd = (jump) ? {21'b0, PC_plus}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs

@@ -1,163 +1,454 @@
 # Reading pref.tcl
-# do lab05_run_msim_rtl_verilog.do
-# if ![file isdirectory lab05_iputf_libs] {
-# 	file mkdir lab05_iputf_libs
+# do lab05_run_msim_gate_verilog.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
 # }
-# 
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# vlib rtl_work
-# vmap work rtl_work
+# vlib gate_work
+# vmap work gate_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
-# vmap work rtl_work 
+# vmap work gate_work 
 # Copying D:/engn1640/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-###### Libraries for IPUTF cores 
-###### End libraries for IPUTF cores 
-###### MIF file copy and HDL compilation commands for IPUTF cores 
-# 
-# 
-# vlog "D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5_sim/pll_lab5.vo"
+# vlog -vlog01compat -work work +incdir+. {lab05.vo}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:59:58 on Mar 23,2021
-# vlog -reportprogress 300 D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5_sim/pll_lab5.vo 
-# -- Compiling module pll_lab5
-# 
-# Top level modules:
-# 	pll_lab5
-# End time: 22:59:58 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:59:59 on Mar 23,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
-# -- Compiling module alu_control
-# 
-# Top level modules:
-# 	alu_control
-# End time: 22:59:59 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:59:59 on Mar 23,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
-# -- Compiling module imm_gen
-# 
-# Top level modules:
-# 	imm_gen
-# End time: 23:00:00 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:00:00 on Mar 23,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
-# -- Compiling module ALU
-# 
-# Top level modules:
-# 	ALU
-# End time: 23:00:00 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:00:00 on Mar 23,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
-# -- Compiling module reg_file
-# 
-# Top level modules:
-# 	reg_file
-# End time: 23:00:01 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:00:03 on Mar 23,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# Start time: 00:51:34 on Mar 25,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." lab05.vo 
 # -- Compiling module lab05
 # 
 # Top level modules:
 # 	lab05
-# End time: 23:00:04 on Mar 23,2021, Elapsed time: 0:00:01
+# End time: 00:51:36 on Mar 25,2021, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1 {D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v}
+# 
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:00:04 on Mar 23,2021
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/engn1640/projects/sultan_and_michael_lab5/proj1" D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
+# Start time: 00:52:01 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 00:52:01 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:01 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/alu_control.v 
+# -- Compiling module alu_control
+# 
+# Top level modules:
+# 	alu_control
+# End time: 00:52:02 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:02 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/control_unit.v 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 23:00:04 on Mar 23,2021, Elapsed time: 0:00:00
+# End time: 00:52:02 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/factorial.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:02 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/factorial.v 
+# -- Compiling module factorial
 # 
+# Top level modules:
+# 	factorial
+# End time: 00:52:02 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/factorial_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:03 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/factorial_bb.v 
+# -- Compiling module factorial
+# 
+# Top level modules:
+# 	factorial
+# End time: 00:52:03 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:03 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/imm_gen.v 
+# -- Compiling module imm_gen
+# 
+# Top level modules:
+# 	imm_gen
+# End time: 00:52:03 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:03 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab05.v 
+# -- Compiling module lab05
+# 
+# Top level modules:
+# 	lab05
+# End time: 00:52:04 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:04 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram.v 
+# -- Compiling module lab5_ram
+# 
+# Top level modules:
+# 	lab5_ram
+# End time: 00:52:04 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:04 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/lab5_ram_bb.v 
+# -- Compiling module lab5_ram
+# 
+# Top level modules:
+# 	lab5_ram
+# End time: 00:52:05 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:05 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom.v 
+# -- Compiling module load_rom
+# 
+# Top level modules:
+# 	load_rom
+# End time: 00:52:05 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:05 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom_bb.v 
+# -- Compiling module load_rom
+# 
+# Top level modules:
+# 	load_rom
+# End time: 00:52:06 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom_inst.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:06 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom_inst.v 
+# ** Error: (vlog-13069) D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom_inst.v(1): near "load_rom_inst": syntax error, unexpected IDENTIFIER.
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/load_rom_inst.v(1): (vlog-13205) Syntax error found in the scope following 'load_rom'. Is there a missing '::'?
+# End time: 00:52:06 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:06 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/pll_lab5.v 
+# -- Compiling module pll_lab5
+# 
+# Top level modules:
+# 	pll_lab5
+# End time: 00:52:07 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/prog2_line.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:07 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/prog2_line.v 
+# -- Compiling module prog2_line
+# 
+# Top level modules:
+# 	prog2_line
+# End time: 00:52:07 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/prog2_line_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:07 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/prog2_line_bb.v 
+# -- Compiling module prog2_line
+# 
+# Top level modules:
+# 	prog2_line
+# End time: 00:52:07 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:08 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 00:52:08 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_branch.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:08 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_branch.v 
+# -- Compiling module rom_branch
+# 
+# Top level modules:
+# 	rom_branch
+# End time: 00:52:08 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_branch_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:09 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_branch_bb.v 
+# -- Compiling module rom_branch
+# 
+# Top level modules:
+# 	rom_branch
+# End time: 00:52:09 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_jal.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:09 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_jal.v 
+# -- Compiling module rom_jal
+# 
+# Top level modules:
+# 	rom_jal
+# End time: 00:52:09 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_jal_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:09 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_jal_bb.v 
+# -- Compiling module rom_jal
+# 
+# Top level modules:
+# 	rom_jal
+# End time: 00:52:10 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:10 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5.v 
+# -- Compiling module rom_lab5
+# 
+# Top level modules:
+# 	rom_lab5
+# End time: 00:52:10 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:10 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_lab5_bb.v 
+# -- Compiling module rom_lab5
+# 
+# Top level modules:
+# 	rom_lab5
+# End time: 00:52:11 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:11 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2.v 
+# -- Compiling module rom_prog2
+# 
+# Top level modules:
+# 	rom_prog2
+# End time: 00:52:11 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2_bb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:11 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/rom_prog2_bb.v 
+# -- Compiling module rom_prog2
+# 
+# Top level modules:
+# 	rom_prog2
+# End time: 00:52:12 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/alu_control_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:32 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/alu_control_tb.v 
+# -- Compiling module alu_control_tb
+# 
+# Top level modules:
+# 	alu_control_tb
+# End time: 00:52:32 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:32 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 00:52:33 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:33 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 00:52:33 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:33 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 00:52:33 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:00:12 on Mar 23,2021
+# Start time: 00:52:34 on Mar 25,2021
 # vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
+# -- Compiling module jal_tb
+# 
+# Top level modules:
+# 	jal_tb
+# End time: 00:52:34 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:34 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(47): (vlog-2730) Undefined variable: 'outclk_0'.
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(1): (vlog-13294) Identifier must be declared with a port mode: run.
+# End time: 00:52:34 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:34 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v 
+# -- Compiling module lab5_prog2_test
+# 
+# Top level modules:
+# 	lab5_prog2_test
+# End time: 00:52:35 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:35 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
 # -- Compiling module lab5_tb
 # 
 # Top level modules:
 # 	lab5_tb
-# End time: 23:00:12 on Mar 23,2021, Elapsed time: 0:00:00
+# End time: 00:52:35 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# Load canceled
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:52:35 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 00:52:36 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/alu_control_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:53:46 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/alu_control_tb.v 
+# -- Compiling module alu_control_tb
+# 
+# Top level modules:
+# 	alu_control_tb
+# End time: 00:53:46 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:53:46 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 00:53:46 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:53:46 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 00:53:47 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:53:47 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 00:53:47 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:02:04 on Mar 23,2021
+# Start time: 00:53:47 on Mar 25,2021
 # vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
 # -- Compiling module jal_tb
 # 
 # Top level modules:
 # 	jal_tb
-# End time: 23:02:05 on Mar 23,2021, Elapsed time: 0:00:01
+# End time: 00:53:48 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim work.jal_tb
-# vsim work.jal_tb 
-# Start time: 23:02:09 on Mar 23,2021
-# Loading work.jal_tb
-# ** Error: (vsim-3033) Instantiation of 'lab05_for_test' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 14
-#         Searched libraries:
-#             D:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work
-# Error loading design
-vsim work.jal_tb
-# End time: 23:02:11 on Mar 23,2021, Elapsed time: 0:00:02
-# Errors: 1, Warnings: 0
-# vsim work.jal_tb 
-# Start time: 23:02:11 on Mar 23,2021
-# Loading work.jal_tb
-# ** Error: (vsim-3033) Instantiation of 'lab05_for_test' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 14
-#         Searched libraries:
-#             D:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work
-# Error loading design
-vsim work.jal_tb
-# End time: 23:02:12 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-# vsim work.jal_tb 
-# Start time: 23:02:12 on Mar 23,2021
-# Loading work.jal_tb
-# ** Error: (vsim-3033) Instantiation of 'lab05_for_test' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 14
-#         Searched libraries:
-#             D:/engn1640/projects/sultan_and_michael_lab5/proj1/simulation/modelsim/rtl_work
-# Error loading design
-# End time: 23:02:13 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
 vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:03:05 on Mar 23,2021
+# Start time: 00:53:48 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(1): (vlog-13294) Identifier must be declared with a port mode: run.
+# End time: 00:53:48 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:53:48 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v 
+# -- Compiling module lab5_prog2_test
+# 
+# Top level modules:
+# 	lab5_prog2_test
+# End time: 00:53:49 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:53:49 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 00:53:49 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:53:49 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 00:53:50 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:54:38 on Mar 25,2021
 # vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
 # -- Compiling module lab05_for_test
 # 
 # Top level modules:
 # 	lab05_for_test
-# End time: 23:03:06 on Mar 23,2021, Elapsed time: 0:00:01
+# End time: 00:54:39 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vsim work.jal_tb
 # vsim work.jal_tb 
-# Start time: 23:03:13 on Mar 23,2021
+# Start time: 00:54:57 on Mar 25,2021
 # Loading work.jal_tb
 # Loading work.lab05_for_test
 # Loading work.control_unit
@@ -165,186 +456,6 @@ vsim work.jal_tb
 # Loading work.ALU
 # Loading work.alu_control
 # Loading work.imm_gen
-# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'instr'.
-#    Time: 0 ns  Iteration: 0  Instance: /jal_tb/TEST File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 14
-# Error loading design
-# End time: 23:03:15 on Mar 23,2021, Elapsed time: 0:00:02
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:03:56 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:03:56 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:04:01 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:04:02 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim work.jal_tb
-# vsim work.jal_tb 
-# Start time: 23:04:05 on Mar 23,2021
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# Loading work.control_unit
-# Loading work.reg_file
-# Loading work.ALU
-# Loading work.alu_control
-# Loading work.imm_gen
-add wave -position insertpoint  \
-sim:/jal_tb/CLOCK_50 \
-sim:/jal_tb/instr \
-sim:/jal_tb/PC \
-sim:/jal_tb/rd2
-run -all
-#                  100 PC=xxx rd2=00000000 instr=00500293
-#                  200 PC=xxx rd2=00000000 instr=00500293
-#                  300 PC=xxx rd2=00000000 instr=00c000ef
-#                  400 PC=xxx rd2=00000000 instr=00900113
-#                  500 PC=xxx rd2=00000000 instr=00102023
-#                  600 PC=xxx rd2=00000000 instr=0000007f
-#                  700 PC=xxx rd2=00000000 instr=00102623
-#                  800 PC=xxx rd2=00000000 instr=00502223
-#                  900 PC=xxx rd2=00000000 instr=00402203
-#                 1000 PC=xxx rd2=00000000 instr=00402423
-#                 1100 PC=xxx rd2=00000000 instr=00008067
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(50)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 50
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:09:06 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:09:06 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:09:06 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:09:07 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (1) for port 'PC_next'. The port definition is at: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(1).
-#    Time: 0 ns  Iteration: 0  Instance: /jal_tb/TEST File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 14
-run -all
-#                  100 PC=xxx PC_next=x rd2=00000000 instr=00500293 run=1
-#                  200 PC=xxx PC_next=x rd2=00000000 instr=00500293 run=1
-#                  300 PC=xxx PC_next=x rd2=00000000 instr=00c000ef run=1
-#                  400 PC=xxx PC_next=x rd2=00000000 instr=00900113 run=1
-#                  500 PC=xxx PC_next=x rd2=00000000 instr=00102023 run=1
-#                  600 PC=xxx PC_next=x rd2=00000000 instr=0000007f run=0
-#                  700 PC=xxx PC_next=x rd2=00000000 instr=00102623 run=1
-#                  800 PC=xxx PC_next=x rd2=00000000 instr=00502223 run=1
-#                  900 PC=xxx PC_next=x rd2=00000000 instr=00402203 run=1
-#                 1000 PC=xxx PC_next=x rd2=00000000 instr=00402423 run=1
-#                 1100 PC=xxx PC_next=0 rd2=00000000 instr=00008067 run=1
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(50)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 50
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:11:03 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:11:04 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:11:04 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:11:05 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# ** Warning: (vsim-3015) [PCDPC] - Port size (11) does not match connection size (1) for port 'PC_next'. The port definition is at: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(1).
-#    Time: 0 ns  Iteration: 0  Instance: /jal_tb/TEST File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 14
-run -all
-#                  100 PC=000 PC_next=0 rd2=00000000 instr=00500293 run=1
-#                  200 PC=000 PC_next=0 rd2=00000000 instr=00500293 run=1
-#                  300 PC=000 PC_next=1 rd2=00000000 instr=00c000ef run=1
-#                  400 PC=000 PC_next=0 rd2=00000000 instr=00900113 run=1
-#                  500 PC=000 PC_next=0 rd2=00000000 instr=00102023 run=1
-#                  600 PC=000 PC_next=0 rd2=00000000 instr=0000007f run=0
-#                  700 PC=000 PC_next=0 rd2=00000000 instr=00102623 run=1
-#                  800 PC=000 PC_next=0 rd2=00000000 instr=00502223 run=1
-#                  900 PC=000 PC_next=0 rd2=00000000 instr=00402203 run=1
-#                 1000 PC=000 PC_next=0 rd2=00000000 instr=00402423 run=1
-#                 1100 PC=000 PC_next=0 rd2=00000000 instr=00008067 run=1
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(50)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 50
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:12:31 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:12:31 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:12:32 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:12:32 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:12:55 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:12:56 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:12:56 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:12:56 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.jal_tb
-# Loading work.lab05_for_test
 add wave -position insertpoint  \
 sim:/jal_tb/CLOCK_50 \
 sim:/jal_tb/instr \
@@ -352,334 +463,56 @@ sim:/jal_tb/PC \
 sim:/jal_tb/PC_next \
 sim:/jal_tb/PC_plus \
 sim:/jal_tb/run \
-sim:/jal_tb/rd2
+sim:/jal_tb/Y
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mcich  Hostname: MCHENSURFACE  ProcessID: 26036
+#           Attempting to use alternate WLF file "./wlft307jaz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft307jaz
 run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  200 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  300 PC=000 PC_next=001 PC_plus=004 rd2=00000000 instr=00c000ef run=1
-#                  400 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00900113 run=1
-#                  500 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00102023 run=1
-#                  600 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=0000007f run=0
-#                  700 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00102623 run=1
-#                  800 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00502223 run=1
-#                  900 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00402203 run=1
-#                 1000 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00402423 run=1
-#                 1100 PC=000 PC_next=000 PC_plus=004 rd2=00000000 instr=00008067 run=1
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(52)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 52
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:15:05 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:15:05 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:15:05 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:15:06 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 rd2=00000005 instr=00500293 run=1
-#                  300 PC=008 PC_next=009 PC_plus=00c rd2=00000000 instr=00c000ef run=1
-#                  400 PC=009 PC_next=00d PC_plus=00d rd2=00000000 instr=00900113 run=1
-#                  500 PC=00d PC_next=011 PC_plus=011 rd2=0000000c instr=00102023 run=1
-#                  600 PC=011 PC_next=015 PC_plus=015 rd2=00000000 instr=0000007f run=0
-#                  700 PC=011 PC_next=015 PC_plus=015 rd2=0000000c instr=00102623 run=1
-#                  800 PC=015 PC_next=019 PC_plus=019 rd2=00000005 instr=00502223 run=1
-#                  900 PC=019 PC_next=01d PC_plus=01d rd2=00000000 instr=00402203 run=1
-#                 1000 PC=01d PC_next=021 PC_plus=021 rd2=zzzzzzzz instr=00402423 run=1
-#                 1100 PC=021 PC_next=025 PC_plus=025 rd2=00000000 instr=00008067 run=1
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(52)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 52
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:17:45 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:17:46 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:17:46 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:17:46 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 rd2=00000005 instr=00500293 run=1
-#                  300 PC=008 PC_next=00e PC_plus=00c rd2=00000000 instr=00c000ef run=1
-#                  400 PC=00e PC_next=012 PC_plus=012 rd2=00000000 instr=00900113 run=1
-#                  500 PC=012 PC_next=016 PC_plus=016 rd2=0000000c instr=00102023 run=1
-#                  600 PC=016 PC_next=01a PC_plus=01a rd2=00000000 instr=0000007f run=0
-#                  700 PC=016 PC_next=01a PC_plus=01a rd2=0000000c instr=00102623 run=1
-#                  800 PC=01a PC_next=01e PC_plus=01e rd2=00000005 instr=00502223 run=1
-#                  900 PC=01e PC_next=022 PC_plus=022 rd2=00000000 instr=00402203 run=1
-#                 1000 PC=022 PC_next=026 PC_plus=026 rd2=zzzzzzzz instr=00402423 run=1
-#                 1100 PC=026 PC_next=02a PC_plus=02a rd2=00000000 instr=00008067 run=1
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(52)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 52
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:18:31 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:18:31 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:18:31 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:18:32 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 rd2=00000005 instr=00500293 run=1
-#                  300 PC=008 PC_next=00b PC_plus=00c rd2=00000000 instr=00c000ef run=1
-#                  400 PC=00b PC_next=00f PC_plus=00f rd2=00000000 instr=00900113 run=1
-#                  500 PC=00f PC_next=013 PC_plus=013 rd2=0000000c instr=00102023 run=1
-#                  600 PC=013 PC_next=017 PC_plus=017 rd2=00000000 instr=0000007f run=0
-#                  700 PC=013 PC_next=017 PC_plus=017 rd2=0000000c instr=00102623 run=1
-#                  800 PC=017 PC_next=01b PC_plus=01b rd2=00000005 instr=00502223 run=1
-#                  900 PC=01b PC_next=01f PC_plus=01f rd2=00000000 instr=00402203 run=1
-#                 1000 PC=01f PC_next=023 PC_plus=023 rd2=zzzzzzzz instr=00402423 run=1
-#                 1100 PC=023 PC_next=027 PC_plus=027 rd2=00000000 instr=00008067 run=1
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(52)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 52
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:22:44 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:22:44 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:22:45 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:22:45 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 rd2=00000005 instr=00500293 run=1
-#                  300 PC=008 PC_next=014 PC_plus=00c rd2=00000000 instr=00c000ef run=1
-#                  400 PC=014 PC_next=018 PC_plus=018 rd2=00000000 instr=00900113 run=1
-#                  500 PC=018 PC_next=01c PC_plus=01c rd2=0000000c instr=00102023 run=1
-#                  600 PC=01c PC_next=020 PC_plus=020 rd2=00000000 instr=0000007f run=0
-#                  700 PC=01c PC_next=020 PC_plus=020 rd2=0000000c instr=00102623 run=1
-#                  800 PC=020 PC_next=024 PC_plus=024 rd2=00000005 instr=00502223 run=1
-#                  900 PC=024 PC_next=028 PC_plus=028 rd2=00000000 instr=00402203 run=1
-#                 1000 PC=028 PC_next=02c PC_plus=02c rd2=zzzzzzzz instr=00402423 run=1
-#                 1100 PC=02c PC_next=030 PC_plus=030 rd2=00000000 instr=00008067 run=1
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(52)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 52
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:48 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:29:49 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:29:49 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:29:50 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 rd2=00000005 instr=00500293 run=1
-#                  300 PC=008 PC_next=014 PC_plus=00c rd2=00000000 instr=00c000ef run=1
-#                  400 PC=014 PC_next=018 PC_plus=018 rd2=0000000c instr=00102623 run=1
-#                  500 PC=018 PC_next=01c PC_plus=01c rd2=00000005 instr=00502223 run=1
-#                  600 PC=01c PC_next=020 PC_plus=020 rd2=00000000 instr=00402203 run=1
-#                  700 PC=020 PC_next=024 PC_plus=024 rd2=zzzzzzzz instr=00402423 run=1
-#                  800 PC=024 PC_next=028 PC_plus=028 rd2=00000000 instr=00008067 run=1
-#                  900 PC=028 PC_next=02c PC_plus=02c rd2=00000000 instr=00900113 run=1
-#                 1000 PC=02c PC_next=030 PC_plus=030 rd2=0000000c instr=00102023 run=1
-#                 1100 PC=030 PC_next=034 PC_plus=034 rd2=00000028 instr=0000007f run=0
+#                  100 PC=xxx PC_next=xxx PC_plus=xxx Y=00000005 instr=00500293 run=1
+#                  200 PC=xxx PC_next=xxx PC_plus=xxx Y=00000005 instr=00500293 run=1
+#                  300 PC=xxx PC_next=xxx PC_plus=xxx Y=00000000 instr=00c000ef run=1
+#                  400 PC=xxx PC_next=xxx PC_plus=xxx Y=0000000c instr=00102623 run=1
+#                  500 PC=xxx PC_next=xxx PC_plus=xxx Y=00000004 instr=00502223 run=1
+#                  600 PC=xxx PC_next=xxx PC_plus=xxx Y=00000004 instr=00402203 run=1
+#                  700 PC=xxx PC_next=xxx PC_plus=xxx Y=00000008 instr=00402423 run=1
+#                  800 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=00008067 run=1
+#                  900 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=00900113 run=1
+#                 1000 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=00102023 run=1
+#                 1100 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=0000007f run=0
 # ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
 #    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
 # Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:30:34 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:30:34 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:30:34 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:30:35 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 rd2=00000000 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 rd2=00000005 instr=00500293 run=1
-#                  300 PC=008 PC_next=014 PC_plus=00c rd2=00000000 instr=00c000ef run=1
-#                  400 PC=014 PC_next=018 PC_plus=018 rd2=0000000c instr=00102623 run=1
-#                  500 PC=018 PC_next=01c PC_plus=01c rd2=00000005 instr=00502223 run=1
-#                  600 PC=01c PC_next=020 PC_plus=020 rd2=00000000 instr=00402203 run=1
-#                  700 PC=020 PC_next=024 PC_plus=024 rd2=zzzzzzzz instr=00402423 run=1
-#                  800 PC=024 PC_next=028 PC_plus=028 rd2=00000000 instr=00008067 run=1
-#                  900 PC=028 PC_next=02c PC_plus=02c rd2=00000000 instr=00900113 run=1
-#                 1000 PC=02c PC_next=030 PC_plus=030 rd2=0000000c instr=00102023 run=1
-#                 1100 PC=030 PC_next=034 PC_plus=034 rd2=00000028 instr=0000007f run=0
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:33:03 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:33:04 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:33:04 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# ** Error: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(18): In, out, or inout does not appear in port list: rd2.
-# End time: 23:33:04 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:33:26 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:33:26 on Mar 23,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:33:26 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:33:27 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-
-restart
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (1) for port 'Y'. The port definition is at: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(1).
-#    Time: 0 ns  Iteration: 0  Instance: /jal_tb/TEST File: D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 16
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 Y=1 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 Y=1 instr=00500293 run=1
-#                  300 PC=008 PC_next=014 PC_plus=00c Y=0 instr=00c000ef run=1
-#                  400 PC=014 PC_next=018 PC_plus=018 Y=0 instr=00102623 run=1
-#                  500 PC=018 PC_next=01c PC_plus=01c Y=0 instr=00502223 run=1
-#                  600 PC=01c PC_next=020 PC_plus=020 Y=0 instr=00402203 run=1
-#                  700 PC=020 PC_next=024 PC_plus=024 Y=0 instr=00402423 run=1
-#                  800 PC=024 PC_next=028 PC_plus=028 Y=0 instr=00008067 run=1
-#                  900 PC=028 PC_next=02c PC_plus=02c Y=1 instr=00900113 run=1
-#                 1000 PC=02c PC_next=030 PC_plus=030 Y=0 instr=00102023 run=1
-#                 1100 PC=030 PC_next=034 PC_plus=034 Y=0 instr=0000007f run=0
-# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:34:31 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:34:32 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:34:32 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 23:34:33 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.jal_tb
+run -all
+#                  100 PC=xxx PC_next=xxx PC_plus=xxx Y=00000005 instr=00500293 run=1
+#                  200 PC=xxx PC_next=xxx PC_plus=xxx Y=00000005 instr=00500293 run=1
+#                  300 PC=xxx PC_next=xxx PC_plus=xxx Y=00000000 instr=00c000ef run=1
+#                  400 PC=xxx PC_next=xxx PC_plus=xxx Y=0000000c instr=00102623 run=1
+#                  500 PC=xxx PC_next=xxx PC_plus=xxx Y=00000004 instr=00502223 run=1
+#                  600 PC=xxx PC_next=xxx PC_plus=xxx Y=00000004 instr=00402203 run=1
+#                  700 PC=xxx PC_next=xxx PC_plus=xxx Y=00000008 instr=00402423 run=1
+#                  800 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=00008067 run=1
+#                  900 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=00900113 run=1
+#                 1000 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=00102023 run=1
+#                 1100 PC=xxx PC_next=xxx PC_plus=xxx Y=xxxxxxxx instr=0000007f run=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 00:57:08 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 00:57:08 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
 # Loading work.lab05_for_test
-# Warning in wave window restart: (vish-4014) No objects found matching '/jal_tb/rd2'. 
 run -all
 #                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
 #                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1
@@ -688,35 +521,159 @@ run -all
 #                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1
 #                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1
 #                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1
-#                  800 PC=024 PC_next=028 PC_plus=028 Y=0000000c instr=00008067 run=1
-#                  900 PC=028 PC_next=02c PC_plus=02c Y=00000031 instr=00900113 run=1
-#                 1000 PC=02c PC_next=030 PC_plus=030 Y=00000028 instr=00102023 run=1
-#                 1100 PC=030 PC_next=034 PC_plus=034 Y=00000050 instr=0000007f run=0
+#                  800 PC=024 PC_next=008 PC_plus=028 Y=00000008 instr=00008067 run=1
+#                  900 PC=008 PC_next=00c PC_plus=00c Y=0000002d instr=00900113 run=1
+#                 1000 PC=00c PC_next=010 PC_plus=010 Y=00000024 instr=00102023 run=1
+#                 1100 PC=010 PC_next=014 PC_plus=014 Y=00000048 instr=0000007f run=0
 # ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
 #    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
 # Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
-vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:37:50 on Mar 23,2021
-# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 23:37:51 on Mar 23,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:37:51 on Mar 23,2021
+# Start time: 01:01:21 on Mar 25,2021
 # vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
 # -- Compiling module lab05_for_test
 # 
 # Top level modules:
 # 	lab05_for_test
-# End time: 23:37:51 on Mar 23,2021, Elapsed time: 0:00:00
+# End time: 01:01:21 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
-# Loading work.jal_tb
+# Loading work.lab05_for_test
+run -all
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1
+#                  800 PC=024 PC_next=008 PC_plus=028 Y=00000008 instr=00008067 run=1
+#                  900 PC=008 PC_next=00c PC_plus=00c Y=0000002d instr=00900113 run=1
+#                 1000 PC=00c PC_next=010 PC_plus=010 Y=00000024 instr=00102023 run=1
+#                 1100 PC=010 PC_next=014 PC_plus=014 Y=00000048 instr=0000007f run=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:02:13 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 01:02:13 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.lab05_for_test
+run -all
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1
+#                  800 PC=024 PC_next=008 PC_plus=028 Y=00000008 instr=00008067 run=1
+#                  900 PC=008 PC_next=00c PC_plus=00c Y=0000002d instr=00900113 run=1
+#                 1000 PC=00c PC_next=010 PC_plus=010 Y=00000024 instr=00102023 run=1
+#                 1100 PC=010 PC_next=014 PC_plus=014 Y=00000048 instr=0000007f run=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:03:01 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 01:03:01 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.lab05_for_test
+run -all
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1
+#                  800 PC=024 PC_next=008 PC_plus=028 Y=00000008 instr=00008067 run=1
+#                  900 PC=008 PC_next=00c PC_plus=00c Y=0000002d instr=00900113 run=1
+#                 1000 PC=00c PC_next=010 PC_plus=010 Y=00000024 instr=00102023 run=1
+#                 1100 PC=010 PC_next=014 PC_plus=014 Y=00000048 instr=0000007f run=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:11:54 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 01:11:54 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.lab05_for_test
+run -all
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1
+#                  800 PC=024 PC_next=008 PC_plus=028 Y=00000008 instr=00008067 run=1
+#                  900 PC=008 PC_next=00c PC_plus=00c Y=0000002d instr=00900113 run=1
+#                 1000 PC=00c PC_next=010 PC_plus=010 Y=00000024 instr=00102023 run=1
+#                 1100 PC=010 PC_next=010 PC_plus=014 Y=00000048 instr=0000007f run=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:16:22 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 01:16:22 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.lab05_for_test
+run -all
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1
+#                  800 PC=024 PC_next=010 PC_plus=028 Y=00000010 instr=00008067 run=1
+#                  900 PC=010 PC_next=014 PC_plus=014 Y=00000035 instr=00900113 run=1
+#                 1000 PC=014 PC_next=018 PC_plus=018 Y=0000002c instr=00102023 run=1
+#                 1100 PC=018 PC_next=018 PC_plus=01c Y=00000058 instr=0000007f run=0
+# ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
+vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 01:17:04 on Mar 25,2021
+# vlog -reportprogress 300 -work work D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 01:17:04 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
 # Loading work.lab05_for_test
 run -all
 #                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
@@ -729,7 +686,7 @@ run -all
 #                  800 PC=024 PC_next=00c PC_plus=028 Y=0000000c instr=00008067 run=1
 #                  900 PC=00c PC_next=010 PC_plus=010 Y=00000031 instr=00900113 run=1
 #                 1000 PC=010 PC_next=014 PC_plus=014 Y=00000028 instr=00102023 run=1
-#                 1100 PC=014 PC_next=018 PC_plus=018 Y=00000050 instr=0000007f run=0
+#                 1100 PC=014 PC_next=014 PC_plus=018 Y=00000050 instr=0000007f run=0
 # ** Note: $stop    : D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
 #    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
 # Break in Module jal_tb at D:/engn1640/projects/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
