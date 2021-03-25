@@ -66,7 +66,7 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (instr[6:0] == JAL | instr[6:0] == JALR) ? {21'b0, PC_before}: regData; //write data
+   assign wd = (instr[6:0] == JAL | instr[6:0] == JALR) ? {21'b0, PC_before + 11'h4}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
