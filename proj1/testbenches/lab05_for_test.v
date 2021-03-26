@@ -1,8 +1,9 @@
-module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run);
+module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd);
    input CLOCK_50;
 
    /*AUTOWIRE*/
    // Beginning of automatic wires (for undeclared instantiated-module outputs)
+
    wire			ALUSrc;			// From ctrl of control_unit.v
    wire			Branch;			// From ctrl of control_unit.v
    wire			MemRead;		// From ctrl of control_unit.v
@@ -28,7 +29,7 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run);
 	output [10:0]			PC_plus;   // PC + 4
    wire [10:0]			PC_offset; // PC offset for branching
 	wire 					to_branch; // branch condition
-   wire [31:0] 		wd;        // write data for reg_file
+   output wire [31:0] 		wd;        // write data for reg_file
    wire [31:0] 		A;         // ALU input A
    wire [31:0] 		B;         // ALU input B
 
@@ -39,11 +40,15 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run);
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
 
 	output run;
-	wire	jump;
+	output wire	jump;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
 	assign jump = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type)) ? 1'b1: 1'b0;
 
-				 
+		
+	output wire [7:0] ram_addr;
+        assign ram_addr = Y[7:0];
+	output wire [4:0] write_addr;
+	assign write_addr = instr[11:7];		 
 
 	reg [10:0] PC_before;
 	initial begin
@@ -61,7 +66,7 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run);
 	assign PC_plus = PC + 11'h4;
 	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (instr[6:0] == JAL) ?
   (out) + PC : out + PC;
-	assign PC_next = ((to_branch & Branch) |jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
 

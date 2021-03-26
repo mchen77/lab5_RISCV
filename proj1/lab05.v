@@ -33,7 +33,8 @@ module lab05(CLOCK_50);
    wire [31:0] 		B;         // ALU input B
 
    wire 		outclk_0; // PLL output clock
-   wire 		outclk_1; // PLL output clock shifted
+   wire 		outclk_1; // PLL output to ROM
+	wire     outclk_2; //PLL output to RAM
 
    initial PC = 11'b0;
 
@@ -42,7 +43,7 @@ module lab05(CLOCK_50);
 
 	wire run, jump;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
-	assign jump = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type)) ? 1'b1: 1'b0;
+	assign jump = ((form_code == JALR) | (form_code == JAL)) ? 1'b1: 1'b0;
 
 	reg [10:0] PC_before;
 	initial PC_before = 11'h0;
@@ -55,8 +56,7 @@ module lab05(CLOCK_50);
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (instr[6:0] == JAL) ?
-  (out) + PC : out + PC;
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
 	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
@@ -140,7 +140,7 @@ module lab05(CLOCK_50);
 		 .q			(q[31:0]),
 		 // Inputs
 		 .address		(Y[7:0]),		 // Templated
-		 .clock			(outclk_0),		 // Templated
+		 .clock			(outclk_2),		 // Templated
 		 .data			(rd2),			 // Templated
 		 .rden			(MemRead),		 // Templated
 		 .wren			(MemWrite));		 // Templated
@@ -197,24 +197,24 @@ module lab05(CLOCK_50);
     .address (PC[9:2]),
     .q (instr[31:0]),
     );*/
-   rom_jal rom5 (/*AUTOINST*/
-		 // Outputs
-		 .q			(instr[31:0]),		 // Templated
-		 // Inputs
-		 .address		(PC[9:2]),		 // Templated
-		 .clock			(outclk_1));		 // Templated
+//   rom_jal rom5 (/*AUTOINST*/
+//		 // Outputs
+//		 .q			(instr[31:0]),		 // Templated
+//		 // Inputs
+//		 .address		(PC[9:2]),		 // Templated
+//		 .clock			(outclk_1));		 // Templated
 
    /*factorial AUTO_TEMPLATE(
     .clock (outclk_1),
     .address (PC[9:2]),
     .q (instr[31:0]),
     );*/
-//   factorial rom6 (/*AUTOINST*/
-//		   // Outputs
-//		   .q			(instr[31:0]),		 // Templated
-//		   // Inputs
-//		   .address		(PC[9:2]),		 // Templated
-//		   .clock		(outclk_1));		 // Templated
+   factorial rom6 (/*AUTOINST*/
+		   // Outputs
+		   .q			(instr[31:0]),		 // Templated
+		   // Inputs
+		   .address		(PC[9:2]),		 // Templated
+		   .clock		(outclk_1));		 // Templated
 
    /*pll_lab5 AUTO_TEMPLATE(
     .refclk (CLOCK_50),
@@ -223,6 +223,7 @@ module lab05(CLOCK_50);
 		// Outputs
 		.outclk_0		(outclk_0),
 		.outclk_1		(outclk_1),
+		.outclk_2      (outclk_2),
 		// Inputs
 		.refclk			(CLOCK_50),		 // Templated
 		.rst			(1'b0));			 // Templated
