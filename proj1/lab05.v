@@ -66,7 +66,7 @@ module lab05(CLOCK_50);
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out + 11'h1 + PC: out + PC;
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out + 11'd1 + PC: out + PC;
 	//assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
 	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
