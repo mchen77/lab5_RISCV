@@ -76,7 +76,7 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (jump) ? {21'b0, PC_plus}: regData; //write data
+   assign wd = (jump) ? {21'b0, PC_before + 11'h4}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs

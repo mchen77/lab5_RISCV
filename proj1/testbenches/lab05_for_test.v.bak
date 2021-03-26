@@ -1,22 +1,22 @@
-module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd);
+module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd, ALUSrc, A, B, aluop, rd1, rd2);
    input CLOCK_50;
 
    /*AUTOWIRE*/
    // Beginning of automatic wires (for undeclared instantiated-module outputs)
 
-   wire			ALUSrc;			// From ctrl of control_unit.v
+   output wire			ALUSrc;			// From ctrl of control_unit.v
    wire			Branch;			// From ctrl of control_unit.v
    wire			MemRead;		// From ctrl of control_unit.v
    wire			MemWrite;		// From ctrl of control_unit.v
    wire			MemtoReg;		// From ctrl of control_unit.v
    wire			RegWrite;		// From ctrl of control_unit.v
    output signed [31:0]	Y;			// From a1 of ALU.v
-   wire [1:0]		aluop;			// From ctrl of control_unit.v
+   output wire [1:0]		aluop;			// From ctrl of control_unit.v
    wire [4:0]		aluopcode;		// From aluctrl of alu_control.v
    wire [31:0]		out;			// From ig of imm_gen.v
    wire [31:0]		q;			// From ram of lab5_ram.v
-   wire [31:0]		rd1;			// From rf of reg_file.v
-   wire [31:0]		rd2;			// From rf of reg_file.v
+   output wire [31:0]		rd1;			// From rf of reg_file.v
+   output wire [31:0]		rd2;			// From rf of reg_file.v
    wire			zero;			// From a1 of ALU.v
    // End of automatics
 
@@ -30,8 +30,8 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
    wire [10:0]			PC_offset; // PC offset for branching
 	wire 					to_branch; // branch condition
    output wire [31:0] 		wd;        // write data for reg_file
-   wire [31:0] 		A;         // ALU input A
-   wire [31:0] 		B;         // ALU input B
+   output wire [31:0] 		A;         // ALU input A
+   output wire [31:0] 		B;         // ALU input B
 
    wire 		CLOCK_50; // PLL output clock
    //wire 		ClOCK_50; // PLL output clock shifted
@@ -42,18 +42,20 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
 	output run;
 	output wire	jump;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
-	assign jump = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type)) ? 1'b1: 1'b0;
+	assign jump = ((form_code == JALR) | (form_code == JAL)) ? 1'b1: 1'b0;
 
-		
-	output wire [7:0] ram_addr = Y[7:0];
-	output wire [4:0] write_addr = instr[11:7];		 
+
+	output wire [7:0] ram_addr;
+        assign ram_addr = Y[7:0];
+	output wire [4:0] write_addr;
+	assign write_addr = instr[11:7];
 
 	reg [10:0] PC_before;
 	initial begin
 		PC = 11'h0;
 		PC_before = 11'h0;
 	end
-	
+
 	always @(posedge CLOCK_50) begin
 	  if (run) begin
 	  PC_before <= PC;
