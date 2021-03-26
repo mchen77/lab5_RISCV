@@ -12,502 +12,336 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {lab05.vo}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:25:49 on Mar 25,2021
+# Start time: 23:15:07 on Mar 25,2021
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." lab05.vo 
 # -- Compiling module lab05
 # 
 # Top level modules:
 # 	lab05
-# End time: 18:25:50 on Mar 25,2021, Elapsed time: 0:00:01
+# End time: 23:15:09 on Mar 25,2021, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:17 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 18:26:17 on Mar 25,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:26:17 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# 
-# Top level modules:
-# 	lab05_for_test
-# End time: 18:26:18 on Mar 25,2021, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-vsim work.jal_tb
-# vsim work.jal_tb 
-# Start time: 18:26:58 on Mar 25,2021
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# ** Error: (vsim-3033) Instantiation of 'control_unit' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 76
-#         Searched libraries:
-#             C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/gate_work
-# ** Error: (vsim-3033) Instantiation of 'reg_file' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 95
-#         Searched libraries:
-#             C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/gate_work
-# ** Error: (vsim-3033) Instantiation of 'ALU' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 110
-#         Searched libraries:
-#             C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/gate_work
-# ** Error: (vsim-3033) Instantiation of 'alu_control' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 122
-#         Searched libraries:
-#             C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/gate_work
-# ** Error: (vsim-3033) Instantiation of 'imm_gen' failed. The design unit was not found.
-#    Time: 0 ps  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v Line: 129
-#         Searched libraries:
-#             C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/simulation/modelsim/gate_work
-# Error loading design
-# End time: 18:27:00 on Mar 25,2021, Elapsed time: 0:00:02
-# Errors: 5, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:32 on Mar 25,2021
+# Start time: 23:15:41 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 18:27:32 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:42 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/alu_control.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:32 on Mar 25,2021
+# Start time: 23:15:42 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/alu_control.v 
 # -- Compiling module alu_control
 # 
 # Top level modules:
 # 	alu_control
-# End time: 18:27:32 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:42 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/control_unit.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:33 on Mar 25,2021
+# Start time: 23:15:42 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/control_unit.v 
 # -- Compiling module control_unit
 # 
 # Top level modules:
 # 	control_unit
-# End time: 18:27:33 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:43 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/factorial.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:33 on Mar 25,2021
+# Start time: 23:15:43 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/factorial.v 
 # -- Compiling module factorial
 # 
 # Top level modules:
 # 	factorial
-# End time: 18:27:33 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:43 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/factorial_bb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:33 on Mar 25,2021
+# Start time: 23:15:43 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/factorial_bb.v 
 # -- Compiling module factorial
 # 
 # Top level modules:
 # 	factorial
-# End time: 18:27:33 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:44 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:33 on Mar 25,2021
+# Start time: 23:15:44 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v 
 # -- Compiling module imm_gen
 # 
 # Top level modules:
 # 	imm_gen
-# End time: 18:27:34 on Mar 25,2021, Elapsed time: 0:00:01
+# End time: 23:15:44 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:34 on Mar 25,2021
+# Start time: 23:15:44 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v 
 # -- Compiling module lab05
 # 
 # Top level modules:
 # 	lab05
-# End time: 18:27:34 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:45 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:34 on Mar 25,2021
+# Start time: 23:15:45 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v 
 # -- Compiling module lab5_ram
 # 
 # Top level modules:
 # 	lab5_ram
-# End time: 18:27:34 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:46 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram_bb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:34 on Mar 25,2021
+# Start time: 23:15:46 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram_bb.v 
 # -- Compiling module lab5_ram
 # 
 # Top level modules:
 # 	lab5_ram
-# End time: 18:27:34 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:46 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:35 on Mar 25,2021
+# Start time: 23:15:46 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom.v 
 # -- Compiling module load_rom
 # 
 # Top level modules:
 # 	load_rom
-# End time: 18:27:35 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:47 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom_bb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:35 on Mar 25,2021
+# Start time: 23:15:47 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom_bb.v 
 # -- Compiling module load_rom
 # 
 # Top level modules:
 # 	load_rom
-# End time: 18:27:35 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:47 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom_inst.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:35 on Mar 25,2021
+# Start time: 23:15:47 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom_inst.v 
 # ** Error: (vlog-13069) C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom_inst.v(1): near "load_rom_inst": syntax error, unexpected IDENTIFIER.
 # ** Error: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/load_rom_inst.v(1): (vlog-13205) Syntax error found in the scope following 'load_rom'. Is there a missing '::'?
-# End time: 18:27:35 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:48 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 2, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:35 on Mar 25,2021
+# Start time: 23:15:48 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.v 
 # -- Compiling module pll_lab5
 # 
 # Top level modules:
 # 	pll_lab5
-# End time: 18:27:35 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:48 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/prog2_line.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:36 on Mar 25,2021
+# Start time: 23:15:48 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/prog2_line.v 
 # -- Compiling module prog2_line
 # 
 # Top level modules:
 # 	prog2_line
-# End time: 18:27:36 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:49 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/prog2_line_bb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:36 on Mar 25,2021
+# Start time: 23:15:49 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/prog2_line_bb.v 
 # -- Compiling module prog2_line
 # 
 # Top level modules:
 # 	prog2_line
-# End time: 18:27:36 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:49 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:36 on Mar 25,2021
+# Start time: 23:15:49 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v 
 # -- Compiling module reg_file
 # 
 # Top level modules:
 # 	reg_file
-# End time: 18:27:36 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:50 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_branch.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:36 on Mar 25,2021
+# Start time: 23:15:50 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_branch.v 
 # -- Compiling module rom_branch
 # 
 # Top level modules:
 # 	rom_branch
-# End time: 18:27:37 on Mar 25,2021, Elapsed time: 0:00:01
+# End time: 23:15:50 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_branch_bb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:37 on Mar 25,2021
+# Start time: 23:15:50 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_branch_bb.v 
 # -- Compiling module rom_branch
 # 
 # Top level modules:
 # 	rom_branch
-# End time: 18:27:37 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:51 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:37 on Mar 25,2021
+# Start time: 23:15:51 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal.v 
 # -- Compiling module rom_jal
 # 
 # Top level modules:
 # 	rom_jal
-# End time: 18:27:37 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:51 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal_bb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:37 on Mar 25,2021
+# Start time: 23:15:51 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal_bb.v 
 # -- Compiling module rom_jal
 # 
 # Top level modules:
 # 	rom_jal
-# End time: 18:27:37 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:51 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_lab5.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:37 on Mar 25,2021
+# Start time: 23:15:52 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_lab5.v 
 # -- Compiling module rom_lab5
 # 
 # Top level modules:
 # 	rom_lab5
-# End time: 18:27:38 on Mar 25,2021, Elapsed time: 0:00:01
+# End time: 23:15:52 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_lab5_bb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:38 on Mar 25,2021
+# Start time: 23:15:52 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_lab5_bb.v 
 # -- Compiling module rom_lab5
 # 
 # Top level modules:
 # 	rom_lab5
-# End time: 18:27:38 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:53 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:38 on Mar 25,2021
+# Start time: 23:15:53 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2.v 
 # -- Compiling module rom_prog2
 # 
 # Top level modules:
 # 	rom_prog2
-# End time: 18:27:38 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:53 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2_bb.v}
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/alu_control_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 18:27:38 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_prog2_bb.v 
-# -- Compiling module rom_prog2
+# Start time: 23:15:54 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/alu_control_tb.v 
+# -- Compiling module alu_control_tb
 # 
 # Top level modules:
-# 	rom_prog2
-# End time: 18:27:38 on Mar 25,2021, Elapsed time: 0:00:00
+# 	alu_control_tb
+# End time: 23:15:55 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vsim work.jal_tb
-# vsim work.jal_tb 
-# Start time: 18:27:50 on Mar 25,2021
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# Loading work.control_unit
-# Loading work.reg_file
-# Loading work.ALU
-# Loading work.alu_control
-# Loading work.imm_gen
-add wave -position insertpoint  \
-sim:/jal_tb/CLOCK_50 \
-sim:/jal_tb/instr \
-sim:/jal_tb/PC \
-sim:/jal_tb/PC_next \
-sim:/jal_tb/PC_plus \
-sim:/jal_tb/run \
-sim:/jal_tb/Y
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: mcich  Hostname: MCHENSURFACE  ProcessID: 26036
-#           Attempting to use alternate WLF file "./wlftbysyvm".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftbysyvm
-run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1
-#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1
-#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1
-#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1
-#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1
-#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1
-#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1
-#                  800 PC=024 PC_next=00c PC_plus=028 Y=0000000c instr=00008067 run=1
-#                  900 PC=00c PC_next=010 PC_plus=010 Y=00000031 instr=00900113 run=1
-#                 1000 PC=010 PC_next=014 PC_plus=014 Y=00000028 instr=00102023 run=1
-#                 1100 PC=014 PC_next=014 PC_plus=018 Y=00000050 instr=0000007f run=0
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(54)
-#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 54
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:15 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(6): (vlog-13299) Undefined variable: 'Y'.
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(7): (vlog-13299) Undefined variable: 'instr'.
-# End time: 19:00:15 on Mar 25,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
+# Start time: 23:15:55 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/ALU_tb.v 
+# -- Compiling module alu_tb
+# 
+# Top level modules:
+# 	alu_tb
+# End time: 23:15:55 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:15 on Mar 25,2021
+# Start time: 23:15:55 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/control_unit_tb.v 
+# -- Compiling module control_unit_tb
+# 
+# Top level modules:
+# 	control_unit_tb
+# End time: 23:15:56 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:15:56 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/imm_gen_test.v 
+# -- Compiling module imm_gen_test
+# 
+# Top level modules:
+# 	imm_gen_test
+# End time: 23:15:56 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:15:56 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
 # -- Compiling module jal_tb
 # 
 # Top level modules:
 # 	jal_tb
-# End time: 19:00:16 on Mar 25,2021, Elapsed time: 0:00:01
+# End time: 23:15:57 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:26 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(6): (vlog-13299) Undefined variable: 'Y'.
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(7): (vlog-13299) Undefined variable: 'instr'.
-# End time: 19:00:26 on Mar 25,2021, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:00:26 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 19:00:26 on Mar 25,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# Loading work.jal_tb
-# ** Fatal: (vsim-3365) Too many port connections. Expected 7, found 11.
-#    Time: 0 ns  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 20
-# FATAL ERROR while loading design
-vsim work.jal_tb
-# vsim work.jal_tb 
-# Start time: 18:27:50 on Mar 25,2021
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# Loading work.control_unit
-# Loading work.reg_file
-# Loading work.ALU
-# Loading work.alu_control
-# Loading work.imm_gen
-# ** Fatal: (vsim-3365) Too many port connections. Expected 7, found 11.
-#    Time: 0 ns  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 20
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 19:00:40 on Mar 25,2021, Elapsed time: 0:32:50
-# Errors: 2, Warnings: 0
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:01:50 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(6): (vlog-13299) Undefined variable: 'Y'.
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(7): (vlog-13299) Undefined variable: 'instr'.
-# End time: 19:01:51 on Mar 25,2021, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:01:51 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 19:01:51 on Mar 25,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.jal_tb
-# vsim work.jal_tb 
-# Start time: 19:01:55 on Mar 25,2021
-# Loading work.jal_tb
-# Loading work.lab05_for_test
-# Loading work.control_unit
-# Loading work.reg_file
-# Loading work.ALU
-# Loading work.alu_control
-# Loading work.imm_gen
-# ** Fatal: (vsim-3365) Too many port connections. Expected 7, found 11.
-#    Time: 0 ns  Iteration: 0  Instance: /jal_tb/TEST File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v Line: 20
-# FATAL ERROR while loading design
-# Error loading design
-# End time: 19:01:56 on Mar 25,2021, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:03:03 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(6): (vlog-13299) Undefined variable: 'Y'.
-# ** Error (suppressible): C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(7): (vlog-13299) Undefined variable: 'instr'.
-# End time: 19:03:04 on Mar 25,2021, Elapsed time: 0:00:01
-# Errors: 2, Warnings: 0
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:03:04 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 19:03:04 on Mar 25,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:04:06 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
-# -- Compiling module lab05_for_test
-# ** Error: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(48): (vlog-2110) Illegal reference to net "ram_addr".
-# ** Error: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(48): Initializer must be a constant value or constant expression.
-# ** Error: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(49): (vlog-2110) Illegal reference to net "write_addr".
-# ** Error: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v(49): Initializer must be a constant value or constant expression.
-# End time: 19:04:07 on Mar 25,2021, Elapsed time: 0:00:01
-# Errors: 4, Warnings: 0
-# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vlog failed.
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:04:07 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
-# 
-# Top level modules:
-# 	jal_tb
-# End time: 19:04:07 on Mar 25,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:05:41 on Mar 25,2021
+# Start time: 23:15:57 on Mar 25,2021
 # vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
 # -- Compiling module lab05_for_test
 # 
 # Top level modules:
 # 	lab05_for_test
-# End time: 19:05:41 on Mar 25,2021, Elapsed time: 0:00:00
+# End time: 23:15:57 on Mar 25,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-vlog -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:05:41 on Mar 25,2021
-# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
-# -- Compiling module jal_tb
+# Start time: 23:15:57 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_prog2_test.v 
+# -- Compiling module lab5_prog2_test
 # 
 # Top level modules:
-# 	jal_tb
-# End time: 19:05:41 on Mar 25,2021, Elapsed time: 0:00:00
+# 	lab5_prog2_test
+# End time: 23:15:58 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:15:58 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab5_tb.v 
+# -- Compiling module lab5_tb
+# 
+# Top level modules:
+# 	lab5_tb
+# End time: 23:15:58 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:15:58 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/reg_file_test.v 
+# -- Compiling module reg_file_test
+# 
+# Top level modules:
+# 	reg_file_test
+# End time: 23:15:59 on Mar 25,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 vsim work.jal_tb
 # vsim work.jal_tb 
-# Start time: 19:05:45 on Mar 25,2021
+# Start time: 23:16:07 on Mar 25,2021
 # Loading work.jal_tb
 # Loading work.lab05_for_test
 # Loading work.control_unit
@@ -515,11 +349,6 @@ vsim work.jal_tb
 # Loading work.ALU
 # Loading work.alu_control
 # Loading work.imm_gen
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: mcich  Hostname: MCHENSURFACE  ProcessID: 26036
-#           Attempting to use alternate WLF file "./wlfttrdmkd".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlfttrdmkd
 add wave -position insertpoint  \
 sim:/jal_tb/CLOCK_50 \
 sim:/jal_tb/instr \
@@ -528,24 +357,166 @@ sim:/jal_tb/PC_next \
 sim:/jal_tb/PC_plus \
 sim:/jal_tb/run \
 sim:/jal_tb/Y \
+sim:/jal_tb/A \
+sim:/jal_tb/B \
 sim:/jal_tb/ram_addr \
 sim:/jal_tb/write_addr \
 sim:/jal_tb/jump \
-sim:/jal_tb/wd
+sim:/jal_tb/ALUSrc \
+sim:/jal_tb/wd \
+sim:/jal_tb/aluop
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mcich  Hostname: MCHENSURFACE  ProcessID: 26036
+#           Attempting to use alternate WLF file "./wlftj19yq0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftj19yq0
 run -all
-#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h         5
-#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h         5
-#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1 ram_addr=00 write_addr=01 jump=1 wd=&h        12
-#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1 ram_addr=0c write_addr=0c jump=0 wd=&h        12
-#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h         4
-#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h         z
-#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1 ram_addr=08 write_addr=08 jump=0 wd=&h         8
-#                  800 PC=024 PC_next=00c PC_plus=028 Y=0000000c instr=00008067 run=1 ram_addr=0c write_addr=00 jump=1 wd=&h        40
-#                  900 PC=00c PC_next=010 PC_plus=010 Y=00000031 instr=00900113 run=1 ram_addr=31 write_addr=02 jump=0 wd=&h        49
-#                 1000 PC=010 PC_next=014 PC_plus=014 Y=00000028 instr=00102023 run=1 ram_addr=28 write_addr=00 jump=0 wd=&h        40
-#                 1100 PC=014 PC_next=014 PC_plus=018 Y=00000050 instr=0000007f run=0 ram_addr=50 write_addr=00 jump=1 wd=&h        24
-# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(58)
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h ALUSrc=00000005 A=1 B=00000000 aluop=000000053
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h ALUSrc=00000005 A=1 B=00000000 aluop=000000053
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1 ram_addr=00 write_addr=01 jump=1 wd=&h ALUSrc=0000000c A=0 B=00000000 aluop=000000001
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1 ram_addr=0c write_addr=0c jump=0 wd=&h ALUSrc=0000000c A=1 B=00000000 aluop=0000000c0
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h ALUSrc=00000004 A=1 B=00000000 aluop=000000040
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h ALUSrc=zzzzzzzz A=1 B=00000000 aluop=000000040
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1 ram_addr=08 write_addr=08 jump=0 wd=&h ALUSrc=00000008 A=1 B=00000000 aluop=000000080
+#                  800 PC=024 PC_next=00c PC_plus=028 Y=0000000c instr=00008067 run=1 ram_addr=0c write_addr=00 jump=1 wd=&h ALUSrc=00000028 A=1 B=0000000c aluop=000000000
+#                  900 PC=00c PC_next=010 PC_plus=010 Y=00000031 instr=00900113 run=1 ram_addr=31 write_addr=02 jump=0 wd=&h ALUSrc=00000031 A=1 B=00000028 aluop=000000093
+#                 1000 PC=010 PC_next=014 PC_plus=014 Y=00000028 instr=00102023 run=1 ram_addr=28 write_addr=00 jump=0 wd=&h ALUSrc=00000028 A=1 B=00000028 aluop=000000000
+#                 1100 PC=014 PC_next=018 PC_plus=018 Y=00000050 instr=0000007f run=0 ram_addr=50 write_addr=00 jump=0 wd=&h ALUSrc=00000050 A=0 B=00000028 aluop=000000280
+# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(59)
 #    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
-# Break in Module jal_tb at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 58
-# End time: 20:07:43 on Mar 25,2021, Elapsed time: 1:01:58
+# Break in Module jal_tb at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 59
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:29:40 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v 
+# -- Compiling module reg_file
+# 
+# Top level modules:
+# 	reg_file
+# End time: 23:29:40 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Break key hit
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.reg_file
+vsim work.jal_tb
+# End time: 23:30:17 on Mar 25,2021, Elapsed time: 0:14:10
+# Errors: 0, Warnings: 0
+# vsim work.jal_tb 
+# Start time: 23:30:17 on Mar 25,2021
+# Loading work.jal_tb
+# Loading work.lab05_for_test
+# Loading work.control_unit
+# Loading work.reg_file
+# Loading work.ALU
+# Loading work.alu_control
+# Loading work.imm_gen
+add wave -position insertpoint  \
+sim:/jal_tb/CLOCK_50 \
+sim:/jal_tb/instr \
+sim:/jal_tb/PC \
+sim:/jal_tb/PC_next \
+sim:/jal_tb/PC_plus \
+sim:/jal_tb/run \
+sim:/jal_tb/Y \
+sim:/jal_tb/A \
+sim:/jal_tb/B \
+sim:/jal_tb/ram_addr \
+sim:/jal_tb/write_addr \
+sim:/jal_tb/jump \
+sim:/jal_tb/ALUSrc \
+sim:/jal_tb/wd \
+sim:/jal_tb/aluop
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mcich  Hostname: MCHENSURFACE  ProcessID: 26036
+#           Attempting to use alternate WLF file "./wlft3hj88z".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3hj88z
+run -all
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h ALUSrc=00000005 A=1 B=00000000 aluop=000000053
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h ALUSrc=00000005 A=1 B=00000000 aluop=000000053
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1 ram_addr=00 write_addr=01 jump=1 wd=&h ALUSrc=0000000c A=0 B=00000000 aluop=000000001
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1 ram_addr=0c write_addr=0c jump=0 wd=&h ALUSrc=0000000c A=1 B=00000000 aluop=0000000c0
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h ALUSrc=00000004 A=1 B=00000000 aluop=000000040
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h ALUSrc=zzzzzzzz A=1 B=00000000 aluop=000000040
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1 ram_addr=08 write_addr=08 jump=0 wd=&h ALUSrc=00000008 A=1 B=00000000 aluop=000000080
+#                  800 PC=024 PC_next=00c PC_plus=028 Y=0000000c instr=00008067 run=1 ram_addr=0c write_addr=00 jump=1 wd=&h ALUSrc=00000028 A=1 B=0000000c aluop=000000000
+#                  900 PC=00c PC_next=010 PC_plus=010 Y=00000009 instr=00900113 run=1 ram_addr=09 write_addr=02 jump=0 wd=&h ALUSrc=00000009 A=1 B=00000000 aluop=000000093
+#                 1000 PC=010 PC_next=014 PC_plus=014 Y=00000000 instr=00102023 run=1 ram_addr=00 write_addr=00 jump=0 wd=&h ALUSrc=00000000 A=1 B=00000000 aluop=000000000
+#                 1100 PC=014 PC_next=018 PC_plus=018 Y=00000000 instr=0000007f run=0 ram_addr=00 write_addr=00 jump=0 wd=&h ALUSrc=00000000 A=0 B=00000000 aluop=000000000
+# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(59)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 59
+# A time value could not be extracted from the current line
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:36:45 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v 
+# -- Compiling module jal_tb
+# 
+# Top level modules:
+# 	jal_tb
+# End time: 23:36:46 on Mar 25,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 23:36:46 on Mar 25,2021
+# vlog -reportprogress 300 -work work C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/lab05_for_test.v 
+# -- Compiling module lab05_for_test
+# 
+# Top level modules:
+# 	lab05_for_test
+# End time: 23:36:46 on Mar 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.jal_tb
+# End time: 23:37:21 on Mar 25,2021, Elapsed time: 0:07:04
+# Errors: 0, Warnings: 2
+# vsim work.jal_tb 
+# Start time: 23:37:22 on Mar 25,2021
+# Loading work.jal_tb
+# Loading work.lab05_for_test
+# Loading work.control_unit
+# Loading work.reg_file
+# Loading work.ALU
+# Loading work.alu_control
+# Loading work.imm_gen
+add wave -position insertpoint  \
+sim:/jal_tb/CLOCK_50 \
+sim:/jal_tb/instr \
+sim:/jal_tb/PC \
+sim:/jal_tb/PC_next \
+sim:/jal_tb/PC_plus \
+sim:/jal_tb/run \
+sim:/jal_tb/Y \
+sim:/jal_tb/A \
+sim:/jal_tb/B \
+sim:/jal_tb/rd1 \
+sim:/jal_tb/rd2 \
+sim:/jal_tb/ram_addr \
+sim:/jal_tb/write_addr \
+sim:/jal_tb/jump \
+sim:/jal_tb/ALUSrc \
+sim:/jal_tb/wd \
+sim:/jal_tb/aluop
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: mcich  Hostname: MCHENSURFACE  ProcessID: 26036
+#           Attempting to use alternate WLF file "./wlfts6wyk9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts6wyk9
+run -all
+#                  100 PC=000 PC_next=004 PC_plus=004 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h ALUSrc=00000005 A=1 B=00000000 aluop=00000005 rd1=3 rd2=00000000         0
+#                  200 PC=004 PC_next=008 PC_plus=008 Y=00000005 instr=00500293 run=1 ram_addr=05 write_addr=05 jump=0 wd=&h ALUSrc=00000005 A=1 B=00000000 aluop=00000005 rd1=3 rd2=00000000         5
+#                  300 PC=008 PC_next=014 PC_plus=00c Y=00000000 instr=00c000ef run=1 ram_addr=00 write_addr=01 jump=1 wd=&h ALUSrc=0000000c A=0 B=00000000 aluop=00000000 rd1=1 rd2=00000000         0
+#                  400 PC=014 PC_next=018 PC_plus=018 Y=0000000c instr=00102623 run=1 ram_addr=0c write_addr=0c jump=0 wd=&h ALUSrc=0000000c A=1 B=00000000 aluop=0000000c rd1=0 rd2=00000000        12
+#                  500 PC=018 PC_next=01c PC_plus=01c Y=00000004 instr=00502223 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h ALUSrc=00000004 A=1 B=00000000 aluop=00000004 rd1=0 rd2=00000000         5
+#                  600 PC=01c PC_next=020 PC_plus=020 Y=00000004 instr=00402203 run=1 ram_addr=04 write_addr=04 jump=0 wd=&h ALUSrc=zzzzzzzz A=1 B=00000000 aluop=00000004 rd1=0 rd2=00000000         0
+#                  700 PC=020 PC_next=024 PC_plus=024 Y=00000008 instr=00402423 run=1 ram_addr=08 write_addr=08 jump=0 wd=&h ALUSrc=00000008 A=1 B=00000000 aluop=00000008 rd1=0 rd2=00000000         z
+#                  800 PC=024 PC_next=00c PC_plus=028 Y=0000000c instr=00008067 run=1 ram_addr=0c write_addr=00 jump=1 wd=&h ALUSrc=00000028 A=1 B=0000000c aluop=00000000 rd1=0 rd2=0000000c         0
+#                  900 PC=00c PC_next=010 PC_plus=010 Y=00000009 instr=00900113 run=1 ram_addr=09 write_addr=02 jump=0 wd=&h ALUSrc=00000009 A=1 B=00000000 aluop=00000009 rd1=3 rd2=00000000         0
+#                 1000 PC=010 PC_next=014 PC_plus=014 Y=00000000 instr=00102023 run=1 ram_addr=00 write_addr=00 jump=0 wd=&h ALUSrc=00000000 A=1 B=00000000 aluop=00000000 rd1=0 rd2=00000000        12
+#                 1100 PC=014 PC_next=018 PC_plus=018 Y=00000000 instr=0000007f run=0 ram_addr=00 write_addr=00 jump=0 wd=&h ALUSrc=00000000 A=0 B=00000000 aluop=00000000 rd1=0 rd2=00000000         0
+# ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(59)
+#    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
+# Break in Module jal_tb at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 59
+# End time: 23:44:06 on Mar 25,2021, Elapsed time: 0:06:44
 # Errors: 0, Warnings: 2

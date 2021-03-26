@@ -30,7 +30,9 @@ module reg_file(clk, wren, wd, rr1, rr2, wr, rd1, rd2);
   //write data Logic
   always @(posedge clk) begin
     if (wren) begin
-      file[wr] <= wd;
+      if(wr != 5'h0) begin
+        file[wr] <= wd;
+      end
     end
   end
 
