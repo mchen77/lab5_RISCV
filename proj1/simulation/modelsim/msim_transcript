@@ -547,3 +547,5 @@ run -all
 # ** Note: $stop    : C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v(58)
 #    Time: 1100 ns  Iteration: 0  Instance: /jal_tb
 # Break in Module jal_tb at C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/testbenches/jal_tb.v line 58
+# End time: 20:07:43 on Mar 25,2021, Elapsed time: 1:01:58
+# Errors: 0, Warnings: 2
