@@ -41,14 +41,24 @@ module lab05(CLOCK_50);
 	parameter R = 7'b0110011, I = 7'b0010011, S = 7'b0100011, L = 7'b0000011,
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
 
-	wire run, jump;
+	wire run;
+	reg jump;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
-	assign jump = ((form_code == JALR) | (form_code == JAL)) ? 1'b1: 1'b0;
+	//assign jump = ((form_code == JALR) | (form_code == JAL)) ? 1'b1: 1'b0;
 
+	always @(posedge outclk_0) begin
+	 if ((form_code == JALR) | (form_code == JAL)) begin
+		jump <= 1'b1;
+	 end
+	 else begin
+		jump <= 1'b0;
+	 end
+	end
+	
 	reg [10:0] PC_before;
 	initial PC_before = 11'h0;
 
-	always @(posedge outclk_0) begin
+	always @(posedge outclk_1) begin
 	  if (run) begin
 	  PC_before <= PC;
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
@@ -56,7 +66,8 @@ module lab05(CLOCK_50);
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + 11'h4 + PC;
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out + 11'h1 + PC: out + PC;
+	//assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
 	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
@@ -67,8 +78,11 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-	wire [31:0] ra = {21'b0, PC + 11'h4};
+	wire [31:0] ra = {21'b0, PC_before + 11'h4};
+	
+
    assign wd = (jump) ? {ra}: regData; //write data
+	
 
 
    control_unit ctrl (/*AUTOINST*/
@@ -155,19 +169,19 @@ module lab05(CLOCK_50);
 //		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(outclk_1));		 // Templated
 
-   rom_jal rom5 (/*AUTOINST*/
-		 // Outputs
-		 .q			(instr[31:0]),		 // Templated
-		 // Inputs
-		 .address		(PC[9:2]),		 // Templated
-		 .clock			(outclk_1));		 // Templated
+//   rom_jal rom5 (/*AUTOINST*/
+//		 // Outputs
+//		 .q			(instr[31:0]),		 // Templated
+//		 // Inputs
+//		 .address		(PC[9:2]),		 // Templated
+//		 .clock			(outclk_1));		 // Templated
 
-//   factorial rom6 (/*AUTOINST*/
-//		   // Outputs
-//		   .q			(instr[31:0]),		 // Templated
-//		   // Inputs
-//		   .address		(PC[9:2]),		 // Templated
-//		   .clock		(outclk_1));		 // Templated
+   factorial rom6 (/*AUTOINST*/
+		   // Outputs
+		   .q			(instr[31:0]),		 // Templated
+		   // Inputs
+		   .address		(PC[9:2]),		 // Templated
+		   .clock		(outclk_1));		 // Templated
 
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs
@@ -177,5 +191,14 @@ module lab05(CLOCK_50);
 		// Inputs
 		.refclk			(CLOCK_50),		 // Templated
 		.rst			(1'b0));			 // Templated
+		
+//	pll_slow p2 (/*AUTOINST*/
+//		// Outputs
+//		.outclk_0		(outclk_0),
+//		.outclk_1		(outclk_1),
+//		.outclk_2      (outclk_2),
+//		// Inputs
+//		.refclk			(CLOCK_50),		 // Templated
+//		.rst			(1'b0));			 // Templated
 
 endmodule
