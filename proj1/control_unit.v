@@ -19,8 +19,8 @@ assign Branch	  = (instr == 7'b0110011) ? 1'b0: //R-type
 									(instr == 7'b0100011) ? 1'b0: // S-type
 									(instr == 7'b0000011) ? 1'b0: // L-type
 									(instr == 7'b1100011) ? 1'b1: // B-type
-									(instr == 7'b1101111) ? 1'b1: // JAL
-									(instr == 7'b1100111) ? 1'b1: // JALR
+									(instr == 7'b1101111) ? 1'b0: // JAL
+									(instr == 7'b1100111) ? 1'b0: // JALR
 									 1'b0; //default
 assign MemRead  = (instr == 7'b0110011) ? 1'b0: //R-type
 									(instr == 7'b0010011) ? 1'b0: // I-type
@@ -67,7 +67,7 @@ assign aluop 		= (instr == 7'b0110011) ? 2'b10: //R-type
 									(instr == 7'b0100011) ? 2'b00: // S-type
 									(instr == 7'b0000011) ? 2'b00: // L-type
 									(instr == 7'b1100011) ? 2'b01: // B-type
-									(instr == 7'b1101111) ? 2'b01: // JAL
+									(instr == 7'b1101111) ? 2'b00: // JAL
 									(instr == 7'b1100111) ? 2'b00: // JALR
 									 2'b00; //default
 
