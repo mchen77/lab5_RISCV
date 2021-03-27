@@ -66,7 +66,7 @@ module lab05(CLOCK_50);
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out[10:0] + 11'd1 + PC: out[10:0] + PC;
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out[10:0] + PC: out[10:0] + PC;
 	//assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
 	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
@@ -177,19 +177,21 @@ module lab05(CLOCK_50);
 //		 .address		(PC[9:2]),		 // Templated
 //		 .clock			(outclk_1));		 // Templated
 
-   factorial rom6 (/*AUTOINST*/
-		   // Outputs
-		   .q			(instr[31:0]),		 // Templated
-		   // Inputs
-		   .address		(PC[9:2]),		 // Templated
-		   .clock		(outclk_1));		 // Templated
+//   factorial rom6 (/*AUTOINST*/
+//		   // Outputs
+//		   .q			(instr[31:0]),		 // Templated
+//		   // Inputs
+//		   .address		(PC[9:2]),		 // Templated
+//		   .clock		(outclk_1));		 // Templated
 			
 //	palin rom7 (/*AUTOINST*/
 //		   // Outputs
 //		   .q			(instr[31:0]),		 // Templated
 //		   // Inputs
-//		   .address		(PC[7:0]),		 // Templated
+//		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(outclk_1));		 // Templated
+
+	reg_rom factorial_reg(outclk_0, PC[9:2], instr);
 
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs

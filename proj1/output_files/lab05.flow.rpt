@@ -1,5 +1,5 @@
 Flow report for lab05
-Fri Mar 26 23:22:01 2021
+Fri Mar 26 23:54:45 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Mar 26 23:22:00 2021       ;
+; Flow Status                     ; Successful - Fri Mar 26 23:54:45 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab05                                       ;
 ; Top-level Entity Name           ; lab05                                       ;
@@ -49,10 +49,10 @@ https://fpgasoftware.intel.com/eula.
 ; Device                          ; 5CEBA4F23C7                                 ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1186                                        ;
+; Total registers                 ; 386                                         ;
 ; Total pins                      ; 1                                           ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 16,384                                      ;
+; Total block memory bits         ; 8,192                                       ;
 ; Total DSP Blocks                ; 2                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/26/2021 23:20:45 ;
+; Start date & time ; 03/26/2021 23:53:34 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab05               ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name    ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+----------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 101564829143456.161681524441708        ; --            ; --             ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 101564829143456.161681721349224        ; --            ; --             ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --             ; eda_board_design_signal_integrity ;
@@ -124,8 +124,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:14     ; 1.0                     ; 4896 MB             ; 00:02:27                           ;
-; Total                ; 00:01:14     ; --                      ; --                  ; 00:02:27                           ;
+; Analysis & Synthesis ; 00:01:10     ; 1.0                     ; 4892 MB             ; 00:02:14                           ;
+; Total                ; 00:01:10     ; --                      ; --                  ; 00:02:14                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
