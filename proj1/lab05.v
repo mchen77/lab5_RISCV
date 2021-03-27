@@ -58,7 +58,7 @@ module lab05(CLOCK_50);
 	reg [10:0] PC_before;
 	initial PC_before = 11'h0;
 
-	always @(posedge outclk_1) begin
+	always @(posedge outclk_0) begin
 	  if (run) begin
 	  PC_before <= PC;
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
@@ -66,7 +66,7 @@ module lab05(CLOCK_50);
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out + 11'd1 + PC: out + PC;
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out + PC: out + PC;
 	//assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
 	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
@@ -78,7 +78,7 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-	wire [31:0] ra = {21'b0, PC_before + 11'h4};
+	wire [31:0] ra = {21'b0, PC + 11'h4};
 	
 
    assign wd = (jump) ? {ra}: regData; //write data
@@ -182,6 +182,8 @@ module lab05(CLOCK_50);
 		   // Inputs
 		   .address		(PC[9:2]),		 // Templated
 		   .clock		(outclk_1));		 // Templated
+
+//reg_rom rom7(outclk_1, PC[9:2], instr);
 
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs

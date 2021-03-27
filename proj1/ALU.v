@@ -13,7 +13,7 @@ module ALU
   input [4:0] opcode
   );
 
-  assign zero = (Y == 0) ? 1'b1 : 1'b0;
+  assign zero = (Y == 32'd0) ? 1'b1 : 1'b0;
 
   always@(*) begin
     case(opcode)
