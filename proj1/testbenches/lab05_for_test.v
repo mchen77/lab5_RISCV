@@ -1,4 +1,4 @@
-module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd, ALUSrc, A, B, aluop, rd1, rd2, PC4);
+module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd, ALUSrc, A, B, aluop, rd1, rd2, PC4, rom_addr);
    input CLOCK_50;
 
    /*AUTOWIRE*/
@@ -20,7 +20,7 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
    wire			zero;			// From a1 of ALU.v
    // End of automatics
 
-   input wire [31:0] 		instr;     // isntruction from ROM
+   output wire [31:0] 		instr;     // isntruction from ROM
 	wire [6:0]			form_code = instr[6:0];
    wire [7:0] 			address;   // address to RAM
    wire 					halt;      // HALT flag
@@ -158,6 +158,10 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
 		//  .rden			(MemRead),		 // Templated
 		//  .wren			(MemWrite));		 // Templated
 
+    output wire [4:0] rom_addr = PC[6:2];
+
+    reg_rom rom7(rom_addr, instr);
+
    /*rom_lab5 AUTO_TEMPLATE(
    //  .clock (ClOCK_50),
    //  .address (PC[9:2]),
@@ -228,6 +232,8 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
 //		   // Inputs
 //		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(ClOCK_50));		 // Templated
+
+
 
    /*pll_lab5 AUTO_TEMPLATE(
     .refclk (CLOCK_50),

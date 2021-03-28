@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab05
-Sat Mar 27 17:56:59 2021
+Sun Mar 28 11:11:06 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -22,18 +22,17 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  14. Inverted Register Statistics
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
  16. Source assignments for lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|altsyncram_29f2:altsyncram1
- 17. Source assignments for rom_jal:rom5|altsyncram:altsyncram_component|altsyncram_4ng1:auto_generated
- 18. Parameter Settings for User Entity Instance: Top-level Entity: |lab05
- 19. Parameter Settings for User Entity Instance: lab5_ram:ram|altsyncram:altsyncram_component
- 20. Parameter Settings for User Entity Instance: rom_jal:rom5|altsyncram:altsyncram_component
- 21. Parameter Settings for User Entity Instance: pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i
- 22. altsyncram Parameter Settings by Entity Instance
- 23. Port Connectivity Checks: "pll_lab5:p1"
- 24. Port Connectivity Checks: "control_unit:ctrl"
- 25. In-System Memory Content Editor Settings
- 26. Post-Synthesis Netlist Statistics for Top Partition
- 27. Elapsed Time Per Partition
- 28. Analysis & Synthesis Messages
+ 17. Parameter Settings for User Entity Instance: Top-level Entity: |lab05
+ 18. Parameter Settings for User Entity Instance: lab5_ram:ram|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i
+ 20. altsyncram Parameter Settings by Entity Instance
+ 21. Port Connectivity Checks: "pll_lab5:p1"
+ 22. Port Connectivity Checks: "reg_rom:rom7"
+ 23. Port Connectivity Checks: "control_unit:ctrl"
+ 24. In-System Memory Content Editor Settings
+ 25. Post-Synthesis Netlist Statistics for Top Partition
+ 26. Elapsed Time Per Partition
+ 27. Analysis & Synthesis Messages
 
 
 
@@ -60,16 +59,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Mar 27 17:56:58 2021       ;
+; Analysis & Synthesis Status     ; Successful - Sun Mar 28 11:11:06 2021       ;
 ; Quartus Prime Version           ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                   ; lab05                                       ;
 ; Top-level Entity Name           ; lab05                                       ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1164                                        ;
+; Total registers                 ; 763                                         ;
 ; Total pins                      ; 1                                           ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 16,384                                      ;
+; Total block memory bits         ; 8,192                                       ;
 ; Total DSP Blocks                ; 2                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -191,14 +190,13 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
 ; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                                                                                 ; Library     ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------+
+; reg_rom.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_rom.v                                                          ;             ;
 ; alu_control.v                                                      ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/alu_control.v                                                      ;             ;
 ; imm_gen.v                                                          ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/imm_gen.v                                                          ;             ;
 ; ALU.v                                                              ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/ALU.v                                                              ;             ;
 ; reg_file.v                                                         ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v                                                         ;             ;
 ; control_unit.v                                                     ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/control_unit.v                                                     ;             ;
 ; lab5_ram.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab5_ram.v                                                         ;             ;
-; jal_testmif.mif                                                    ; yes             ; User Memory Initialization File              ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/jal_testmif.mif                                                    ;             ;
-; rom_jal.v                                                          ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal.v                                                          ;             ;
 ; factorial.v                                                        ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/factorial.v                                                        ;             ;
 ; pll_lab5.v                                                         ; yes             ; User Wizard-Generated File                   ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.v                                                         ; pll_lab5    ;
 ; pll_lab5/pll_lab5_0002.v                                           ; yes             ; User Verilog HDL File                        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v                                           ; pll_lab5    ;
@@ -218,7 +216,6 @@ https://fpgasoftware.intel.com/eula.
 ; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                                                         ;             ;
 ; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                                                     ;             ;
 ; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                                                        ;             ;
-; db/altsyncram_4ng1.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_4ng1.tdf                                             ;             ;
 ; altera_pll.v                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                                                          ;             ;
 ; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                                                           ; altera_sld  ;
 ; db/ip/sldc3a581be/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/alt_sld_fab.v                                    ; alt_sld_fab ;
@@ -236,20 +233,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------------------------------------------------------------+
 ; Resource                                    ; Usage                                                                          ;
 +---------------------------------------------+--------------------------------------------------------------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 1278                                                                           ;
+; Estimate of Logic utilization (ALMs needed) ; 791                                                                            ;
 ;                                             ;                                                                                ;
-; Combinational ALUT usage for logic          ; 1172                                                                           ;
-;     -- 7 input functions                    ; 451                                                                            ;
-;     -- 6 input functions                    ; 332                                                                            ;
-;     -- 5 input functions                    ; 179                                                                            ;
-;     -- 4 input functions                    ; 63                                                                             ;
-;     -- <=3 input functions                  ; 147                                                                            ;
+; Combinational ALUT usage for logic          ; 1071                                                                           ;
+;     -- 7 input functions                    ; 68                                                                             ;
+;     -- 6 input functions                    ; 312                                                                            ;
+;     -- 5 input functions                    ; 300                                                                            ;
+;     -- 4 input functions                    ; 168                                                                            ;
+;     -- <=3 input functions                  ; 223                                                                            ;
 ;                                             ;                                                                                ;
-; Dedicated logic registers                   ; 1164                                                                           ;
+; Dedicated logic registers                   ; 763                                                                            ;
 ;                                             ;                                                                                ;
 ; I/O pins                                    ; 1                                                                              ;
 ; Total MLAB memory bits                      ; 0                                                                              ;
-; Total block memory bits                     ; 16384                                                                          ;
+; Total block memory bits                     ; 8192                                                                           ;
 ;                                             ;                                                                                ;
 ; Total DSP Blocks                            ; 2                                                                              ;
 ;                                             ;                                                                                ;
@@ -257,9 +254,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 3                                                                              ;
 ;                                             ;                                                                                ;
 ; Maximum fan-out node                        ; pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|outclk_wire[1] ;
-; Maximum fan-out                             ; 1035                                                                           ;
-; Total fan-out                               ; 11444                                                                          ;
-; Average fan-out                             ; 4.74                                                                           ;
+; Maximum fan-out                             ; 608                                                                            ;
+; Total fan-out                               ; 8330                                                                           ;
+; Average fan-out                             ; 4.43                                                                           ;
 +---------------------------------------------+--------------------------------------------------------------------------------+
 
 
@@ -268,11 +265,11 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                               ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |lab05                                                                                                                                  ; 1172 (114)          ; 1164 (22)                 ; 16384             ; 2          ; 1    ; 0            ; |lab05                                                                                                                                                                                                                                                                                                                                            ; lab05                             ; work         ;
-;    |ALU:a1|                                                                                                                             ; 266 (266)           ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |lab05|ALU:a1                                                                                                                                                                                                                                                                                                                                     ; ALU                               ; work         ;
-;    |alu_control:aluctrl|                                                                                                                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|alu_control:aluctrl                                                                                                                                                                                                                                                                                                                        ; alu_control                       ; work         ;
-;    |control_unit:ctrl|                                                                                                                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|control_unit:ctrl                                                                                                                                                                                                                                                                                                                          ; control_unit                      ; work         ;
-;    |imm_gen:ig|                                                                                                                         ; 21 (21)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|imm_gen:ig                                                                                                                                                                                                                                                                                                                                 ; imm_gen                           ; work         ;
+; |lab05                                                                                                                                  ; 1071 (143)          ; 763 (5)                   ; 8192              ; 2          ; 1    ; 0            ; |lab05                                                                                                                                                                                                                                                                                                                                            ; lab05                             ; work         ;
+;    |ALU:a1|                                                                                                                             ; 200 (200)           ; 0 (0)                     ; 0                 ; 2          ; 0    ; 0            ; |lab05|ALU:a1                                                                                                                                                                                                                                                                                                                                     ; ALU                               ; work         ;
+;    |alu_control:aluctrl|                                                                                                                ; 4 (4)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|alu_control:aluctrl                                                                                                                                                                                                                                                                                                                        ; alu_control                       ; work         ;
+;    |control_unit:ctrl|                                                                                                                  ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|control_unit:ctrl                                                                                                                                                                                                                                                                                                                          ; control_unit                      ; work         ;
+;    |imm_gen:ig|                                                                                                                         ; 13 (13)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|imm_gen:ig                                                                                                                                                                                                                                                                                                                                 ; imm_gen                           ; work         ;
 ;    |lab5_ram:ram|                                                                                                                       ; 46 (0)              ; 64 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |lab05|lab5_ram:ram                                                                                                                                                                                                                                                                                                                               ; lab5_ram                          ; work         ;
 ;       |altsyncram:altsyncram_component|                                                                                                 ; 46 (0)              ; 64 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                               ; altsyncram                        ; work         ;
 ;          |altsyncram_nuo1:auto_generated|                                                                                               ; 46 (0)              ; 64 (0)                    ; 8192              ; 0          ; 0    ; 0            ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated                                                                                                                                                                                                                                                                ; altsyncram_nuo1                   ; work         ;
@@ -282,10 +279,8 @@ https://fpgasoftware.intel.com/eula.
 ;    |pll_lab5:p1|                                                                                                                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|pll_lab5:p1                                                                                                                                                                                                                                                                                                                                ; pll_lab5                          ; pll_lab5     ;
 ;       |pll_lab5_0002:pll_lab5_inst|                                                                                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|pll_lab5:p1|pll_lab5_0002:pll_lab5_inst                                                                                                                                                                                                                                                                                                    ; pll_lab5_0002                     ; pll_lab5     ;
 ;          |altera_pll:altera_pll_i|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                            ; altera_pll                        ; work         ;
-;    |reg_file:rf|                                                                                                                        ; 616 (616)           ; 992 (992)                 ; 0                 ; 0          ; 0    ; 0            ; |lab05|reg_file:rf                                                                                                                                                                                                                                                                                                                                ; reg_file                          ; work         ;
-;    |rom_jal:rom5|                                                                                                                       ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |lab05|rom_jal:rom5                                                                                                                                                                                                                                                                                                                               ; rom_jal                           ; work         ;
-;       |altsyncram:altsyncram_component|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |lab05|rom_jal:rom5|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                               ; altsyncram                        ; work         ;
-;          |altsyncram_4ng1:auto_generated|                                                                                               ; 0 (0)               ; 0 (0)                     ; 8192              ; 0          ; 0    ; 0            ; |lab05|rom_jal:rom5|altsyncram:altsyncram_component|altsyncram_4ng1:auto_generated                                                                                                                                                                                                                                                                ; altsyncram_4ng1                   ; work         ;
+;    |reg_file:rf|                                                                                                                        ; 537 (537)           ; 608 (608)                 ; 0                 ; 0          ; 0    ; 0            ; |lab05|reg_file:rf                                                                                                                                                                                                                                                                                                                                ; reg_file                          ; work         ;
+;    |reg_rom:rom7|                                                                                                                       ; 25 (25)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab05|reg_rom:rom7                                                                                                                                                                                                                                                                                                                               ; reg_rom                           ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 98 (1)              ; 86 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab05|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 97 (0)              ; 86 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab05|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 97 (0)              ; 86 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab05|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -298,14 +293,13 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                ;
-+--------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+-----------------+
-; Name                                                                                                               ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF             ;
-+--------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+-----------------+
-; lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|altsyncram_29f2:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 256          ; 32           ; 256          ; 32           ; 8192 ; None            ;
-; rom_jal:rom5|altsyncram:altsyncram_component|altsyncram_4ng1:auto_generated|ALTSYNCRAM                             ; AUTO ; ROM            ; 256          ; 32           ; --           ; --           ; 8192 ; jal_testmif.mif ;
-+--------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+-----------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                     ;
++--------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                               ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++--------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+------+
+; lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|altsyncram_29f2:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 256          ; 32           ; 256          ; 32           ; 8192 ; None ;
++--------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+------+------+
 
 
 +-------------------------------------------------+
@@ -334,65 +328,496 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Altera ; Signal Tap   ; N/A     ; N/A          ; Licensed     ; |lab05|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_splitter:splitter   ;                 ;
 ; Altera ; altera_pll   ; 20.1    ; N/A          ; N/A          ; |lab05|pll_lab5:p1                                                                                                                                                                                                                                                         ; pll_lab5.v      ;
 ; Altera ; RAM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |lab05|lab5_ram:ram                                                                                                                                                                                                                                                        ; lab5_ram.v      ;
-; Altera ; ROM: 1-PORT  ; 20.1    ; N/A          ; N/A          ; |lab05|rom_jal:rom5                                                                                                                                                                                                                                                        ; rom_jal.v       ;
 +--------+--------------+---------+--------------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
 
 
-+--------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                   ;
-+----------------------------------------+---------------------------------------------+
-; Register name                          ; Reason for Removal                          ;
-+----------------------------------------+---------------------------------------------+
-; reg_file:rf|file~0                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~13                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~14                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~15                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~12                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~18                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~19                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~16                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~17                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~11                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~21                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~23                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~26                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~27                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~22                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~29                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~8                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~6                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~9                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~5                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~7                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~10                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~24                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~25                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~28                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~30                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~31                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~20                    ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~4                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~3                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~2                     ; Stuck at GND due to stuck port clock_enable ;
-; reg_file:rf|file~1                     ; Stuck at GND due to stuck port clock_enable ;
-; Total Number of Removed Registers = 32 ;                                             ;
-+----------------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                    ;
++-----------------------------------------+---------------------------------------------+
+; Register name                           ; Reason for Removal                          ;
++-----------------------------------------+---------------------------------------------+
+; reg_file:rf|file~0                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~20                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~21                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~22                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~24                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~31                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~30                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~29                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~28                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~18                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~17                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~15                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~16                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~14                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~12                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~19                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~13                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~11                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~10                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~9                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~5                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~6                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~7                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~8                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~25                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~23                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~26                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~27                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~4                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~1                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~3                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~2                      ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~416                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~480                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~384                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~448                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~128                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~640                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~704                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~436                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~500                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~404                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~468                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~148                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~660                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~724                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~437                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~501                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~405                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~469                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~149                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~661                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~725                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~438                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~502                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~406                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~470                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~150                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~662                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~726                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~440                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~504                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~408                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~472                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~152                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~664                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~728                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~447                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~511                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~415                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~479                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~159                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~671                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~735                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~446                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~510                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~414                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~478                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~158                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~670                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~734                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~445                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~509                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~413                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~477                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~157                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~669                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~733                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~444                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~508                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~412                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~476                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~156                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~668                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~732                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~434                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~498                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~402                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~466                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~146                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~658                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~722                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~433                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~497                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~401                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~465                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~145                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~657                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~721                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~431                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~495                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~399                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~463                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~143                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~655                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~719                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~432                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~496                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~400                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~464                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~144                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~656                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~720                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~430                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~494                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~398                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~462                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~142                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~654                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~718                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~428                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~492                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~396                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~460                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~140                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~652                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~716                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~435                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~499                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~403                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~467                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~147                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~659                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~723                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~429                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~493                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~397                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~461                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~141                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~653                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~717                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~427                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~491                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~395                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~459                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~139                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~651                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~715                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~426                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~490                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~394                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~458                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~138                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~650                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~714                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~425                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~489                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~393                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~457                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~137                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~649                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~713                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~421                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~485                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~389                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~453                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~133                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~645                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~709                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~422                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~486                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~390                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~454                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~134                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~646                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~710                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~423                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~487                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~391                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~455                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~135                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~647                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~711                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~424                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~488                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~392                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~456                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~136                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~648                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~712                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~441                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~505                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~409                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~473                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~153                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~665                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~729                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~439                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~503                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~407                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~471                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~151                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~663                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~727                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~442                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~506                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~410                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~474                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~154                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~666                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~730                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~443                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~507                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~411                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~475                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~155                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~667                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~731                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~420                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~484                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~388                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~452                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~132                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~644                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~708                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~417                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~481                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~385                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~449                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~129                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~641                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~705                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~419                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~483                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~387                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~451                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~131                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~643                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~707                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~418                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~482                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~386                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~450                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~130                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~642                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~706                    ; Stuck at GND due to stuck port clock_enable ;
+; PC[0]                                   ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~352                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~320                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~96                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~64                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~512                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~372                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~340                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~116                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~84                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~532                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~373                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~341                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~117                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~85                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~533                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~374                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~342                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~118                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~86                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~534                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~376                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~344                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~120                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~88                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~536                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~383                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~351                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~127                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~95                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~543                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~382                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~350                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~126                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~94                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~542                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~381                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~349                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~125                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~93                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~541                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~380                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~348                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~124                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~92                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~540                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~370                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~338                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~114                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~82                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~530                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~369                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~337                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~113                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~81                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~529                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~367                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~335                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~111                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~79                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~527                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~368                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~336                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~112                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~80                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~528                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~366                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~334                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~110                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~78                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~526                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~364                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~332                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~108                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~76                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~524                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~371                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~339                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~115                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~83                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~531                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~365                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~333                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~109                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~77                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~525                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~363                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~331                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~107                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~75                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~523                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~362                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~330                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~106                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~74                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~522                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~361                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~329                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~105                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~73                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~521                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~357                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~325                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~101                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~69                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~517                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~358                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~326                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~102                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~70                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~518                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~359                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~327                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~103                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~71                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~519                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~360                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~328                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~104                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~72                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~520                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~377                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~345                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~121                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~89                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~537                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~375                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~343                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~119                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~87                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~535                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~378                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~346                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~122                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~90                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~538                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~379                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~347                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~123                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~91                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~539                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~356                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~324                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~100                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~68                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~516                    ; Stuck at GND due to stuck port clock_enable ;
+; PC[1]                                   ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~353                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~321                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~97                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~65                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~513                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~355                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~323                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~99                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~67                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~515                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~354                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~322                    ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~98                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~66                     ; Stuck at GND due to stuck port clock_enable ;
+; reg_file:rf|file~514                    ; Stuck at GND due to stuck port clock_enable ;
+; Total Number of Removed Registers = 418 ;                                             ;
++-----------------------------------------+---------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                               ;
-+--------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; Register name      ; Reason for Removal             ; Registers Removed due to This Register                                              ;
-+--------------------+--------------------------------+-------------------------------------------------------------------------------------+
-; reg_file:rf|file~0 ; Stuck at GND                   ; reg_file:rf|file~13, reg_file:rf|file~14, reg_file:rf|file~15, reg_file:rf|file~12, ;
-;                    ; due to stuck port clock_enable ; reg_file:rf|file~18, reg_file:rf|file~19, reg_file:rf|file~16, reg_file:rf|file~17, ;
-;                    ;                                ; reg_file:rf|file~11, reg_file:rf|file~21, reg_file:rf|file~23, reg_file:rf|file~26, ;
-;                    ;                                ; reg_file:rf|file~27, reg_file:rf|file~22, reg_file:rf|file~29, reg_file:rf|file~8,  ;
-;                    ;                                ; reg_file:rf|file~6, reg_file:rf|file~9, reg_file:rf|file~5, reg_file:rf|file~7,     ;
-;                    ;                                ; reg_file:rf|file~10, reg_file:rf|file~24, reg_file:rf|file~25, reg_file:rf|file~28, ;
-;                    ;                                ; reg_file:rf|file~30, reg_file:rf|file~31, reg_file:rf|file~20, reg_file:rf|file~4,  ;
-;                    ;                                ; reg_file:rf|file~3, reg_file:rf|file~2, reg_file:rf|file~1                          ;
-+--------------------+--------------------------------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                     ;
++----------------------+--------------------------------+-----------------------------------------------------------------------------------------+
+; Register name        ; Reason for Removal             ; Registers Removed due to This Register                                                  ;
++----------------------+--------------------------------+-----------------------------------------------------------------------------------------+
+; reg_file:rf|file~418 ; Stuck at GND                   ; reg_file:rf|file~352, reg_file:rf|file~320, reg_file:rf|file~96, reg_file:rf|file~64,   ;
+;                      ; due to stuck port clock_enable ; reg_file:rf|file~512, reg_file:rf|file~367, reg_file:rf|file~335, reg_file:rf|file~111, ;
+;                      ;                                ; reg_file:rf|file~79, reg_file:rf|file~527, reg_file:rf|file~364, reg_file:rf|file~332,  ;
+;                      ;                                ; reg_file:rf|file~108, reg_file:rf|file~76, reg_file:rf|file~524, reg_file:rf|file~365,  ;
+;                      ;                                ; reg_file:rf|file~333, reg_file:rf|file~109, reg_file:rf|file~77, reg_file:rf|file~525,  ;
+;                      ;                                ; reg_file:rf|file~363, reg_file:rf|file~331, reg_file:rf|file~107, reg_file:rf|file~75,  ;
+;                      ;                                ; reg_file:rf|file~523, reg_file:rf|file~362, reg_file:rf|file~330, reg_file:rf|file~106, ;
+;                      ;                                ; reg_file:rf|file~74, reg_file:rf|file~522, reg_file:rf|file~361, reg_file:rf|file~329,  ;
+;                      ;                                ; reg_file:rf|file~105, reg_file:rf|file~73, reg_file:rf|file~521, reg_file:rf|file~357,  ;
+;                      ;                                ; reg_file:rf|file~325, reg_file:rf|file~101, reg_file:rf|file~69, reg_file:rf|file~517,  ;
+;                      ;                                ; reg_file:rf|file~358, reg_file:rf|file~326, reg_file:rf|file~102, reg_file:rf|file~70,  ;
+;                      ;                                ; reg_file:rf|file~518, reg_file:rf|file~359, reg_file:rf|file~327, reg_file:rf|file~103, ;
+;                      ;                                ; reg_file:rf|file~71, reg_file:rf|file~519, reg_file:rf|file~360, reg_file:rf|file~328,  ;
+;                      ;                                ; reg_file:rf|file~104, reg_file:rf|file~72, reg_file:rf|file~520, reg_file:rf|file~356,  ;
+;                      ;                                ; reg_file:rf|file~324, reg_file:rf|file~100, reg_file:rf|file~68, reg_file:rf|file~516,  ;
+;                      ;                                ; reg_file:rf|file~353, reg_file:rf|file~321, reg_file:rf|file~97, reg_file:rf|file~65,   ;
+;                      ;                                ; reg_file:rf|file~513, reg_file:rf|file~355, reg_file:rf|file~323, reg_file:rf|file~99,  ;
+;                      ;                                ; reg_file:rf|file~67, reg_file:rf|file~515                                               ;
+; reg_file:rf|file~420 ; Stuck at GND                   ; reg_file:rf|file~374, reg_file:rf|file~342, reg_file:rf|file~118, reg_file:rf|file~86,  ;
+;                      ; due to stuck port clock_enable ; reg_file:rf|file~534, reg_file:rf|file~376, reg_file:rf|file~344, reg_file:rf|file~120, ;
+;                      ;                                ; reg_file:rf|file~88, reg_file:rf|file~536, reg_file:rf|file~383, reg_file:rf|file~351,  ;
+;                      ;                                ; reg_file:rf|file~127, reg_file:rf|file~95, reg_file:rf|file~543, reg_file:rf|file~382,  ;
+;                      ;                                ; reg_file:rf|file~350, reg_file:rf|file~126, reg_file:rf|file~94, reg_file:rf|file~542,  ;
+;                      ;                                ; reg_file:rf|file~381, reg_file:rf|file~349, reg_file:rf|file~125, reg_file:rf|file~93,  ;
+;                      ;                                ; reg_file:rf|file~541, reg_file:rf|file~380, reg_file:rf|file~348, reg_file:rf|file~124, ;
+;                      ;                                ; reg_file:rf|file~92, reg_file:rf|file~540, reg_file:rf|file~377, reg_file:rf|file~345,  ;
+;                      ;                                ; reg_file:rf|file~121, reg_file:rf|file~89, reg_file:rf|file~537, reg_file:rf|file~375,  ;
+;                      ;                                ; reg_file:rf|file~343, reg_file:rf|file~119, reg_file:rf|file~87, reg_file:rf|file~535,  ;
+;                      ;                                ; reg_file:rf|file~378, reg_file:rf|file~346, reg_file:rf|file~122, reg_file:rf|file~90,  ;
+;                      ;                                ; reg_file:rf|file~538, reg_file:rf|file~379, reg_file:rf|file~347, reg_file:rf|file~123, ;
+;                      ;                                ; reg_file:rf|file~91, reg_file:rf|file~539                                               ;
+; reg_file:rf|file~18  ; Stuck at GND                   ; reg_file:rf|file~19, reg_file:rf|file~436, reg_file:rf|file~500, reg_file:rf|file~404,  ;
+;                      ; due to stuck port clock_enable ; reg_file:rf|file~468, reg_file:rf|file~148, reg_file:rf|file~660, reg_file:rf|file~724, ;
+;                      ;                                ; reg_file:rf|file~437, reg_file:rf|file~501, reg_file:rf|file~405, reg_file:rf|file~469, ;
+;                      ;                                ; reg_file:rf|file~149, reg_file:rf|file~661, reg_file:rf|file~725, reg_file:rf|file~435, ;
+;                      ;                                ; reg_file:rf|file~499, reg_file:rf|file~403, reg_file:rf|file~467, reg_file:rf|file~147, ;
+;                      ;                                ; reg_file:rf|file~659, reg_file:rf|file~723, reg_file:rf|file~372, reg_file:rf|file~340, ;
+;                      ;                                ; reg_file:rf|file~116, reg_file:rf|file~84, reg_file:rf|file~532, reg_file:rf|file~373,  ;
+;                      ;                                ; reg_file:rf|file~341, reg_file:rf|file~117, reg_file:rf|file~85, reg_file:rf|file~533,  ;
+;                      ;                                ; reg_file:rf|file~371, reg_file:rf|file~339, reg_file:rf|file~115, reg_file:rf|file~83,  ;
+;                      ;                                ; reg_file:rf|file~531                                                                    ;
+; reg_file:rf|file~15  ; Stuck at GND                   ; reg_file:rf|file~16, reg_file:rf|file~433, reg_file:rf|file~497, reg_file:rf|file~401,  ;
+;                      ; due to stuck port clock_enable ; reg_file:rf|file~465, reg_file:rf|file~145, reg_file:rf|file~657, reg_file:rf|file~721, ;
+;                      ;                                ; reg_file:rf|file~432, reg_file:rf|file~496, reg_file:rf|file~400, reg_file:rf|file~464, ;
+;                      ;                                ; reg_file:rf|file~144, reg_file:rf|file~656, reg_file:rf|file~720, reg_file:rf|file~369, ;
+;                      ;                                ; reg_file:rf|file~337, reg_file:rf|file~113, reg_file:rf|file~81, reg_file:rf|file~529,  ;
+;                      ;                                ; reg_file:rf|file~368, reg_file:rf|file~336, reg_file:rf|file~112, reg_file:rf|file~80,  ;
+;                      ;                                ; reg_file:rf|file~528                                                                    ;
+; reg_file:rf|file~17  ; Stuck at GND                   ; reg_file:rf|file~434, reg_file:rf|file~498, reg_file:rf|file~402, reg_file:rf|file~466, ;
+;                      ; due to stuck port clock_enable ; reg_file:rf|file~146, reg_file:rf|file~658, reg_file:rf|file~722, reg_file:rf|file~370, ;
+;                      ;                                ; reg_file:rf|file~338, reg_file:rf|file~114, reg_file:rf|file~82, reg_file:rf|file~530   ;
+; reg_file:rf|file~13  ; Stuck at GND                   ; reg_file:rf|file~430, reg_file:rf|file~494, reg_file:rf|file~398, reg_file:rf|file~462, ;
+;                      ; due to stuck port clock_enable ; reg_file:rf|file~142, reg_file:rf|file~654, reg_file:rf|file~718, reg_file:rf|file~366, ;
+;                      ;                                ; reg_file:rf|file~334, reg_file:rf|file~110, reg_file:rf|file~78, reg_file:rf|file~526   ;
++----------------------+--------------------------------+-----------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -400,12 +825,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1164  ;
+; Total registers                              ; 763   ;
 ; Number of registers using Synchronous Clear  ; 7     ;
 ; Number of registers using Synchronous Load   ; 41    ;
 ; Number of registers using Asynchronous Clear ; 56    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1117  ;
+; Number of registers using Clock Enable       ; 722   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -428,24 +853,25 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 32 bits   ; 64 LEs        ; 0 LEs                ; 64 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[17]                                               ;
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                     ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                ;
-; 3:1                ; 9 bits    ; 18 LEs        ; 18 LEs               ; 0 LEs                  ; Yes        ; |lab05|PC[2]                                                                                                                                                                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[6]                                                ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |lab05|PC[6]                                                                                                                                                                    ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[2] ;
 ; 26:1               ; 4 bits    ; 68 LEs        ; 52 LEs               ; 16 LEs                 ; Yes        ; |lab05|lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[0]      ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |lab05|wd[14]                                                                                                                                                                   ;
+; 3:1                ; 21 bits   ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |lab05|wd[20]                                                                                                                                                                   ;
 ; 3:1                ; 11 bits   ; 22 LEs        ; 22 LEs               ; 0 LEs                  ; No         ; |lab05|wd[10]                                                                                                                                                                   ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab05|ALU:a1|ShiftLeft0                                                                                                                                                        ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab05|ALU:a1|ShiftLeft0                                                                                                                                                        ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab05|ALU:a1|ShiftLeft0                                                                                                                                                        ;
 ; 4:1                ; 25 bits   ; 50 LEs        ; 50 LEs               ; 0 LEs                  ; No         ; |lab05|ALU:a1|ShiftLeft0                                                                                                                                                        ;
-; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |lab05|B[16]                                                                                                                                                                    ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab05|control_unit:ctrl|MemRead                                                                                                                                                ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |lab05|B[13]                                                                                                                                                                    ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab05|imm_gen:ig|out[3]                                                                                                                                                        ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab05|alu_control:aluctrl|aluopcode[1]                                                                                                                                         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab05|alu_control:aluctrl|aluopcode[1]                                                                                                                                         ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |lab05|alu_control:aluctrl|aluopcode[3]                                                                                                                                         ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |lab05|control_unit:ctrl|Branch                                                                                                                                                 ;
-; 9:1                ; 16 bits   ; 96 LEs        ; 80 LEs               ; 16 LEs                 ; No         ; |lab05|ALU:a1|Y[8]                                                                                                                                                              ;
-; 12:1               ; 12 bits   ; 96 LEs        ; 84 LEs               ; 12 LEs                 ; No         ; |lab05|ALU:a1|Y[24]                                                                                                                                                             ;
-; 15:1               ; 4 bits    ; 40 LEs        ; 36 LEs               ; 4 LEs                  ; No         ; |lab05|ALU:a1|Y[28]                                                                                                                                                             ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |lab05|control_unit:ctrl|RegWrite                                                                                                                                               ;
+; 7:1                ; 16 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |lab05|ALU:a1|Y                                                                                                                                                                 ;
+; 10:1               ; 12 bits   ; 72 LEs        ; 72 LEs               ; 0 LEs                  ; No         ; |lab05|ALU:a1|Y                                                                                                                                                                 ;
+; 13:1               ; 4 bits    ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |lab05|ALU:a1|Y                                                                                                                                                                 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -456,15 +882,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+------------------------------------------------------------------+
 ; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                ;
 +---------------------------------+--------------------+------+------------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Source assignments for rom_jal:rom5|altsyncram:altsyncram_component|altsyncram_4ng1:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------+
-; Assignment                      ; Value              ; From ; To                                   ;
-+---------------------------------+--------------------+------+--------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                    ;
-+---------------------------------+--------------------+------+--------------------------------------+
 
 
 +-----------------------------------------------------------------------+
@@ -540,67 +957,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                       ;
 ; CBXI_PARAMETER                     ; altsyncram_nuo1      ; Untyped                       ;
-+------------------------------------+----------------------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: rom_jal:rom5|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-------------------------------+
-; Parameter Name                     ; Value                ; Type                          ;
-+------------------------------------+----------------------+-------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                       ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                    ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                  ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                  ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                       ;
-; OPERATION_MODE                     ; ROM                  ; Untyped                       ;
-; WIDTH_A                            ; 32                   ; Signed Integer                ;
-; WIDTHAD_A                          ; 8                    ; Signed Integer                ;
-; NUMWORDS_A                         ; 256                  ; Signed Integer                ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                       ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                       ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                       ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                       ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                       ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                       ;
-; WIDTH_B                            ; 1                    ; Untyped                       ;
-; WIDTHAD_B                          ; 1                    ; Untyped                       ;
-; NUMWORDS_B                         ; 1                    ; Untyped                       ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                       ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                       ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                       ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                       ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                       ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                       ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                       ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                       ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                       ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                       ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                       ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                       ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                       ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                       ;
-; BYTE_SIZE                          ; 8                    ; Untyped                       ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                       ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
-; INIT_FILE                          ; jal_testmif.mif      ; Untyped                       ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                       ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                       ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                       ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                       ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                       ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                       ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                       ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                       ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                       ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_4ng1      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -857,20 +1213,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+----------------------------------------------+
 ; Name                                      ; Value                                        ;
 +-------------------------------------------+----------------------------------------------+
-; Number of entity instances                ; 2                                            ;
+; Number of entity instances                ; 1                                            ;
 ; Entity Instance                           ; lab5_ram:ram|altsyncram:altsyncram_component ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
-;     -- WIDTH_A                            ; 32                                           ;
-;     -- NUMWORDS_A                         ; 256                                          ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
-;     -- WIDTH_B                            ; 1                                            ;
-;     -- NUMWORDS_B                         ; 1                                            ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                       ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                 ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
-; Entity Instance                           ; rom_jal:rom5|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; ROM                                          ;
 ;     -- WIDTH_A                            ; 32                                           ;
 ;     -- NUMWORDS_A                         ; 256                                          ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
@@ -890,6 +1235,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+---------------+
 ; rst  ; Input ; Info     ; Stuck at GND  ;
 +------+-------+----------+---------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_rom:rom7"                                                                                                                                                                   ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; addr ; Input ; Warning  ; Input port expression (8 bits) is wider than the input port (5 bits) it drives.  The 3 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------+
@@ -916,37 +1270,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1078                        ;
+; arriav_ff             ; 677                         ;
 ;     CLR               ; 8                           ;
-;     ENA               ; 1012                        ;
+;     ENA               ; 617                         ;
 ;     ENA CLR           ; 7                           ;
 ;     ENA CLR SLD       ; 8                           ;
 ;     ENA SLD           ; 32                          ;
-;     plain             ; 11                          ;
-; arriav_lcell_comb     ; 1073                        ;
-;     arith             ; 107                         ;
+;     plain             ; 5                           ;
+; arriav_lcell_comb     ; 972                         ;
+;     arith             ; 92                          ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 15                          ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 3                           ;
-;         5 data inputs ; 66                          ;
-;     extend            ; 450                         ;
-;         7 data inputs ; 450                         ;
-;     normal            ; 516                         ;
-;         1 data inputs ; 8                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 44                          ;
-;         4 data inputs ; 46                          ;
-;         5 data inputs ; 93                          ;
-;         6 data inputs ; 316                         ;
+;         1 data inputs ; 13                          ;
+;         2 data inputs ; 14                          ;
+;         4 data inputs ; 9                           ;
+;         5 data inputs ; 55                          ;
+;     extend            ; 67                          ;
+;         7 data inputs ; 67                          ;
+;     normal            ; 813                         ;
+;         2 data inputs ; 101                         ;
+;         3 data inputs ; 46                          ;
+;         4 data inputs ; 145                         ;
+;         5 data inputs ; 225                         ;
+;         6 data inputs ; 296                         ;
 ; arriav_mac            ; 2                           ;
 ; boundary_port         ; 28                          ;
 ; generic_pll           ; 3                           ;
-; stratixv_ram_block    ; 64                          ;
+; stratixv_ram_block    ; 32                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 12.00                       ;
-; Average LUT depth     ; 10.07                       ;
+; Max LUT depth         ; 10.10                       ;
+; Average LUT depth     ; 7.34                        ;
 +-----------------------+-----------------------------+
 
 
@@ -955,7 +1307,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:08     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -965,7 +1317,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sat Mar 27 17:55:59 2021
+    Info: Processing started: Sun Mar 28 11:10:20 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab05 -c lab05
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1014,6 +1366,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll_slo
 Info (12021): Found 1 design units, including 1 entities, in source file lab05.v
     Info (12023): Found entity 1: lab05 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 1
 Info (12127): Elaborating entity "lab05" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at lab05.v(68): object "PC4" assigned a value but never read File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 68
 Warning (10230): Verilog HDL assignment warning at lab05.v(57): truncated value with size 32 to match size of target (11) File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 57
 Info (12128): Elaborating entity "control_unit" for hierarchy "control_unit:ctrl" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 89
 Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:rf" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 101
@@ -1059,29 +1412,10 @@ Info (12133): Instantiated megafunction "lab5_ram:ram|altsyncram:altsyncram_comp
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
 Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "lab5_ram:ram|altsyncram:altsyncram_component|altsyncram_nuo1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
-Info (12128): Elaborating entity "rom_jal" for hierarchy "rom_jal:rom5" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 168
-Info (12128): Elaborating entity "altsyncram" for hierarchy "rom_jal:rom5|altsyncram:altsyncram_component" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal.v Line: 82
-Info (12130): Elaborated megafunction instantiation "rom_jal:rom5|altsyncram:altsyncram_component" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal.v Line: 82
-Info (12133): Instantiated megafunction "rom_jal:rom5|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/rom_jal.v Line: 82
-    Info (12134): Parameter "address_aclr_a" = "NONE"
-    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "jal_testmif.mif"
-    Info (12134): Parameter "intended_device_family" = "Cyclone V"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "256"
-    Info (12134): Parameter "operation_mode" = "ROM"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "widthad_a" = "8"
-    Info (12134): Parameter "width_a" = "32"
-    Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_4ng1.tdf
-    Info (12023): Found entity 1: altsyncram_4ng1 File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/altsyncram_4ng1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_4ng1" for hierarchy "rom_jal:rom5|altsyncram:altsyncram_component|altsyncram_4ng1:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (113028): 1 out of 256 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/jal_testmif.mif Line: 1
-    Warning (113026): Memory Initialization File Address 12 is not initialized File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/jal_testmif.mif Line: 1
+Info (12128): Elaborating entity "reg_rom" for hierarchy "reg_rom:rom7" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 177
+Warning (10030): Net "file.data_a" at reg_rom.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_rom.v Line: 8
+Warning (10030): Net "file.waddr_a" at reg_rom.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_rom.v Line: 8
+Warning (10030): Net "file.we_a" at reg_rom.v(8) has no driver or initial value, using a default initial value '0' File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_rom.v Line: 8
 Info (12128): Elaborating entity "pll_lab5" for hierarchy "pll_lab5:p1" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/lab05.v Line: 186
 Info (12128): Elaborating entity "pll_lab5_0002" for hierarchy "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5.v Line: 23
 Info (12128): Elaborating entity "altera_pll" for hierarchy "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i" File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/pll_lab5/pll_lab5_0002.v Line: 91
@@ -1149,7 +1483,7 @@ Info (12133): Instantiated megafunction "pll_lab5:p1|pll_lab5_0002:pll_lab5_inst
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2021.03.27.17:56:31 Progress: Loading sldc3a581be/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2021.03.28.11:10:45 Progress: Loading sldc3a581be/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1172,9 +1506,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file db/ip/s
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/db/ip/sldc3a581be/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
-Info (276014): Found 1 instances of uninferred RAM logic
+Info (276014): Found 2 instances of uninferred RAM logic
+    Info (276004): RAM logic "reg_rom:rom7|file" is uninferred due to inappropriate RAM size File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_rom.v Line: 8
     Info (276007): RAM logic "reg_file:rf|file" is uninferred due to asynchronous read logic File: C:/Users/gohar/OneDrive/Documents/ENGN 1640-DESKTOP-LGI5C03/sultan_and_michael_lab5/proj1/reg_file.v Line: 9
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Warning (20013): Ignored 24 assignments for entity "DE0_CV_Default" -- entity does not exist in design
     Warning (20014): Assignment for entity set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -entity DE0_CV_Default -section_id Top was ignored
@@ -1210,21 +1545,21 @@ Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 14 node(s), including 0 DDIO, 3 PLL, 0 transceiver and 0 LCELL
 Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[2].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[1].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
-    Info: Must be connected
 Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[0].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
     Info: Must be connected
-Info (21057): Implemented 2308 device resources after synthesis - the final resource count might be different
+Warning: RST port on the PLL is not properly connected on instance pll_lab5:p1|pll_lab5_0002:pll_lab5_inst|altera_pll:altera_pll_i|general[1].gpll. The reset port on the PLL should be connected. If the PLL loses lock for any reason, you might need to manually reset the PLL in order to re-establish lock to the reference clock. File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 749
+    Info: Must be connected
+Info (21057): Implemented 1788 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 4 input pins
     Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 2233 logic cells
-    Info (21064): Implemented 64 RAM segments
+    Info (21061): Implemented 1745 logic cells
+    Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 3 PLLs
     Info (21062): Implemented 2 DSP elements
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 39 warnings
-    Info: Peak virtual memory: 4895 megabytes
-    Info: Processing ended: Sat Mar 27 17:56:59 2021
-    Info: Elapsed time: 00:01:00
-    Info: Total CPU time (on all processors): 00:01:54
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
+    Info: Peak virtual memory: 4887 megabytes
+    Info: Processing ended: Sun Mar 28 11:11:06 2021
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:01:24
 
 

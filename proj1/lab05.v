@@ -70,7 +70,7 @@ module lab05(CLOCK_50);
     PC4 <= PC_plus;
    end
 
-	wire [31:0] ra = {21'b0, PC4};
+	wire [31:0] ra = {21'b0, PC_plus};
 	
 
    assign wd = (jump) ? {ra}: regData; //write data
@@ -160,12 +160,12 @@ module lab05(CLOCK_50);
 //		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(outclk_1));		 // Templated
 
-   rom_jal rom5 (/*AUTOINST*/
-		 // Outputs
-		 .q			(instr[31:0]),		 // Templated
-		 // Inputs
-		 .address		(PC[9:2]),		 // Templated
-		 .clock			(outclk_1));		 // Templated
+//   rom_jal rom5 (/*AUTOINST*/
+//		 // Outputs
+//		 .q			(instr[31:0]),		 // Templated
+//		 // Inputs
+//		 .address		(PC[9:2]),		 // Templated
+//		 .clock			(outclk_1));		 // Templated
 
 //   factorial rom6 (/*AUTOINST*/
 //		   // Outputs
@@ -174,7 +174,7 @@ module lab05(CLOCK_50);
 //		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(outclk_1));		 // Templated
 
-//reg_rom rom7(outclk_1, PC[9:2], instr);
+reg_rom rom7(outclk_1, PC[9:2], instr);
 
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs

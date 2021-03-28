@@ -20,7 +20,7 @@ module jal_tb ();
 
     lab05_for_test TEST(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd, ALUSrc, A, B, aluop, rd1, rd2, PC4);
 
-    initial CLOCK_50 = 1;
+    initial CLOCK_50 = 1'b1;
 
     always #0.5 CLOCK_50 = ~CLOCK_50;
 
@@ -33,29 +33,42 @@ module jal_tb ();
     end
 
     initial begin
-        #0;
-        instr = 32'h00500293;
-        #1;
-        instr = 32'h00500293;
-        #1;
-        instr = 32'h00c000ef;
-        #1;
-        instr = 32'h00102623;
-        #1;
-        instr = 32'h00502223;
-        #1;
-        instr = 32'h00402203;
-        #1;
-        instr = 32'h00402423;
-        #1;
-        instr = 32'h00008067;
+        // #0;
+        // instr = 32'h00500293;
+        // #1;
+        // instr = 32'h00500293;
+        // #1;
+        // instr = 32'h00c000ef;
+        // #1;
+        // instr = 32'h00102623;
+        // #1;
+        // instr = 32'h00502223;
+        // #1;
+        // instr = 32'h00402203;
+        // #1;
+        // instr = 32'h00402423;
+        // #1;
+        // instr = 32'h00008067;
+        //
+        // #1;
+        // instr = 32'h00900113;
+        // #1;
+        // instr = 32'h00102023;
+        // #1;
+        // instr = 32'h0000007f;
+        // #1;
 
+        #0;
         #1;
-        instr = 32'h00900113;
         #1;
-        instr = 32'h00102023;
         #1;
-        instr = 32'h0000007f;
+        #1;
+        #1;
+        #1;
+        #1;
+        #1;
+        #1;
+        #1;
         #1;
 
         $stop;
