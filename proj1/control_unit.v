@@ -10,8 +10,8 @@ module control_unit(
 	output  MemRead,
 	output  MemtoReg,
 	output  MemWrite,
-	output  ALUSrc,
-	output  RegWrite//,
+	output  ALUSrc, J, JR,
+	output  RegWrite
 	//output reg  halt
 );
 assign Branch	  = (instr == 7'b0110011) ? 1'b0: //R-type
@@ -67,10 +67,26 @@ assign aluop 		= (instr == 7'b0110011) ? 2'b10: //R-type
 									(instr == 7'b0100011) ? 2'b00: // S-type
 									(instr == 7'b0000011) ? 2'b00: // L-type
 									(instr == 7'b1100011) ? 2'b01: // B-type
-									(instr == 7'b1101111) ? 2'b01: // JAL
+									(instr == 7'b1101111) ? 2'b00: // JAL
 									(instr == 7'b1100111) ? 2'b00: // JALR
 									 2'b00; //default
+assign J = (instr == 7'b0110011) ? 1'b0: //R-type
+									(instr == 7'b0010011) ? 1'b0: // I-type
+									(instr == 7'b0100011) ? 1'b0: // S-type
+									(instr == 7'b0000011) ? 1'b0: // L-type
+									(instr == 7'b1100011) ? 1'b0: // B-type
+									(instr == 7'b1101111) ? 1'b1: // JAL
+									(instr == 7'b1100111) ? 1'b0: // JALR
+									 1'b0; //default
 
+assign JR = (instr == 7'b0110011) ? 1'b0: //R-type
+									(instr == 7'b0010011) ? 1'b0: // I-type
+									(instr == 7'b0100011) ? 1'b0: // S-type
+									(instr == 7'b0000011) ? 1'b0: // L-type
+									(instr == 7'b1100011) ? 1'b0: // B-type
+									(instr == 7'b1101111) ? 1'b0: // JAL
+									(instr == 7'b1100111) ? 1'b1: // JALR
+									 1'b0; //default
 ////make into assign statements
 //	always@(*) begin
 //	MemWrite = 1'b0;

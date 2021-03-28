@@ -1,4 +1,4 @@
-module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd, ALUSrc, A, B, aluop, rd1, rd2);
+module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, write_addr, jump, wd, ALUSrc, A, B, aluop, rd1, rd2, PC4);
    input CLOCK_50;
 
    /*AUTOWIRE*/
@@ -64,8 +64,7 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (instr[6:0] == JAL) ?
-  (out) + PC : out + PC;
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
 	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
@@ -76,7 +75,12 @@ module lab05_for_test(CLOCK_50, PC, Y, instr, PC_next, PC_plus,run, ram_addr, wr
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 
-   assign wd = (jump) ? {21'b0, PC_before + 11'h4}: regData; //write data
+   output reg [10:0] PC4;
+   always @(posedge CLOCK_50) begin
+    PC4 <= PC_plus;
+   end
+
+   assign wd = (jump) ? {21'b0, PC_plus}: regData; //write data
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs

@@ -32,7 +32,7 @@ module  pll_lab5_0002(
 		.phase_shift1("5556 ps"),
 		.duty_cycle1(50),
 		.output_clock_frequency2("10.000000 MHz"),
-		.phase_shift2("83333 ps"),
+		.phase_shift2("41667 ps"),
 		.duty_cycle2(50),
 		.output_clock_frequency3("0 MHz"),
 		.phase_shift3("0 ps"),

@@ -42,32 +42,19 @@ module lab05(CLOCK_50);
 				 B_type = 7'b1100011, JAL = 7'b1101111, JALR = 7'b1100111;
 
 	wire run;
-	reg jump;
+	wire jump;
 	assign run = ((form_code != R) & (form_code != I) & (form_code != S) & (form_code != L) & (form_code != B_type) & (form_code != JAL) & (form_code != JALR)) ? 1'b0: 1'b1;
-	//assign jump = ((form_code == JALR) | (form_code == JAL)) ? 1'b1: 1'b0;
+	assign jump = ((form_code == JALR) | (form_code == JAL)) ? 1'b1: 1'b0;
 
-	always @(posedge outclk_0) begin
-	 if ((form_code == JALR) | (form_code == JAL)) begin
-		jump <= 1'b1;
-	 end
-	 else begin
-		jump <= 1'b0;
-	 end
-	end
-	
-	reg [10:0] PC_before;
-	initial PC_before = 11'h0;
 
 	always @(posedge outclk_0) begin
 	  if (run) begin
-	  PC_before <= PC;
 	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
 	  end
 	end
 
 	assign PC_plus = PC + 11'h4;
-	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: (form_code == JAL) ? out + PC: out + PC;
-	//assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
+	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
 	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
 	assign to_branch = instr[12] ^ zero;
 
@@ -77,13 +64,17 @@ module lab05(CLOCK_50);
 	
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
+	
+	reg [10:0] PC4;
+   always @(posedge outclk_1) begin
+    PC4 <= PC_plus;
+   end
 
-	wire [31:0] ra = {21'b0, PC + 11'h4};
+	wire [31:0] ra = {21'b0, PC4};
 	
 
    assign wd = (jump) ? {ra}: regData; //write data
 	
-
 
    control_unit ctrl (/*AUTOINST*/
 		      // Outputs
@@ -169,19 +160,19 @@ module lab05(CLOCK_50);
 //		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(outclk_1));		 // Templated
 
-//   rom_jal rom5 (/*AUTOINST*/
-//		 // Outputs
-//		 .q			(instr[31:0]),		 // Templated
-//		 // Inputs
-//		 .address		(PC[9:2]),		 // Templated
-//		 .clock			(outclk_1));		 // Templated
+   rom_jal rom5 (/*AUTOINST*/
+		 // Outputs
+		 .q			(instr[31:0]),		 // Templated
+		 // Inputs
+		 .address		(PC[9:2]),		 // Templated
+		 .clock			(outclk_1));		 // Templated
 
-   factorial rom6 (/*AUTOINST*/
-		   // Outputs
-		   .q			(instr[31:0]),		 // Templated
-		   // Inputs
-		   .address		(PC[9:2]),		 // Templated
-		   .clock		(outclk_1));		 // Templated
+//   factorial rom6 (/*AUTOINST*/
+//		   // Outputs
+//		   .q			(instr[31:0]),		 // Templated
+//		   // Inputs
+//		   .address		(PC[9:2]),		 // Templated
+//		   .clock		(outclk_1));		 // Templated
 
 //reg_rom rom7(outclk_1, PC[9:2], instr);
 
