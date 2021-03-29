@@ -65,10 +65,6 @@ module lab05(CLOCK_50);
    wire [31:0] regData; //either memory or alu data
    assign regData = (MemtoReg) ? q : Y;
 	
-	reg [10:0] PC4;
-   always @(posedge outclk_1) begin
-    PC4 <= PC_plus;
-   end
 
 	wire [31:0] ra = {21'b0, PC_plus};
 	
@@ -93,7 +89,7 @@ module lab05(CLOCK_50);
 		.rd1			(rd1[31:0]),
 		.rd2			(rd2[31:0]),
 		// Inputs
-		.clk			(outclk_1),		 // Templated
+		.clk			(outclk_0),		 // Templated
 		.wren			(RegWrite),		 // Templated
 		.rr1			(instr[19:15]),		 // Templated
 		.rr2			(instr[24:20]),		 // Templated
@@ -174,7 +170,7 @@ module lab05(CLOCK_50);
 //		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(outclk_1));		 // Templated
 
-reg_rom rom7(outclk_1, PC[9:2], instr);
+reg_rom rom7(PC[9:2], instr);
 
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs

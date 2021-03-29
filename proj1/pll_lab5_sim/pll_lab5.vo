@@ -259,7 +259,7 @@ module  pll_lab5
 		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift15 = "0 ps",
 		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift16 = "0 ps",
 		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift17 = "0 ps",
-		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift2 = "41667 ps",
+		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift2 = "50000 ps",
 		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift3 = "0 ps",
 		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift4 = "0 ps",
 		pll_lab5_altera_pll_altera_pll_i_1557.phase_shift5 = "0 ps",
