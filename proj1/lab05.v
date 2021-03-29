@@ -49,13 +49,13 @@ module lab05(CLOCK_50);
 
 	always @(posedge outclk_0) begin
 	  if (run) begin
-	  PC <= PC_next;//PC_next; //PC_next works for branching, not prog2
+	  PC <= PC_next;
 	  end
 	end
 
 	assign PC_plus = PC + 11'h4;
 	assign PC_offset = (instr[6:0] == JALR) ? Y[10:0]: out + PC;
-	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus; //if ALU output is zero -> branch
+	assign PC_next = ((to_branch & Branch) | jump) ? PC_offset : PC_plus;
 	assign to_branch = instr[12] ^ zero;
 
 
@@ -67,7 +67,7 @@ module lab05(CLOCK_50);
 	
 
 	wire [31:0] ra = {21'b0, PC_plus};
-	
+	wire [31:0] mult = A * B;
 
    assign wd = (jump) ? {ra}: regData; //write data
 	
@@ -103,6 +103,7 @@ module lab05(CLOCK_50);
 	   // Inputs
 	   .A				(A[31:0]),
 	   .B				(B[31:0]),
+		.mult       (mult[31:0]),
 	   .opcode			(aluopcode[4:0]));	 // Templated
 
    alu_control aluctrl (/*AUTOINST*/
@@ -170,7 +171,7 @@ module lab05(CLOCK_50);
 //		   .address		(PC[9:2]),		 // Templated
 //		   .clock		(outclk_1));		 // Templated
 
-reg_rom rom7(PC[9:2], instr);
+	reg_rom rom7(PC[9:2], instr);
 
    pll_lab5 p1 (/*AUTOINST*/
 		// Outputs
@@ -180,14 +181,5 @@ reg_rom rom7(PC[9:2], instr);
 		// Inputs
 		.refclk			(CLOCK_50),		 // Templated
 		.rst			(1'b0));			 // Templated
-		
-//	pll_slow p2 (/*AUTOINST*/
-//		// Outputs
-//		.outclk_0		(outclk_0),
-//		.outclk_1		(outclk_1),
-//		.outclk_2      (outclk_2),
-//		// Inputs
-//		.refclk			(CLOCK_50),		 // Templated
-//		.rst			(1'b0));			 // Templated
 
 endmodule

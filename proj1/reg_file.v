@@ -17,12 +17,6 @@ module reg_file(clk, wren, wd, rr1, rr2, wr, rd1, rd2);
      end
    end
 
-  //read data logic
-  // always @(posedge clk) begin
-  //   rd1 <= file[rr1];
-  //   rd2 <= file[rr2];
-  // end
-
   //should be combinational
   assign rd1 = file[rr1];
   assign rd2 = file[rr2];
